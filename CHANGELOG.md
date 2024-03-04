@@ -3,10 +3,19 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.30.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.29.0...v0.30.0) 
+
+> March 4, 2024 
+
+- feat: ✨ repo and conversion folders [`ad7b0d3f`](https://github.com/PKief/vscode-material-icon-theme/commit/ad7b0d3f)
+- Add Controller, Television, and Desktop folder icons [`#2218`](https://github.com/PKief/vscode-material-icon-theme/pull/2218)
+- feat: add postcss .mjs extension support [`#2239`](https://github.com/PKief/vscode-material-icon-theme/pull/2239)
+ 
 #### [v0.29.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.28.0...v0.29.0) 
 
 > March 2, 2024 
 
+- release: 🔖 v0.29.0 [`3ee8db0a`](https://github.com/PKief/vscode-material-icon-theme/commit/3ee8db0a)
 - fix: 🚑 test rust file light theme [`c8ae8c25`](https://github.com/PKief/vscode-material-icon-theme/commit/c8ae8c25)
 - feat: ✨ rust test files [`f484b9e7`](https://github.com/PKief/vscode-material-icon-theme/commit/f484b9e7)
  

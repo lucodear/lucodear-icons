@@ -151,6 +151,15 @@ export const folders = lucodear('misc', [
       'conversion',
     ],
   },
+
+  {
+    name: 'ui',
+    folderNames: ['ui', 'ux', 'gui', 'front', 'frontend', 'front-end'],
+  },
+  {
+    name: 'tui',
+    folderNames: ['tui', 'terminal-ui', 'terminalui', 'terminal-ui'],
+  },
   {
     name: 'version',
     folderNames: ['version', 'versions', 'vx'],

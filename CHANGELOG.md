@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.32.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.31.0...v0.32.0) 
+
+> March 8, 2024 
+
+- feat: ✨ ui and tui folder icons [`bf47a370`](https://github.com/PKief/vscode-material-icon-theme/commit/bf47a370)
+ 
 #### [v0.31.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.30.0...v0.31.0) 
 
 > March 4, 2024 
 
+- release: 🔖 v0.31.0 [`fb9ad64a`](https://github.com/PKief/vscode-material-icon-theme/commit/fb9ad64a)
 - feat: ✨ template folders and icons [`8315d5cd`](https://github.com/PKief/vscode-material-icon-theme/commit/8315d5cd)
 - feat: add commitlint .mjs extension support [`#2241`](https://github.com/PKief/vscode-material-icon-theme/pull/2241)
  

@@ -362,8 +362,6 @@ export const fileIcons: FileIcons = {
       name: 'hpp',
       fileExtensions: ['hh', 'hpp', 'hxx', 'h++', 'hp', 'tcc', 'inl'],
     },
-    { name: 'objective-c', fileExtensions: ['m'] },
-    { name: 'objective-cpp', fileExtensions: ['mm'] },
     { name: 'rc', fileExtensions: ['rc'] },
     { name: 'go', fileExtensions: ['go'] },
     {
@@ -1400,6 +1398,7 @@ export const fileIcons: FileIcons = {
         '.eslintignore',
         '.eslintcache',
         'eslint.config.js',
+        'eslint.config.cjs',
         'eslint.config.mjs',
         '.eslintrc.base.json',
       ],

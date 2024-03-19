@@ -3,10 +3,25 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.33.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.32.0...v0.33.0) 
+
+> March 19, 2024 
+
+- fix: 🚑 wrong file for folder pydantic [`2a9eec9d`](https://github.com/PKief/vscode-material-icon-theme/commit/2a9eec9d)
+- feat: ✨ alternative hollow python folders [`139461f6`](https://github.com/PKief/vscode-material-icon-theme/commit/139461f6)
+- fix: 🚑 fix package lock to not point to verdaccio [`1f34115f`](https://github.com/PKief/vscode-material-icon-theme/commit/1f34115f)
+- feat: add translation for Korean [`#2234`](https://github.com/PKief/vscode-material-icon-theme/pull/2234)
+- build(deps-dev): bump follow-redirects from 1.15.4 to 1.15.6 [`#2254`](https://github.com/PKief/vscode-material-icon-theme/pull/2254)
+- chore: add `svg-color-linter` to check-colors before requesting merge [`#2237`](https://github.com/PKief/vscode-material-icon-theme/pull/2237)
+- Remove duplicated language id definitions [`ff4bb608`](https://github.com/PKief/vscode-material-icon-theme/commit/ff4bb608)
+- Move objective c and cpp to language associations [`#2249`](https://github.com/PKief/vscode-material-icon-theme/pull/2249)
+- feat: enhance eslint flat config support [`#2247`](https://github.com/PKief/vscode-material-icon-theme/pull/2247)
+ 
 #### [v0.32.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.31.0...v0.32.0) 
 
 > March 8, 2024 
 
+- release: 🔖 v0.32.0 [`8f0ed5e2`](https://github.com/PKief/vscode-material-icon-theme/commit/8f0ed5e2)
 - feat: ✨ ui and tui folder icons [`bf47a370`](https://github.com/PKief/vscode-material-icon-theme/commit/bf47a370)
  
 #### [v0.31.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.30.0...v0.31.0) 

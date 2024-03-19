@@ -23,6 +23,7 @@ export const common = lucodear('python', [
   pyfolder('dataclass', ['dataclasses']),
   pyfolder('dict', ['dicts', 'dictionary', 'dictionaries']),
   pyfolder('protocol', ['protocols', 'interface', 'interfaces'], true),
+  pyfolder('pydantic', ['pyd']),
   pyfolder('typing', ['types', 'type', 'typings']),
 ] as LucodearFolderIcon[]);
 

@@ -61,7 +61,6 @@ const pythonFiles: LucodearFileIcon[] = lucodear('python', [
     ],
   },
   ...pyfile('protocol', ['protocols', 'interface', 'interfaces'], true),
-  ...pyfile('pydantic', ['pyd'], false),
   ...pyfile('script', ['scripts'], false),
   ...pyfile('test', ['tests', 'spec', 'specs'], false),
   ...pyfile('tool', ['tools'], false),

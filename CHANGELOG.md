@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.33.1](https://github.com/PKief/vscode-material-icon-theme/compare/v0.33.0...v0.33.1) 
+
+> March 20, 2024 
+
+- feat: ✨ pydantic missing files + wrong folder dataclass [`f545f284`](https://github.com/PKief/vscode-material-icon-theme/commit/f545f284)
+ 
 #### [v0.33.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.32.0...v0.33.0) 
 
 > March 19, 2024 
 
+- release: 🔖 v0.33.0 [`40db01aa`](https://github.com/PKief/vscode-material-icon-theme/commit/40db01aa)
 - fix: 🚑 wrong file for folder pydantic [`2a9eec9d`](https://github.com/PKief/vscode-material-icon-theme/commit/2a9eec9d)
 - feat: ✨ alternative hollow python folders [`139461f6`](https://github.com/PKief/vscode-material-icon-theme/commit/139461f6)
 - fix: 🚑 fix package lock to not point to verdaccio [`1f34115f`](https://github.com/PKief/vscode-material-icon-theme/commit/1f34115f)

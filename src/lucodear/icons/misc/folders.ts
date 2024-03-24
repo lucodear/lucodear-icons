@@ -98,6 +98,10 @@ export const folders = lucodear('misc', [
     folderNames: ['middleware', 'middlewares', 'mdw'],
   },
   {
+    name: 'migration',
+    folderNames: ['migration', 'migrations', 'mig'],
+  },
+  {
     name: 'model',
     folderNames: ['model', 'models', 'entities', 'entity'],
   },

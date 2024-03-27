@@ -82,6 +82,19 @@ export const folders = lucodear('misc', [
     folderNames: ['factory', 'factories'],
   },
   {
+    name: 'grpc',
+    folderNames: [
+      'grpc',
+      'rpc',
+      'gRPC',
+      'gRPCs',
+      'grpc-api',
+      'grpc-server',
+      'grpc_api',
+      'grpc_server',
+    ],
+  },
+  {
     name: 'help',
     folderNames: ['help', 'question', 'questions', 'faq', 'faqs'],
   },

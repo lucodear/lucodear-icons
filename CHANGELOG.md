@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.37.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.36.0...v0.37.0) 
+
+> March 27, 2024 
+
+- feat(misc): ✨ grpc folder [`b3e5c70a`](https://github.com/PKief/vscode-material-icon-theme/commit/b3e5c70a)
+ 
 #### [v0.36.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.35.0...v0.36.0) 
 
 > March 27, 2024 
 
+- release: 🔖 v0.36.0 [`93fecca6`](https://github.com/PKief/vscode-material-icon-theme/commit/93fecca6)
  
 #### [v0.35.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.34.0...v0.35.0) 
 

@@ -8,6 +8,11 @@ const rustDefault = lucodear('rust', [
     fileExtensions: ['rs'],
   },
   {
+    name: 'rust-build',
+    fileNames: ['build.rs'],
+    light: true,
+  },
+  {
     name: 'rust-cargo',
     fileNames: ['Cargo.toml', 'cargo.toml'],
     light: true,

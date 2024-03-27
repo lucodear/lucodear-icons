@@ -140,6 +140,10 @@ export const folders = lucodear('misc', [
     folderNames: ['service', 'services', 'srv', 'svc'],
   },
   {
+    name: 'socket',
+    folderNames: ['socket', 'sockets', 'gateway', 'gateways'],
+  },
+  {
     name: 'tasks',
     folderNames: ['tasks', 'task', 'todo', 'todos'],
   },

@@ -3,10 +3,16 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.36.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.35.0...v0.36.0) 
+
+> March 27, 2024 
+
+ 
 #### [v0.35.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.34.0...v0.35.0) 
 
 > March 27, 2024 
 
+- release: 🔖 v0.35.0 [`c671dabd`](https://github.com/PKief/vscode-material-icon-theme/commit/c671dabd)
 - feat: ✨ folders gateway & rustler [`eabecc00`](https://github.com/PKief/vscode-material-icon-theme/commit/eabecc00)
 - feat: add lighthouserc .cjs extension support [`#2256`](https://github.com/PKief/vscode-material-icon-theme/pull/2256)
  

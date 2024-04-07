@@ -117,9 +117,10 @@ const getAllUsedFileIcons = (): string[] => {
 
 const getAllUsedFolderIcons = (): string[] => {
   const icons = folderIcons
-    .concat(lucodearFolderIcons)
+    .concat(lucodearFolderIcons as FolderTheme)
     .map((theme) => (theme.name === 'none' ? [] : getAllFolderIcons(theme)))
     .reduce((a, b) => a.concat(b));
+
   return icons
     .map((icon) => {
       return [

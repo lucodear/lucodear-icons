@@ -1,6 +1,7 @@
+import { RequireAtLeastOne } from '../helpers/types';
 import {
   DefaultIcon,
-  FileIcon,
+  BasicFileIcon,
   FolderIcon,
   FolderTheme,
   IconAssociations,
@@ -22,19 +23,32 @@ export interface ExtendedOptions extends IconJsonOptions {
   lucodear: LucodearOptions;
 }
 
-export type LucodearFileIcon = FileIcon & {
-  theme?: string;
-};
+export type LucodearFileIcon = RequireAtLeastOne<
+  BasicFileIcon & {
+    looseFileIcon?: true;
+    theme?: string;
+  },
+  'fileExtensions' | 'fileNames' | 'looseFileIcon'
+>;
 
 export interface LucodearFileIcons {
   defaultIcon?: DefaultIcon;
   icons: LucodearFileIcon[];
 }
 
-export interface LucodearFolderIcon extends FolderIcon {
-  theme?: string;
-}
+export type LucodearFolderIcon = RequireAtLeastOne<
+  Omit<FolderIcon, 'folderNames'> & {
+    theme?: string;
+    looseFolderIcon?: true;
+    /**
+     * Define the folder names that should apply the icon.
+     * E.g. ['src', 'source']
+     */
+    folderNames?: string[];
+  },
+  'looseFolderIcon' | 'folderNames'
+>;
 
-export interface LucodearFolderTheme extends FolderTheme {
+export interface LucodearFolderTheme extends Omit<FolderTheme, 'icons'> {
   icons: LucodearFolderIcon[];
 }

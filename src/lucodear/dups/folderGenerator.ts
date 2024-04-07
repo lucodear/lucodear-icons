@@ -27,7 +27,7 @@ export const loadLucodearFolderIconDefinitions = (
   config = merge({}, config);
   config.hidesExplorerArrows = options.hidesExplorerArrows;
   const activeTheme = getEnabledFolderTheme(
-    folderThemes,
+    folderThemes as FolderTheme[],
     options.folders?.theme
   );
   if (!activeTheme) {

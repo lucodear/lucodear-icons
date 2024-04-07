@@ -15,6 +15,25 @@ export const folders = lucodear('misc', [
     folderNames: ['bin', 'binary', 'binaries', 'bins'],
   },
   {
+    name: 'calendar',
+    folderNames: [
+      'calendar',
+      'calendars',
+      'agenda',
+      'schedule',
+      'schedules',
+      'sched',
+    ],
+  },
+  {
+    name: 'binance',
+    looseFolderIcon: true,
+  },
+  {
+    name: 'cocos-cap',
+    looseFolderIcon: true,
+  },
+  {
     name: 'controller',
     folderNames: ['controller', 'controllers', 'ctrl'],
   },
@@ -189,4 +208,8 @@ export const folders = lucodear('misc', [
     name: 'workflow',
     folderNames: ['workflow', 'workflows', 'flow', 'flows'],
   },
-] as LucodearFolderIcon[]);
+  {
+    name: 'yahoo',
+    looseFolderIcon: true,
+  },
+] satisfies LucodearFolderIcon[]);

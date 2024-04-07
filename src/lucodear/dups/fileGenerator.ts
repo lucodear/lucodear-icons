@@ -50,7 +50,7 @@ export const loadLucodearFileIconDefinitions = (
       config = merge(
         {},
         config,
-        mapSpecificFileIcons(icon, FileMappingType.FileExtensions)
+        mapSpecificFileIcons(icon as FileIcon, FileMappingType.FileExtensions)
       );
     }
     if (icon.fileNames) {
@@ -58,7 +58,7 @@ export const loadLucodearFileIconDefinitions = (
         {},
         config,
         mapSpecificFileIcons(
-          icon,
+          icon as FileIcon,
           FileMappingType.FileNames,
           options.files?.associations
         )
@@ -132,7 +132,7 @@ export const loadLucodearFileIconDefinitions = (
 const disableIconsByPack = (
   fileIcons: LucodearFileIcons,
   activatedIconPack: string
-): FileIcon[] => {
+): LucodearFileIcon[] => {
   return fileIcons.icons.filter((icon) => {
     return !icon.enabledFor
       ? true
@@ -169,8 +169,8 @@ export const setFileIconDefinition = (
     typeof icon === 'string'
       ? ''
       : icon.theme === undefined
-      ? ''
-      : `${icon.theme}/`;
+        ? ''
+        : `${icon.theme}/`;
 
   const obj: Partial<IconConfiguration> = { iconDefinitions: {} };
   if (config.options) {

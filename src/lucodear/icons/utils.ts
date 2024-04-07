@@ -12,7 +12,11 @@ const isIconPackArray = (p: any): p is IconPack[] => {
 };
 
 const isFolderIcon = (i: any): i is LucodearFolderIcon => {
-  return i.folderNames !== undefined;
+  return (
+    i !== undefined &&
+    i !== null &&
+    (i.folderNames !== undefined || i.looseFolderIcon === true)
+  );
 };
 
 export function lucodear<T extends LucodearIconConfig>(
@@ -57,10 +61,12 @@ function addPrefixes<T extends LucodearIconConfig>(
   return icons.map((icon) => {
     if (isFolderIcon(icon)) {
       // add prefixes to folder names (@folder, ~folder, =folder)
-      icon.folderNames.forEach((folderName) => {
-        icon.folderNames = icon.folderNames.concat(
-          prefixes.map((prefix) => `${prefix}${folderName}`)
-        );
+      icon.folderNames?.forEach((folderName) => {
+        if (icon.folderNames) {
+          icon.folderNames = icon.folderNames.concat(
+            prefixes.map((prefix) => `${prefix}${folderName}`)
+          );
+        }
       });
 
       // check if the icon starts with folder- and if not, add it

@@ -223,7 +223,7 @@ export const setFolderNames = (
     folderNames: {},
     folderNamesExpanded: {},
   };
-  folderNames.forEach((name) => {
+  folderNames?.forEach((name) => {
     if (obj.folderNames) {
       obj.folderNames[name as keyof IconConfiguration] = iconName + appendix;
     }

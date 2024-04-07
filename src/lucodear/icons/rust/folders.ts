@@ -13,6 +13,7 @@ export const folders = lucodear('rust', [
   {
     name: 'rust-derive',
     folderNames: ['derive', 'derives', 'derived'],
+    light: true,
   },
   {
     name: 'rust-macro',

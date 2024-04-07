@@ -10,4 +10,12 @@ export const folders = lucodear('rust', [
     name: 'cargo',
     folderNames: ['cargo', '.cargo', 'crates', '.crates'],
   },
+  {
+    name: 'rust-derive',
+    folderNames: ['derive', 'derives', 'derived'],
+  },
+  {
+    name: 'rust-macro',
+    folderNames: ['macros', 'macro'],
+  },
 ] as LucodearFolderIcon[]);

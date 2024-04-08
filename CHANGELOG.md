@@ -3,10 +3,21 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.39.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.38.0...v0.39.0) 
+
+> April 7, 2024 
+
+- fix: 🚑 add light theme versions [`41ecd4c9`](https://github.com/PKief/vscode-material-icon-theme/commit/41ecd4c9)
+- feat(rust): ✨ derive + macro folders [`9407f6c6`](https://github.com/PKief/vscode-material-icon-theme/commit/9407f6c6)
+- feat: ✨ allow loose folder and file icons [`91f2eef4`](https://github.com/PKief/vscode-material-icon-theme/commit/91f2eef4)
+- feat: ✨ brokers icons [`99eee86d`](https://github.com/PKief/vscode-material-icon-theme/commit/99eee86d)
+- Update icon-review.yml [`5fa74251`](https://github.com/PKief/vscode-material-icon-theme/commit/5fa74251)
+ 
 #### [v0.38.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.37.0...v0.38.0) 
 
 > March 27, 2024 
 
+- release: 🔖 v0.38.0 [`8f45c61d`](https://github.com/PKief/vscode-material-icon-theme/commit/8f45c61d)
 - feat(rust): ✨ build.rs file icon [`2ffafbe7`](https://github.com/PKief/vscode-material-icon-theme/commit/2ffafbe7)
  
 #### [v0.37.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.36.0...v0.37.0) 

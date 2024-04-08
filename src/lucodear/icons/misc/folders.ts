@@ -180,6 +180,20 @@ export const folders = lucodear('misc', [
     folderNames: ['tasks', 'task', 'todo', 'todos'],
   },
   {
+    name: 'thread',
+    folderNames: [
+      'thread',
+      'threads',
+      'threading',
+      'concurrency',
+      'parallel',
+      'multithreading',
+      'multithread',
+      'threadpool',
+      'thread-pool',
+    ],
+  },
+  {
     name: 'transformation',
     folderNames: [
       'transformations',

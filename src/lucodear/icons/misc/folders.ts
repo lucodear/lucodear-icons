@@ -146,6 +146,10 @@ export const folders = lucodear('misc', [
     folderNames: ['oracle', 'osb', 'soa'],
   },
   {
+    name: 'orm',
+    folderNames: ['orm', 'orms'],
+  },
+  {
     name: 'provider',
     folderNames: [
       'provider',

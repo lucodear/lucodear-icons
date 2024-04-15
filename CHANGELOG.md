@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.41.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.40.0...v0.41.0) 
+
+> April 15, 2024 
+
+- feat: ✨ + orm folder icon [`49fddedd`](https://github.com/PKief/vscode-material-icon-theme/commit/49fddedd)
+ 
 #### [v0.40.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.39.0...v0.40.0) 
 
 > April 8, 2024 
 
+- release: 🔖 v0.40.0 [`257e8bec`](https://github.com/PKief/vscode-material-icon-theme/commit/257e8bec)
 - feat: ✨ misc thread folder [`7e9b2f4d`](https://github.com/PKief/vscode-material-icon-theme/commit/7e9b2f4d)
  
 #### [v0.39.0](https://github.com/PKief/vscode-material-icon-theme/compare/v0.38.0...v0.39.0) 

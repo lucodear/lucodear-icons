@@ -41,13 +41,13 @@ export async function makePage(destination: string = './index.html') {
   const fileIcons: SvgIcon[] = convertedFileIcons.map((icon) => ({
     name: icon,
     localPath: `./icons/${icon}.svg`,
-    remotePath: `https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/icons/${icon}.svg`,
+    remotePath: `https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/v4.34.0/icons/${icon}.svg`,
   }));
 
   const folderIcons: SvgIcon[] = convertedFolderIcons.map((icon) => ({
     name: icon,
     localPath: `./icons/${icon}.svg`,
-    remotePath: `https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/icons/${icon}.svg`,
+    remotePath: `https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/v4.34.0/icons/${icon}.svg`,
   }));
 
   const lucodearFolders = getFolders([lucodearFolderIcons]);

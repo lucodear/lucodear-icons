@@ -227,7 +227,7 @@ const extendFolderNames = (folderNames: string[]) => {
   return names;
 };
 
-const setFolderNames = (
+export const setFolderNames = (
   iconName: string,
   folderNames: string[],
   appendix: string = ''

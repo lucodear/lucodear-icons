@@ -1,7 +1,7 @@
 import { deepStrictEqual } from 'assert';
 import merge from 'lodash.merge';
 import {
-  getDefaultIconOptions,
+  getDefaultIconOptions as getDefaultOpts,
   loadFolderIconDefinitions,
 } from '../../../icons/index';
 import {
@@ -9,6 +9,12 @@ import {
   IconConfiguration,
   IconPack,
 } from '../../../models/index';
+
+function getDefaultIconOptions() {
+  const options = getDefaultOpts();
+  options.activeIconPack = IconPack.Angular;
+  return options;
+}
 
 describe('folder icons', () => {
   let folderIcons: FolderTheme[];

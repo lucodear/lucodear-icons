@@ -1,10 +1,16 @@
 import { deepStrictEqual } from 'assert';
 import merge from 'lodash.merge';
 import {
-  getDefaultIconOptions,
+  getDefaultIconOptions as getDefaultOpts,
   loadFileIconDefinitions,
 } from '../../../icons/index';
 import { FileIcons, IconConfiguration, IconPack } from '../../../models/index';
+
+function getDefaultIconOptions() {
+  const options = getDefaultOpts();
+  options.activeIconPack = IconPack.Angular;
+  return options;
+}
 
 describe('file icons', () => {
   let expectedConfig: IconConfiguration;

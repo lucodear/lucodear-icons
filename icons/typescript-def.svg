@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <g>
-    <path d="M28,4V28H4V4H28m0-2H4A2,2,0,0,0,2,4V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2Z" style="fill: #0288d1"/>
-    <path d="M14,26H12V18H8V16H18v2H14Z" style="fill: #0288d1"/>
-  </g>
-  <path d="M26,18V16H22a2,2,0,0,0-2,2v2a2,2,0,0,0,2,2h2v2H20v2h4a2,2,0,0,0,2-2V22a2,2,0,0,0-2-2H22V18Z" style="fill: #0288d1"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M28,4V28H4V4H28m0-2H4A2,2,0,0,0,2,4V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2Z" style="fill:#0288d1"/><path d="M12,14v6H8.5a.5.5,0,0,0-.5.5v5a.5.5,0,0,0,.5.5h5a.5.5,0,0,0,.5-.5V14Zm0,10H10V22h2Z" style="fill:#0288d1"/><path d="M22,18.5V22h2V20h2V18H22.5A.5.5,0,0,0,22,18.5Z" style="fill:#0288d1"/><path d="M24,22v2H22v2h3.5a.5.5,0,0,0,.5-.5V22Z" style="fill:#0288d1"/><path d="M20,20V18H18V16H16v2H15v2h1v4a2,2,0,0,0,2,2h2V24H18V20Z" style="fill:#0288d1"/></svg>

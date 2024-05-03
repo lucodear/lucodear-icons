@@ -1,14 +1,23 @@
 import { env } from 'process';
 import {
   FileIcon,
+  FileIcons,
   FolderIcon,
+  FolderTheme,
   IconAssociations,
   IconConfiguration,
+  parseIconPack,
 } from '../models';
 import merge from 'lodash.merge';
-import { ExtendedOptions } from './model';
+import clone from 'lodash.clonedeep';
+import {
+  ExtendedOptions,
+  LucodearFileIcons,
+  LucodearFolderTheme,
+} from './model';
 import {
   FileMappingType,
+  getEnabledFolderTheme,
   highContrastColorFileEnding,
   lightColorFileEnding,
   mapSpecificFileIcons,
@@ -33,7 +42,8 @@ export const loadLucodearAddonIconDefinitions = async (
   config: IconConfiguration,
   options: ExtendedOptions,
   currentFileConfig: IconConfiguration,
-  currentFolderConfig: IconConfiguration
+  currentFolderConfig: IconConfiguration,
+  pkiefIcons: { file: FileIcons; folder: FolderTheme[] }
 ): Promise<IconConfiguration> => {
   config = merge({}, config);
   let files: FileIcon[] = [];
@@ -68,14 +78,23 @@ export const loadLucodearAddonIconDefinitions = async (
     );
   }
 
-  const addonFileIcons = loadLucodearFileIconDefinitions(
+  // remove folder names, file names and extensions that override icons
+  // already defined in the active icon pack
+  const [filteredFiles, filteredFolders] = filterOutPacksOverrides(
     lucodearFileIcons,
+    lucodearFolderIcons,
+    pkiefIcons,
+    options
+  );
+
+  const addonFileIcons = loadLucodearFileIconDefinitions(
+    filteredFiles,
     config,
     options
   );
 
   const addonFolderIcons = loadLucodearFolderIconDefinitions(
-    [lucodearFolderIcons],
+    [filteredFolders],
     config,
     options
   );
@@ -143,4 +162,74 @@ const makeRegexConfig = (
   });
 
   return config;
+};
+
+const filterOutPacksOverrides = (
+  files: LucodearFileIcons,
+  folders: LucodearFolderTheme,
+  pkiefIcons: { file: FileIcons; folder: FolderTheme[] },
+  options: ExtendedOptions
+): [LucodearFileIcons, LucodearFolderTheme] => {
+  files = clone(files);
+  folders = clone(folders);
+
+  const pack = parseIconPack(options.activeIconPack);
+  if (!pack) return [files, folders];
+
+  // files
+  const [fileExts, fileNames]: [Set<string>, Set<string>] =
+    pkiefIcons.file.icons.reduce(
+      ([fileExts, fileNames], icon) => {
+        if (!icon.enabledFor?.includes(pack)) return [fileExts, fileNames];
+
+        icon.fileExtensions?.forEach((ext) => fileExts.add(ext));
+        icon.fileNames?.forEach((name) => fileNames.add(name));
+        return [fileExts, fileNames];
+      },
+      [new Set<string>(), new Set<string>()]
+    );
+
+  files.icons.forEach((icon) => {
+    if (icon.enabledFor !== undefined) {
+      // if the icon has a pack defined, it should not be filtered out
+      return;
+    }
+
+    if (icon.fileExtensions) {
+      icon.fileExtensions = icon.fileExtensions.filter(
+        (ext) => !fileExts.has(ext)
+      );
+    }
+
+    if (icon.fileNames) {
+      icon.fileNames = icon.fileNames.filter((name) => !fileNames.has(name));
+    }
+  });
+
+  // folders
+  const folderNames =
+    getEnabledFolderTheme(
+      pkiefIcons.folder,
+      options.folders?.theme
+    )?.icons?.reduce((names, icon) => {
+      if (!icon.enabledFor?.includes(pack)) return names;
+
+      icon.folderNames?.forEach((name) => names.add(name));
+      return names;
+    }, new Set<string>()) ?? new Set<string>();
+
+  folders.icons.forEach((icon) => {
+    if (icon.enabledFor !== undefined) {
+      // if the icon has a pack defined, it should not be filtered out
+      return;
+    }
+
+    if (icon.folderNames) {
+      icon.folderNames = icon.folderNames.filter(
+        (name) => !folderNames.has(name)
+      );
+    }
+  });
+
+  return [files, folders];
 };

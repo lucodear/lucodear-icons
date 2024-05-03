@@ -56,7 +56,11 @@ export const generateIconConfigurationObject = async (
     iconConfig,
     options as any,
     merge({}, languageIconDefinitions, fileIconDefinitions),
-    folderIconDefinitions
+    folderIconDefinitions,
+    {
+      file: fileIcons,
+      folder: folderIcons,
+    }
   );
   // #endregion
 
@@ -173,7 +177,7 @@ export const getDefaultIconOptions = (): Required<IconJsonOptions> => ({
     color: '#90a4ae',
     associations: {},
   },
-  activeIconPack: 'angular',
+  activeIconPack: 'none',
   hidesExplorerArrows: false,
   opacity: 1,
   saturation: 1,

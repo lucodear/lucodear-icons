@@ -17,3 +17,17 @@ export enum IconPack {
   RustFerrisMinimal = 'rust_ferris_minimal',
   RustFerrisFull = 'rust_ferris_full',
 }
+
+export function parseIconPack(value?: string) {
+  if (!value) {
+    return;
+  }
+
+  for (const key in IconPack) {
+    const val = IconPack[key as keyof typeof IconPack];
+
+    if (val === value) {
+      return val;
+    }
+  }
+}

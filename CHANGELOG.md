@@ -3,10 +3,32 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.43.0](https://github.com/lucodear/lucodear-icons/compare/v0.42.0...v0.43.0) 
+
+> April 26, 2024 
+
+- fix: 🚑 export setFolderNames [`2a5c52f2`](https://github.com/lucodear/lucodear-icons/commit/2a5c52f2)
+- Add seeders folder icons [`#2298`](https://github.com/lucodear/lucodear-icons/pull/2298)
+- Pseudo-wildcard support for folder icons [`#2292`](https://github.com/lucodear/lucodear-icons/pull/2292)
+- Update CONTRIBUTING.md [`834e5aed`](https://github.com/lucodear/lucodear-icons/commit/834e5aed)
+- feat: ✨ c-family icons improvements [`#2299`](https://github.com/lucodear/lucodear-icons/pull/2299)
+- feat: slnx file extension [`#2302`](https://github.com/lucodear/lucodear-icons/pull/2302)
+- feat(filenames): add patterns support [`#2289`](https://github.com/lucodear/lucodear-icons/pull/2289)
+- Add some missed attribute options [`#2300`](https://github.com/lucodear/lucodear-icons/pull/2300)
+- Add aliases for platform folders [`#2288`](https://github.com/lucodear/lucodear-icons/pull/2288)
+- feat: Add `.editorconfig` and `.gitattributes` [`#2290`](https://github.com/lucodear/lucodear-icons/pull/2290)
+- feat: ✨ update pytest icon [`7ef9ce88`](https://github.com/lucodear/lucodear-icons/commit/7ef9ce88)
+- chore(ghpage): 🧹 update pkief's url [`ffb73208`](https://github.com/lucodear/lucodear-icons/commit/ffb73208)
+- fix: 🚑 golang icon [`#2287`](https://github.com/lucodear/lucodear-icons/pull/2287)
+- feat: add all syncpack cosmiconfig config [`#2282`](https://github.com/lucodear/lucodear-icons/pull/2282)
+- feat: knip [`#2280`](https://github.com/lucodear/lucodear-icons/pull/2280)
+- Updated ES translation [`#2286`](https://github.com/lucodear/lucodear-icons/pull/2286)
+ 
 #### [v0.42.0](https://github.com/lucodear/lucodear-icons/compare/v0.41.0...v0.42.0) 
 
 > April 19, 2024 
 
+- release: 🔖 v0.42.0 [`cd23c2b5`](https://github.com/lucodear/lucodear-icons/commit/cd23c2b5)
 - ci: 🔄 fix changelog urls [`1ee11681`](https://github.com/lucodear/lucodear-icons/commit/1ee11681)
 - fix: update version [`0ae248de`](https://github.com/lucodear/lucodear-icons/commit/0ae248de)
 - feat: add backend/backends folder icon (Closes #2276) [`c7fd9c9c`](https://github.com/lucodear/lucodear-icons/commit/c7fd9c9c)

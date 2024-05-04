@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.45.0](https://github.com/lucodear/lucodear-icons/compare/v0.44.0...v0.45.0) 
+
+> May 4, 2024 
+
+- feat: ✨ change default folder color [`df07d2eb`](https://github.com/lucodear/lucodear-icons/commit/df07d2eb)
+ 
 #### [v0.44.0](https://github.com/lucodear/lucodear-icons/compare/v0.43.0...v0.44.0) 
 
 > May 3, 2024 
 
+- release: 🔖 v0.44.0 [`95a21704`](https://github.com/lucodear/lucodear-icons/commit/95a21704)
 - test: 🧪 fix failing tests due to angular not being default [`dfd2de1b`](https://github.com/lucodear/lucodear-icons/commit/dfd2de1b)
 - feat: ✨ improve many icons [`2e039bde`](https://github.com/lucodear/lucodear-icons/commit/2e039bde)
 - feat(i18n): Add missing japanese translate [`#2313`](https://github.com/lucodear/lucodear-icons/pull/2313)

@@ -150,7 +150,7 @@
       "properties": {
         "lucodear-icons.activeIconPack": {
           "type": "string",
-          "default": "angular",
+          "default": "none",
           "description": "%configuration.activeIconPack%",
           "enumDescriptions": [
             "%configuration.activeIconPack.angular%",

@@ -3,10 +3,19 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.44.0](https://github.com/lucodear/lucodear-icons/compare/v0.43.0...v0.44.0) 
+
+> May 3, 2024 
+
+- test: 🧪 fix failing tests due to angular not being default [`dfd2de1b`](https://github.com/lucodear/lucodear-icons/commit/dfd2de1b)
+- feat: ✨ improve many icons [`2e039bde`](https://github.com/lucodear/lucodear-icons/commit/2e039bde)
+- feat(i18n): Add missing japanese translate [`#2313`](https://github.com/lucodear/lucodear-icons/pull/2313)
+ 
 #### [v0.43.0](https://github.com/lucodear/lucodear-icons/compare/v0.42.0...v0.43.0) 
 
 > April 26, 2024 
 
+- release: 🔖 v0.43.0 [`503c5a6f`](https://github.com/lucodear/lucodear-icons/commit/503c5a6f)
 - fix: 🚑 export setFolderNames [`2a5c52f2`](https://github.com/lucodear/lucodear-icons/commit/2a5c52f2)
 - Add seeders folder icons [`#2298`](https://github.com/lucodear/lucodear-icons/pull/2298)
 - Pseudo-wildcard support for folder icons [`#2292`](https://github.com/lucodear/lucodear-icons/pull/2292)

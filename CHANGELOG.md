@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.46.0](https://github.com/lucodear/lucodear-icons/compare/v0.45.0...v0.46.0) 
+
+> May 4, 2024 
+
+- fix: 🚑 set default icon pack to none [`4b4ec3ac`](https://github.com/lucodear/lucodear-icons/commit/4b4ec3ac)
+ 
 #### [v0.45.0](https://github.com/lucodear/lucodear-icons/compare/v0.44.0...v0.45.0) 
 
 > May 4, 2024 
 
+- release: 🔖 v0.45.0 [`f2f8a949`](https://github.com/lucodear/lucodear-icons/commit/f2f8a949)
 - feat: ✨ change default folder color [`df07d2eb`](https://github.com/lucodear/lucodear-icons/commit/df07d2eb)
  
 #### [v0.44.0](https://github.com/lucodear/lucodear-icons/compare/v0.43.0...v0.44.0) 

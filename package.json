@@ -215,7 +215,7 @@
         },
         "lucodear-icons.folders.color": {
           "type": "string",
-          "default": "#90a4ae",
+          "default": "#ffca28",
           "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
           "description": "%configuration.folders.color%"
         },

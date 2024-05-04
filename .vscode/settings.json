@@ -56,8 +56,5 @@
     "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": ["typescript"],
-  "editor.formatOnSave": true,
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
-  }
+  "editor.formatOnSave": true
 }

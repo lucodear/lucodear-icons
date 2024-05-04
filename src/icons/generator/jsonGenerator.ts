@@ -174,7 +174,7 @@ export const createIconFile = async (
 export const getDefaultIconOptions = (): Required<IconJsonOptions> => ({
   folders: {
     theme: 'specific',
-    color: '#90a4ae',
+    color: '#ffca28',
     associations: {},
   },
   activeIconPack: 'none',

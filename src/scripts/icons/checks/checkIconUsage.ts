@@ -46,7 +46,7 @@ const fsReadAllIconFiles = (dir: string) => {
 
       if (file.endsWith('.svg')) {
         const fileName = file;
-        const iconName = parse(file).name;
+        const iconName = parse(file).name.replace('.clone', '');
         availableIcons[iconName] = fileName;
       }
     });

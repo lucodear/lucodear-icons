@@ -6,8 +6,8 @@ import { IconDefinition, getFiles, getFolders } from './icon';
 
 const basicFileIcons = getFiles(
   fileIcons.icons
-    .map((i) => ({ name: i.name, theme: (i as any).theme } as IconDefinition))
-    .concat(languageIcons.map((i) => ({ name: i.icon.name } as IconDefinition)))
+    .map((i) => ({ name: i.name, theme: (i as any).theme }) as IconDefinition)
+    .concat(languageIcons.map((i) => ({ name: i.icon.name }) as IconDefinition))
 );
 const folderThemes = getFolders(folderIcons);
 

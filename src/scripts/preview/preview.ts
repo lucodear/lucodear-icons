@@ -39,8 +39,8 @@ const createHTMLTableBodyRows = (
               <img style="width: ${size.toFixed(
                 0
               )}px" src="${iconsPath}/${subpath}${icon.name}.svg" alt="${
-          icon.label
-        }">
+                icon.label
+              }">
           </td>
           <td class="iconName">${icon.label ?? icon.name}</td>
         `;

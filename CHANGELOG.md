@@ -3,10 +3,22 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.47.0](https://github.com/lucodear/lucodear-icons/compare/v0.46.0...v0.47.0) 
+
+> May 6, 2024 
+
+- ci: 🔄 rollback to preversion script usage [`ebc10642`](https://github.com/lucodear/lucodear-icons/commit/ebc10642)
+- ci: 🔄 release action: stage all created images [`11b167cd`](https://github.com/lucodear/lucodear-icons/commit/11b167cd)
+- style: 💄 fix linting issues [`a7175dc4`](https://github.com/lucodear/lucodear-icons/commit/a7175dc4)
+- ci: 🔄 fix build action, do not use vscode:prepublish [`5fdd2937`](https://github.com/lucodear/lucodear-icons/commit/5fdd2937)
+- Modernize svgo config [`#2301`](https://github.com/lucodear/lucodear-icons/pull/2301)
+- feat: ✨ clone and recolorize icons [`#2305`](https://github.com/lucodear/lucodear-icons/pull/2305)
+ 
 #### [v0.46.0](https://github.com/lucodear/lucodear-icons/compare/v0.45.0...v0.46.0) 
 
 > May 4, 2024 
 
+- release: 🔖 v0.46.0 [`2886d098`](https://github.com/lucodear/lucodear-icons/commit/2886d098)
 - fix: 🚑 set default icon pack to none [`4b4ec3ac`](https://github.com/lucodear/lucodear-icons/commit/4b4ec3ac)
  
 #### [v0.45.0](https://github.com/lucodear/lucodear-icons/compare/v0.44.0...v0.45.0) 

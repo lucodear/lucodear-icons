@@ -27,6 +27,7 @@
     "svgo": "svgo -i icons icons-lc -r -q",
     "test": "node ./out/test/runTest.js",
     "changelog": "changelog-machine --config changelog.config.json",
+    "preversion": "npm run contributors && npm run preview && git add images/*.png",
     "version": "npm run changelog && git add CHANGELOG.md"
   },
   "publisher": "lucaslabs",

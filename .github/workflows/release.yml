@@ -37,21 +37,6 @@ jobs:
       - name: Compile Extension 🛠️
         run: npm run lint && npm run compile && npm run package-web
 
-      - name: Generate preview images 🖼️
-        run: |
-          npm run preview
-          git add images/*.png
-
-      - name: Generate contributors image 📸
-        run: |
-          npm run contributors
-          git add images/contributors.png
-
-      # - name: Optimize SVG files ⚡
-      #   run: |
-      #     npm run svgo
-      #     git add icons/*.svg
-
       - name: Update version ↗
         run: |
           git status

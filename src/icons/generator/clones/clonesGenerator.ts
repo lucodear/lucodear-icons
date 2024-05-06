@@ -78,7 +78,7 @@ export function generateConfiguredClones(
           fileNames: icon.fileNames,
           name: icon.name,
           ...icon.clone!,
-        } as FileIconClone)
+        }) as FileIconClone
     );
   }
 
@@ -156,10 +156,10 @@ function createIconClone(
             clone.variant === Variant.Base
               ? clonesConfig.folderNames!
               : clone.variant === Variant.Open
-              ? clonesConfig.folderNamesExpanded!
-              : clone.variant === Variant.Light
-              ? clonesConfig.light!.folderNames!
-              : clonesConfig.light!.folderNamesExpanded!;
+                ? clonesConfig.folderNamesExpanded!
+                : clone.variant === Variant.Light
+                  ? clonesConfig.light!.folderNames!
+                  : clonesConfig.light!.folderNamesExpanded!;
           folderNamesCfg[folderName] = clone.name;
         });
       } else {

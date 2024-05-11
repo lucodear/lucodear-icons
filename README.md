@@ -50,8 +50,8 @@ You can change the color of the default file and folder icons using the command 
 or via user settings:
 
 ```json
-"material-icon-theme.folders.color": "#ef5350",
-"material-icon-theme.files.color": "#42a5f5",
+"lucodear-icons.folders.color": "#ef5350",
+"lucodear-icons.files.color": "#42a5f5",
 ```
 
 #### Folder themes
@@ -63,7 +63,7 @@ You can change the design of the folder icons using the command palette:
 or via user settings:
 
 ```json
-"material-icon-theme.folders.theme": "specific"
+"lucodear-icons.folders.theme": "specific"
 ```
 
 ## Custom icon opacity
@@ -71,7 +71,7 @@ or via user settings:
 You can set a custom opacity for the icons:
 
 ```json
-"material-icon-theme.opacity": 0.5
+"lucodear-icons.opacity": 0.5
 ```
 
 ## Custom icon saturation
@@ -79,7 +79,7 @@ You can set a custom opacity for the icons:
 If colors do not make you happy you can change the icons to have less saturation making them look grayish or completely grayscale by setting saturation to 0:
 
 ```json
-"material-icon-theme.saturation": 0.5
+"lucodear-icons.saturation": 0.5
 ```
 
 You can also achieve no saturation (i.e., grayscale) by setting **Toggle Grayscale** to ON.
@@ -95,7 +95,7 @@ With the `*.[extension]` pattern you can define custom file icon associations. F
 If there's no leading `*` it will be automatically configured as filename and not as file extension.
 
 ```json
-"material-icon-theme.files.associations": {
+"lucodear-icons.files.associations": {
     "*.ts": "typescript",
     "**.json": "json",
     "fileName.ts": "angular"
@@ -118,7 +118,7 @@ For example a custom SVG file called `sample.svg` can be placed in an `icons` fo
 In the settings.json (User Settings only!) the icon can be associated to a file name or file extension like this:
 
 ```json
-"material-icon-theme.files.associations": {
+"lucodear-icons.files.associations": {
     "fileName.ts": "../../icons/sample"
 }
 ```
@@ -130,7 +130,7 @@ _Note: The custom file name must be configured in the settings without the file 
 It's also possible to clone existing file icons and change their colors to create new icons that can be associated with file names or file extensions. The following example shows how to clone the `rust` icon:
 
 ```json
-"material-icon-theme.files.customClones": [
+"lucodear-icons.files.customClones": [
   {
     "name": "rust-mod",
     "base": "rust",
@@ -159,7 +159,7 @@ This will create two new icons called `rust-mod` and `rust-lib` that are associa
 The following configuration can customize the folder icons. It is also possible to overwrite existing associations and create nice combinations. For example you could change the folder theme to "classic" and define icons only for the folder names you like.
 
 ```json
-"material-icon-theme.folders.associations": {
+"lucodear-icons.folders.associations": {
     "customFolderName": "src",
     "sample": "dist"
 }
@@ -182,7 +182,7 @@ In our example we place them into an `icons` folder inside of the `.vscode/exten
 In the settings.json (User Settings only!) the folder icons can be associated to a folder name (e.g. "src") like this:
 
 ```json
-"material-icon-theme.folders.associations": {
+"lucodear-icons.folders.associations": {
     "src": "../../../../icons/folder-sample"
 }
 ```
@@ -192,7 +192,7 @@ In the settings.json (User Settings only!) the folder icons can be associated to
 It's also possible to clone existing folder icons and change their colors to create new icons that can be associated with folder names. The following example shows how to clone the `admin` folder icon:
 
 ```json
-"material-icon-theme.folders.customClones": [
+"lucodear-icons.folders.customClones": [
   {
     "name": "users-admin",
     "base": "admin",
@@ -221,7 +221,7 @@ This will create two new icons called `users-admin` and `roles-admin` that are a
 With the following configuration you can customize the language icons. It is also possible to overwrite existing associations.
 
 ```json
-"material-icon-theme.languages.associations": {
+"lucodear-icons.languages.associations": {
     "languageId": "iconName",
     "json": "json"
 }

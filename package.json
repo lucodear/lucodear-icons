@@ -197,7 +197,7 @@
           "default": {},
           "description": "%configuration.languages.associations%"
         },
-        "material-icon-theme.files.customClones": {
+        "lucodear-icons.files.customClones": {
           "type": "array",
           "default": [],
           "items": {
@@ -239,7 +239,7 @@
           },
           "description": "%configuration.customClones%"
         },
-        "material-icon-theme.folders.customClones": {
+        "lucodear-icons.folders.customClones": {
           "type": "array",
           "default": [],
           "items": {

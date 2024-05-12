@@ -3,10 +3,22 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.48.0](https://github.com/lucodear/lucodear-icons/compare/v0.47.0...v0.48.0) 
+
+> May 12, 2024 
+
+- fix: 🚑 wrong settings names and setting references in doc [`fc32d38b`](https://github.com/lucodear/lucodear-icons/commit/fc32d38b)
+- Added `devcontainer.json` [`#2319`](https://github.com/lucodear/lucodear-icons/pull/2319)
+- feat: update link in readme [`de998a76`](https://github.com/lucodear/lucodear-icons/commit/de998a76)
+- Feat/update angular and nest icons [`#2314`](https://github.com/lucodear/lucodear-icons/pull/2314)
+- feat: support biome.jsonc [`#2316`](https://github.com/lucodear/lucodear-icons/pull/2316)
+- Modernize svgo config [`#2301`](https://github.com/lucodear/lucodear-icons/pull/2301)
+ 
 #### [v0.47.0](https://github.com/lucodear/lucodear-icons/compare/v0.46.0...v0.47.0) 
 
 > May 6, 2024 
 
+- release: 🔖 v0.47.0 [`5b3a7b1f`](https://github.com/lucodear/lucodear-icons/commit/5b3a7b1f)
 - ci: 🔄 rollback to preversion script usage [`ebc10642`](https://github.com/lucodear/lucodear-icons/commit/ebc10642)
 - ci: 🔄 release action: stage all created images [`11b167cd`](https://github.com/lucodear/lucodear-icons/commit/11b167cd)
 - style: 💄 fix linting issues [`a7175dc4`](https://github.com/lucodear/lucodear-icons/commit/a7175dc4)

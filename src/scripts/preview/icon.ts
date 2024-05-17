@@ -23,10 +23,12 @@ export const getFolders = (
         const folders = [];
         if (theme.icons && theme.icons.length > 0) {
           folders.push(
-            ...theme.icons.map((i) => ({
-              name: i.name,
-              theme: (i as LucodearFolderIcon).theme,
-            }))
+            ...theme.icons
+              .filter((i) => i.clone === undefined)
+              .map((i) => ({
+                name: i.name,
+                theme: (i as LucodearFolderIcon).theme,
+              }))
           );
         }
         return [...folders];

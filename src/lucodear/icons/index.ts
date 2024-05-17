@@ -36,7 +36,7 @@ export const lucodearFolderIcons: LucodearFolderTheme = {
 };
 
 // #region patcher
-
+/** patches the folder icons adding prefixes */
 export const patchFolders = (folders: FolderTheme[]) => {
   const theme = folders.find((f) => f.name === 'specific');
   if (!theme) {
@@ -48,6 +48,17 @@ export const patchFolders = (folders: FolderTheme[]) => {
     if (existing) {
       const folderNames = !patch.skipExtend
         ? patch.folderNames?.reduce((acc, folderName) => {
+            if (
+              folderName.startsWith('~') ||
+              folderName.startsWith('@') ||
+              folderName.startsWith('=') ||
+              folderName.startsWith('.') ||
+              folderName.startsWith('_')
+            ) {
+              // if already prefixed, don't add the prefixes
+              return acc.concat(folderName);
+            }
+
             return acc.concat([
               folderName,
               `@${folderName}`,

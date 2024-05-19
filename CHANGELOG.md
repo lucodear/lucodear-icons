@@ -3,10 +3,29 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.49.0](https://github.com/lucodear/lucodear-icons/compare/v0.48.0...v0.49.0) 
+
+> May 19, 2024 
+
+- feat: ✨ xrates, tickers, issue_template icons [`269c152f`](https://github.com/lucodear/lucodear-icons/commit/269c152f)
+- fix: 🚑 prefixing already prefix icons [`0ec83f1d`](https://github.com/lucodear/lucodear-icons/commit/0ec83f1d)
+- fix: 🚑 broken image src link in preview generation [`156ded07`](https://github.com/lucodear/lucodear-icons/commit/156ded07)
+- Added icon for `devcontainer.json` [`#2332`](https://github.com/lucodear/lucodear-icons/pull/2332)
+- Added icons for `.github/*_TEMPLATE` folders [`#2333`](https://github.com/lucodear/lucodear-icons/pull/2333)
+- Added new filenames for `key` icon [`#2334`](https://github.com/lucodear/lucodear-icons/pull/2334)
+- Added snapcraft icon [`#2318`](https://github.com/lucodear/lucodear-icons/pull/2318)
+- Added `CODE_OF_CONDUCT.md` [`#2327`](https://github.com/lucodear/lucodear-icons/pull/2327)
+- feat: update recommended extensions for development [`8af9bcdb`](https://github.com/lucodear/lucodear-icons/commit/8af9bcdb)
+- feat: select default version change value [`190092bf`](https://github.com/lucodear/lucodear-icons/commit/190092bf)
+- feat: ✨ .github/workflows folder icon [`#2324`](https://github.com/lucodear/lucodear-icons/pull/2324)
+- fix: 🚑 interop between cloned icons and user associations [`#2323`](https://github.com/lucodear/lucodear-icons/pull/2323)
+- feat: Rename custom attribute (use data prefix) [`#2322`](https://github.com/lucodear/lucodear-icons/pull/2322)
+ 
 #### [v0.48.0](https://github.com/lucodear/lucodear-icons/compare/v0.47.0...v0.48.0) 
 
 > May 12, 2024 
 
+- release: 🔖 v0.48.0 [`42541284`](https://github.com/lucodear/lucodear-icons/commit/42541284)
 - fix: 🚑 wrong settings names and setting references in doc [`fc32d38b`](https://github.com/lucodear/lucodear-icons/commit/fc32d38b)
 - Added `devcontainer.json` [`#2319`](https://github.com/lucodear/lucodear-icons/pull/2319)
 - feat: update link in readme [`de998a76`](https://github.com/lucodear/lucodear-icons/commit/de998a76)

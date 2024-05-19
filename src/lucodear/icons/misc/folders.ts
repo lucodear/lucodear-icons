@@ -101,6 +101,10 @@ export const folders = lucodear('misc', [
     folderNames: ['factory', 'factories'],
   },
   {
+    name: 'gh-issue-template',
+    folderNames: ['.github/ISSUE_TEMPLATE'],
+  },
+  {
     name: 'grpc',
     folderNames: [
       'grpc',
@@ -198,6 +202,10 @@ export const folders = lucodear('misc', [
     ],
   },
   {
+    name: 'ticker',
+    looseFolderIcon: true,
+  },
+  {
     name: 'transformation',
     folderNames: [
       'transformations',
@@ -225,6 +233,10 @@ export const folders = lucodear('misc', [
   {
     name: 'workflow',
     folderNames: ['workflow', 'workflows', 'flow', 'flows'],
+  },
+  {
+    name: 'xrate',
+    looseFolderIcon: true,
   },
   {
     name: 'yahoo',

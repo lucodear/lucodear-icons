@@ -94,11 +94,6 @@ export const files: LucodearFileIcon[] = lucodear('misc', [
     light: true,
   },
   {
-    name: 'release',
-    fileNames: ['release.toml', 'Release.toml'],
-    light: true,
-  },
-  {
     name: 'workflow',
     fileExtensions: [
       'workflow/yml',

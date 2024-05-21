@@ -18,6 +18,10 @@ const rustDefault = lucodear('rust', [
     light: true,
   },
   {
+    name: 'rust-format',
+    fileNames: ['rustfmt.toml'],
+  },
+  {
     name: 'rust-lib',
     fileNames: ['lib.rs'],
     light: true,
@@ -31,6 +35,10 @@ const rustDefault = lucodear('rust', [
     name: 'rust-mod',
     fileNames: ['mod.rs'],
     light: true,
+  },
+  {
+    name: 'rust-release',
+    fileNames: ['release.toml', 'Release.toml'],
   },
   {
     name: 'rust-test',

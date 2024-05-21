@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.51.0](https://github.com/lucodear/lucodear-icons/compare/v0.50.0...v0.51.0) 
+
+> May 21, 2024 
+
+- feat: ✨ rustfmt,rust release,cargo [`d8e19e87`](https://github.com/lucodear/lucodear-icons/commit/d8e19e87)
+ 
 #### [v0.50.0](https://github.com/lucodear/lucodear-icons/compare/v0.49.0...v0.50.0) 
 
 > May 21, 2024 
 
+- release: 🔖 v0.50.0 [`ce992530`](https://github.com/lucodear/lucodear-icons/commit/ce992530)
 - feat: ✨ file icon release.toml [`0ff0aae4`](https://github.com/lucodear/lucodear-icons/commit/0ff0aae4)
 - feat: ⚙️ Refactor pattern code structure [`#2326`](https://github.com/lucodear/lucodear-icons/pull/2326)
  

@@ -3,10 +3,18 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.50.0](https://github.com/lucodear/lucodear-icons/compare/v0.49.0...v0.50.0) 
+
+> May 21, 2024 
+
+- feat: ✨ file icon release.toml [`0ff0aae4`](https://github.com/lucodear/lucodear-icons/commit/0ff0aae4)
+- feat: ⚙️ Refactor pattern code structure [`#2326`](https://github.com/lucodear/lucodear-icons/pull/2326)
+ 
 #### [v0.49.0](https://github.com/lucodear/lucodear-icons/compare/v0.48.0...v0.49.0) 
 
 > May 19, 2024 
 
+- release: 🔖 v0.49.0 [`43d5e102`](https://github.com/lucodear/lucodear-icons/commit/43d5e102)
 - feat: ✨ xrates, tickers, issue_template icons [`269c152f`](https://github.com/lucodear/lucodear-icons/commit/269c152f)
 - fix: 🚑 prefixing already prefix icons [`0ec83f1d`](https://github.com/lucodear/lucodear-icons/commit/0ec83f1d)
 - fix: 🚑 broken image src link in preview generation [`156ded07`](https://github.com/lucodear/lucodear-icons/commit/156ded07)

@@ -42,29 +42,6 @@ export const folders = lucodear('misc', [
     folderNames: ['conversion', 'convert', 'conversions'],
   },
   {
-    name: 'subcommand',
-    folderNames: [
-      'subcommand',
-      'subcommands',
-      'subcmd',
-      'subcmds',
-      'sub-cmd',
-      'sub-cmds',
-    ],
-    light: true,
-  },
-  {
-    name: 'subprogram',
-    folderNames: [
-      'subprogram',
-      'subprograms',
-      'subprog',
-      'subprogs',
-      'sub-prog',
-      'sub-progs',
-    ],
-  },
-  {
     name: 'decorator',
     folderNames: ['decorator', 'decorators'],
   },
@@ -115,6 +92,16 @@ export const folders = lucodear('misc', [
       'grpc-server',
       'grpc_api',
       'grpc_server',
+    ],
+  },
+  {
+    name: 'handshake',
+    folderNames: [
+      'handshake',
+      'handshakes',
+      'handshaking',
+      'p2p',
+      'peer-to-peer',
     ],
   },
   {
@@ -182,6 +169,29 @@ export const folders = lucodear('misc', [
   {
     name: 'socket',
     folderNames: ['socket', 'sockets', 'gateway', 'gateways'],
+  },
+  {
+    name: 'subcommand',
+    folderNames: [
+      'subcommand',
+      'subcommands',
+      'subcmd',
+      'subcmds',
+      'sub-cmd',
+      'sub-cmds',
+    ],
+    light: true,
+  },
+  {
+    name: 'subprogram',
+    folderNames: [
+      'subprogram',
+      'subprograms',
+      'subprog',
+      'subprogs',
+      'sub-prog',
+      'sub-progs',
+    ],
   },
   {
     name: 'tasks',

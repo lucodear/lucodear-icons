@@ -171,6 +171,19 @@ export const folders = lucodear('misc', [
     folderNames: ['socket', 'sockets', 'gateway', 'gateways'],
   },
   {
+    name: 'stream',
+    folderNames: [
+      'stream',
+      'streams',
+      'streaming',
+      'event-stream',
+      'event-streams',
+      'broadcast',
+      'broadcasts',
+      'multicast',
+    ],
+  },
+  {
     name: 'subcommand',
     folderNames: [
       'subcommand',

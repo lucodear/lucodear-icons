@@ -3,10 +3,19 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.52.0](https://github.com/lucodear/lucodear-icons/compare/v0.51.0...v0.52.0) 
+
+> May 27, 2024 
+
+- feat: ✨ streaming [`554f3733`](https://github.com/lucodear/lucodear-icons/commit/554f3733)
+- feat: ✨ handshake/p2p folder icon [`8d1b66cc`](https://github.com/lucodear/lucodear-icons/commit/8d1b66cc)
+- chore: 🧹 update .ai files [`4ddcacd9`](https://github.com/lucodear/lucodear-icons/commit/4ddcacd9)
+ 
 #### [v0.51.0](https://github.com/lucodear/lucodear-icons/compare/v0.50.0...v0.51.0) 
 
 > May 21, 2024 
 
+- release: 🔖 v0.51.0 [`4e6656a0`](https://github.com/lucodear/lucodear-icons/commit/4e6656a0)
 - feat: ✨ rustfmt,rust release,cargo [`d8e19e87`](https://github.com/lucodear/lucodear-icons/commit/d8e19e87)
  
 #### [v0.50.0](https://github.com/lucodear/lucodear-icons/compare/v0.49.0...v0.50.0) 

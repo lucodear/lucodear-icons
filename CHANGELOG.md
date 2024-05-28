@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.53.0](https://github.com/lucodear/lucodear-icons/compare/v0.52.0...v0.53.0) 
+
+> May 28, 2024 
+
+- feat: ✨ package.json and package-lock.json icons [`6d3bb13c`](https://github.com/lucodear/lucodear-icons/commit/6d3bb13c)
+ 
 #### [v0.52.0](https://github.com/lucodear/lucodear-icons/compare/v0.51.0...v0.52.0) 
 
 > May 27, 2024 
 
+- release: 🔖 v0.52.0 [`4f850ba7`](https://github.com/lucodear/lucodear-icons/commit/4f850ba7)
 - feat: ✨ streaming [`554f3733`](https://github.com/lucodear/lucodear-icons/commit/554f3733)
 - feat: ✨ handshake/p2p folder icon [`8d1b66cc`](https://github.com/lucodear/lucodear-icons/commit/8d1b66cc)
 - chore: 🧹 update .ai files [`4ddcacd9`](https://github.com/lucodear/lucodear-icons/commit/4ddcacd9)

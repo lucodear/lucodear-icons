@@ -382,6 +382,7 @@ export const fileIcons: FileIcons = {
         'pylintrc',
         '.pylintrc',
         'pyproject.toml',
+        'py.typed',
       ],
     },
     { name: 'url', fileExtensions: ['url'] },
@@ -1237,9 +1238,9 @@ export const fileIcons: FileIcons = {
       fileNames: [
         '.eslintrc-md.js',
         '.eslintrc-jsdoc.js',
+        '.eslintrc.base.json',
         '.eslintignore',
         '.eslintcache',
-        '.eslintrc.base.json',
       ],
       patterns: {
         eslint: FileNamePattern.Cosmiconfig,

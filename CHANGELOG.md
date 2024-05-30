@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.55.0](https://github.com/lucodear/lucodear-icons/compare/v0.54.0...v0.55.0) 
+
+> May 30, 2024 
+
+- feat: ✨ match py colors with ts colors [`498981df`](https://github.com/lucodear/lucodear-icons/commit/498981df)
+ 
 #### [v0.54.0](https://github.com/lucodear/lucodear-icons/compare/v0.53.0...v0.54.0) 
 
 > May 28, 2024 
 
+- release: 🔖 v0.54.0 [`74da9ebb`](https://github.com/lucodear/lucodear-icons/commit/74da9ebb)
 - feat: update patterns support [`d8bdd337`](https://github.com/lucodear/lucodear-icons/commit/d8bdd337)
 - Added icon for `py.typed` file [`#2343`](https://github.com/lucodear/lucodear-icons/pull/2343)
 - fix:  `pull_request_template.md` [`#2339`](https://github.com/lucodear/lucodear-icons/pull/2339)

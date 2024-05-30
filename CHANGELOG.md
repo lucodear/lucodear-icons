@@ -3,10 +3,20 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.54.0](https://github.com/lucodear/lucodear-icons/compare/v0.53.0...v0.54.0) 
+
+> May 28, 2024 
+
+- feat: update patterns support [`d8bdd337`](https://github.com/lucodear/lucodear-icons/commit/d8bdd337)
+- Added icon for `py.typed` file [`#2343`](https://github.com/lucodear/lucodear-icons/pull/2343)
+- fix:  `pull_request_template.md` [`#2339`](https://github.com/lucodear/lucodear-icons/pull/2339)
+- feat: ⚙️ Refactor pattern code structure [`#2326`](https://github.com/lucodear/lucodear-icons/pull/2326)
+ 
 #### [v0.53.0](https://github.com/lucodear/lucodear-icons/compare/v0.52.0...v0.53.0) 
 
 > May 28, 2024 
 
+- release: 🔖 v0.53.0 [`d0f66c2a`](https://github.com/lucodear/lucodear-icons/commit/d0f66c2a)
 - feat: ✨ package.json and package-lock.json icons [`6d3bb13c`](https://github.com/lucodear/lucodear-icons/commit/6d3bb13c)
  
 #### [v0.52.0](https://github.com/lucodear/lucodear-icons/compare/v0.51.0...v0.52.0) 

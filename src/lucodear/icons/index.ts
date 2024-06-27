@@ -1,13 +1,13 @@
-import { FolderTheme } from '../../models';
-import { LucodearFileIcons, LucodearFolderTheme } from '../model';
-import { folderPatches } from './patches';
-import * as misc from './misc';
-import * as ts from './typescript';
-import * as lucodear from './lucodear';
-import * as python from './python';
+import type { FolderTheme } from '../../models';
+import type { LucodearFileIcons, LucodearFolderTheme } from '../model';
 import * as ai from './ai';
+import * as lucodear from './lucodear';
+import * as misc from './misc';
+import { folderPatches } from './patches';
+import * as python from './python';
 import * as react from './react';
 import * as rust from './rust';
+import * as ts from './typescript';
 
 /** Defines file icons */
 export const lucodearFileIcons: LucodearFileIcons = {

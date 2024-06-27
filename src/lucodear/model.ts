@@ -1,7 +1,7 @@
-import { RequireAtLeastOne } from '../helpers/types';
-import {
-  DefaultIcon,
+import type { RequireAtLeastOne } from '../helpers/types';
+import type {
   BasicFileIcon,
+  DefaultIcon,
   FolderIcon,
   FolderTheme,
   IconAssociations,

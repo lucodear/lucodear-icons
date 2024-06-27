@@ -1,5 +1,5 @@
-import { dirname, join } from 'path';
-import { IconJsonOptions } from '../models';
+import { dirname, join } from 'node:path';
+import type { IconJsonOptions } from '../models';
 
 export const getCustomIconPaths = (options: IconJsonOptions) => {
   return Object.values(options?.files?.associations ?? {})

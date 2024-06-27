@@ -1,13 +1,5 @@
 import merge from 'lodash.merge';
 import {
-  DefaultIcon,
-  FolderIcon,
-  FolderTheme,
-  IconAssociations,
-  IconConfiguration,
-  IconJsonOptions,
-} from '../../models';
-import {
   getEnabledFolderTheme,
   highContrastColorFileEnding,
   iconFolderPath,
@@ -16,8 +8,16 @@ import {
   setDefaultFolderIcons,
   setFolderNames,
 } from '../../icons';
+import type {
+  DefaultIcon,
+  FolderIcon,
+  FolderTheme,
+  IconAssociations,
+  IconConfiguration,
+  IconJsonOptions,
+} from '../../models';
 import { lucodearIconsPath } from '../constants';
-import { LucodearFolderIcon, LucodearFolderTheme } from '../model';
+import type { LucodearFolderIcon, LucodearFolderTheme } from '../model';
 
 export const loadLucodearFolderIconDefinitions = (
   folderThemes: LucodearFolderTheme[],

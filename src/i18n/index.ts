@@ -1,6 +1,21 @@
 import { env } from 'vscode';
 import { getObjectPropertyValue } from '../helpers/objects';
-import { Translation } from '../models';
+import type { Translation } from '../models';
+import { translation as langCs } from './lang-cs';
+import { translation as langDe } from './lang-de';
+import { translation as langEn } from './lang-en';
+import { translation as langEs } from './lang-es';
+import { translation as langFr } from './lang-fr';
+import { translation as langJa } from './lang-ja';
+import { translation as langKo } from './lang-ko';
+import { translation as langNl } from './lang-nl';
+import { translation as langPl } from './lang-pl';
+import { translation as langPtBr } from './lang-pt-br';
+import { translation as langPtPt } from './lang-pt-pt';
+import { translation as langRu } from './lang-ru';
+import { translation as langUk } from './lang-uk';
+import { translation as langZhCn } from './lang-zh-cn';
+import { translation as langZhTw } from './lang-zh-tw';
 
 // Get current language of the vs code workspace
 export const getCurrentLanguage = (): string => env.language;
@@ -31,37 +46,39 @@ const loadTranslation = async (language: string) => {
 
 /** Get the translation object of the separated translation files */
 const getTranslationObject = async (language: string): Promise<Translation> => {
-  const getTranslations = (lang: any) => lang.translation as Translation;
-
   switch (language) {
     case 'cs':
-      return getTranslations(await import(`./lang-cs`));
+      return langCs;
     case 'de':
-      return getTranslations(await import(`./lang-de`));
+      return langDe;
+    case 'en':
+      return langEn;
     case 'es':
-      return getTranslations(await import(`./lang-es`));
+      return langEs;
     case 'fr':
-      return getTranslations(await import(`./lang-fr`));
+      return langFr;
     case 'ja':
-      return getTranslations(await import(`./lang-ja`));
+      return langJa;
+    case 'ko':
+      return langKo;
     case 'nl':
-      return getTranslations(await import(`./lang-nl`));
+      return langNl;
     case 'pl':
-      return getTranslations(await import(`./lang-pl`));
+      return langPl;
     case 'pt-br':
-      return getTranslations(await import(`./lang-pt-br`));
+      return langPtBr;
     case 'pt-pt':
-      return getTranslations(await import(`./lang-pt-pt`));
+      return langPtPt;
     case 'ru':
-      return getTranslations(await import(`./lang-ru`));
+      return langRu;
     case 'uk':
-      return getTranslations(await import(`./lang-uk`));
+      return langUk;
     case 'zh-cn':
-      return getTranslations(await import(`./lang-zh-cn`));
+      return langZhCn;
     case 'zh-tw':
-      return getTranslations(await import(`./lang-zh-tw`));
+      return langZhTw;
     default:
-      return getTranslations(await import(`./lang-en`));
+      return langEn;
   }
 };
 

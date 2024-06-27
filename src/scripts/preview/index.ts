@@ -1,8 +1,8 @@
-import { fileIcons } from './../../icons/fileIcons';
 import { folderIcons } from './../../icons';
+import { fileIcons } from './../../icons/fileIcons';
 import { languageIcons } from './../../icons/languageIcons';
+import { type IconDefinition, getFiles, getFolders } from './icon';
 import { generatePreview } from './preview';
-import { IconDefinition, getFiles, getFolders } from './icon';
 
 const basicFileIcons = getFiles(
   fileIcons.icons

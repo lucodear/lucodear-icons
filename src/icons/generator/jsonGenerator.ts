@@ -4,15 +4,20 @@ import {
   renameSync,
   unlinkSync,
   writeFileSync,
-} from 'fs';
+} from 'node:fs';
+import { basename, join } from 'node:path';
 import merge from 'lodash.merge';
-import { basename, join } from 'path';
+import { folderIcons } from '..';
 import { getCustomIconPaths } from '../../helpers/customIcons';
 import { getFileConfigHash } from '../../helpers/fileConfig';
-import { IconConfiguration, IconJsonOptions } from '../../models/index';
+import { loadLucodearAddonIconDefinitions } from '../../lucodear/generator';
+import { IconConfiguration, type IconJsonOptions } from '../../models/index';
 import { fileIcons } from '../fileIcons';
-import { folderIcons } from '..';
 import { languageIcons } from '../languageIcons';
+import {
+  customClonesIcons,
+  generateConfiguredClones,
+} from './clones/clonesGenerator';
 import { iconJsonName } from './constants';
 import {
   generateFileIcons,
@@ -26,11 +31,6 @@ import {
   validateOpacityValue,
   validateSaturationValue,
 } from './index';
-import { loadLucodearAddonIconDefinitions } from '../../lucodear/generator';
-import {
-  customClonesIcons,
-  generateConfiguredClones,
-} from './clones/clonesGenerator';
 
 /**
  * Generate the complete icon configuration object that can be written as JSON file.
@@ -187,13 +187,15 @@ export const createIconFile = async (
 /**
  * The options control the generator and decide which icons are disabled or not.
  */
-export const getDefaultIconOptions = (): Required<IconJsonOptions> => ({
+export const getDefaultIconOptions = (
+  activePack = 'none'
+): Required<IconJsonOptions> => ({
   folders: {
     theme: 'specific',
     color: '#ffca28',
     associations: {},
   },
-  activeIconPack: 'none',
+  activeIconPack: activePack,
   hidesExplorerArrows: false,
   opacity: 1,
   saturation: 1,

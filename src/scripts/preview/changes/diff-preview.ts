@@ -1,7 +1,7 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import { compile } from 'handlebars';
-import fs from 'fs';
-import path from 'path';
-import { FileStatus, OrganizedDiff } from './diff';
+import { type FileStatus, type OrganizedDiff } from './diff';
 
 type ThemedSvg = FileStatus & {
   lightPath: string;

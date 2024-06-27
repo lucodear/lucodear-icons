@@ -1,4 +1,4 @@
-import { LucodearFolderIcon } from '../../model';
+import type { LucodearFolderIcon } from '../../model';
 import { lucodear } from '../utils';
 
 export const folders = lucodear('lucodear', [

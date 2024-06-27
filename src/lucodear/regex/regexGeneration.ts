@@ -1,6 +1,6 @@
-import { WorkspaceFolder, workspace, FileType, Uri } from 'vscode';
-import { ExtendedOptions } from '../model';
-import { IconAssociations } from '../../models';
+import { FileType, Uri, type WorkspaceFolder, workspace } from 'vscode';
+import { type IconAssociations } from '../../models';
+import { type ExtendedOptions } from '../model';
 
 export type EligibleFile = {
   /** name of the file or folder */

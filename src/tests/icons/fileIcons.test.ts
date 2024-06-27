@@ -1,23 +1,14 @@
-import { deepStrictEqual } from 'assert';
+import { beforeEach, describe, expect, it } from 'bun:test';
 import merge from 'lodash.merge';
-import {
-  getDefaultIconOptions as getDefaultOpts,
-  loadFileIconDefinitions,
-} from '../../../icons/index';
-import { FileIcons, IconConfiguration, IconPack } from '../../../models/index';
-
-function getDefaultIconOptions() {
-  const options = getDefaultOpts();
-  options.activeIconPack = IconPack.Angular;
-  return options;
-}
+import { getDefaultIconOptions, loadFileIconDefinitions } from '../../icons';
+import { type FileIcons, IconConfiguration, IconPack } from '../../models';
 
 describe('file icons', () => {
   let expectedConfig: IconConfiguration;
 
   beforeEach(() => {
     expectedConfig = merge({}, new IconConfiguration(), {
-      options: getDefaultIconOptions(),
+      options: getDefaultIconOptions(IconPack.Angular),
     });
   });
 
@@ -37,7 +28,7 @@ describe('file icons', () => {
         },
       ],
     };
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFileIconDefinitions(
       fileIcons,
@@ -66,7 +57,7 @@ describe('file icons', () => {
       'filename.js': 'javascript',
     };
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should disable icon packs', () => {
@@ -86,7 +77,7 @@ describe('file icons', () => {
       ],
     };
 
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     options.activeIconPack = '';
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFileIconDefinitions(
@@ -114,7 +105,7 @@ describe('file icons', () => {
     // disable default icon pack by using empty string
     expectedConfig.options!.activeIconPack = '';
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should configure custom icon associations', () => {
@@ -132,7 +123,7 @@ describe('file icons', () => {
         },
       ],
     };
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     options.files.associations = {
       '*.sample.ts': 'angular',
       'sample.js': 'javascript',
@@ -171,7 +162,7 @@ describe('file icons', () => {
       'sample.js': 'javascript',
     };
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should configure language icons for light and high contrast', () => {
@@ -192,30 +183,33 @@ describe('file icons', () => {
         },
       ],
     };
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFileIconDefinitions(
       fileIcons,
       iconConfig,
       options
     );
-    /* eslint-disable camelcase */
     expectedConfig.iconDefinitions = {
       file: {
         iconPath: './../icons/file.svg',
       },
+      // biome-ignore lint/style/useNamingConvention:
       file_light: {
         iconPath: './../icons/file_light.svg',
       },
+      // biome-ignore lint/style/useNamingConvention:
       file_highContrast: {
         iconPath: './../icons/file_highContrast.svg',
       },
       javascript: {
         iconPath: './../icons/javascript.svg',
       },
+      // biome-ignore lint/style/useNamingConvention:
       javascript_light: {
         iconPath: './../icons/javascript_light.svg',
       },
+      // biome-ignore lint/style/useNamingConvention:
       javascript_highContrast: {
         iconPath: './../icons/javascript_highContrast.svg',
       },
@@ -250,8 +244,8 @@ describe('file icons', () => {
       'angular-cli.json': 'angular',
       'filename.js': 'javascript',
     };
-    /* eslint-enable camelcase */
-    deepStrictEqual(iconDefinitions, expectedConfig);
+
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should generate cloned file icons config', () => {
@@ -276,7 +270,7 @@ describe('file icons', () => {
       ],
     };
 
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFileIconDefinitions(
       fileIcons,
@@ -315,7 +309,7 @@ describe('file icons', () => {
     };
     expectedConfig.file = 'file';
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should allow interoperability between cloned and user custom associations', () => {
@@ -338,7 +332,7 @@ describe('file icons', () => {
       ],
     };
 
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     options.files.associations = {
       '*.baz': 'bar', // assigned to the clone
     };
@@ -370,6 +364,6 @@ describe('file icons', () => {
     };
     expectedConfig.file = 'file';
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 });

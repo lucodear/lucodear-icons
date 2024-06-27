@@ -1,5 +1,5 @@
 import { IconPack } from '../../../models';
-import { LucodearFolderIcon } from '../../model';
+import type { LucodearFolderIcon } from '../../model';
 import { lucodear } from '../utils';
 
 const pyprefix = (...x: string[]) => x.flatMap((x) => [x, `_${x}`, `__${x}`]);

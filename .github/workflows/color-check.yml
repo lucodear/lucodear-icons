@@ -4,7 +4,9 @@ on:
   pull_request:
     paths:
       - 'icons/*.svg'
-      - 'icons-lc/**/*.svg'
+
+permissions:
+  contents: read
 
 jobs:
   color-check:
@@ -12,11 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TARGET_BRANCH: ${{ github.event.pull_request.base.ref }}
+
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Check colors 🎨
         run: |

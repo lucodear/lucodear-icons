@@ -18,7 +18,7 @@
 
     // ⚙️ » config
     // "**/**/tsconfig*": true,
-    "svgo.config.js": true,
+    // "svgo.config.js": true,
     "**/**/*code-workspace": true,
     "package.nls*.json": true, // all i18n package.json files
     "material-colors.yml": true,
@@ -41,20 +41,22 @@
     ".vscodeignore": true,
     // ".gitignore": true,
     ".git": true,
-    ".vscode-test": true,
+    // ".vscode-test": true,
 
-    ".vscode": true,
+    // ".vscode": true,
 
     // 🧪 » tests
-    "**/**/test": true
+    // "**/**/test": true
   },
   "search.exclude": {
     "out": true
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
-  "eslint.validate": ["typescript"],
-  "editor.formatOnSave": true
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    }
+  }
 }

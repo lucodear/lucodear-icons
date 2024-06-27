@@ -1,26 +1,13 @@
-import { deepStrictEqual } from 'assert';
+import { beforeAll, beforeEach, describe, expect, it } from 'bun:test';
 import merge from 'lodash.merge';
-import {
-  getDefaultIconOptions as getDefaultOpts,
-  loadFolderIconDefinitions,
-} from '../../../icons/index';
-import {
-  FolderTheme,
-  IconConfiguration,
-  IconPack,
-} from '../../../models/index';
-
-function getDefaultIconOptions() {
-  const options = getDefaultOpts();
-  options.activeIconPack = IconPack.Angular;
-  return options;
-}
+import { getDefaultIconOptions, loadFolderIconDefinitions } from '../../icons';
+import { type FolderTheme, IconConfiguration, IconPack } from '../../models';
 
 describe('folder icons', () => {
   let folderIcons: FolderTheme[];
   let expectedConfig: IconConfiguration;
 
-  before(() => {
+  beforeAll(() => {
     folderIcons = [
       {
         name: 'specific',
@@ -47,12 +34,12 @@ describe('folder icons', () => {
 
   beforeEach(() => {
     expectedConfig = merge({}, new IconConfiguration(), {
-      options: getDefaultIconOptions(),
+      options: getDefaultIconOptions(IconPack.Angular),
     });
   });
 
   it('should configure icon definitions', () => {
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFolderIconDefinitions(
       folderIcons,
@@ -128,11 +115,11 @@ describe('folder icons', () => {
     };
     expectedConfig.hidesExplorerArrows = false;
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should deactivate folder icons', () => {
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     options.folders.theme = 'none';
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFolderIconDefinitions(
@@ -147,11 +134,11 @@ describe('folder icons', () => {
     expectedConfig.hidesExplorerArrows = false;
     expectedConfig.options!.folders!.theme = 'none';
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should enable folder theme', () => {
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     options.folders.theme = 'blue';
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFolderIconDefinitions(
@@ -201,11 +188,11 @@ describe('folder icons', () => {
     expectedConfig.hidesExplorerArrows = false;
     expectedConfig.options!.folders!.theme = 'blue';
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should configure custom icon associations', () => {
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     options.folders.associations = {
       sample: 'src',
     };
@@ -294,11 +281,11 @@ describe('folder icons', () => {
       sample: 'src',
     };
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should disable icon packs', () => {
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     options.activeIconPack = '';
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFolderIconDefinitions(
@@ -355,11 +342,11 @@ describe('folder icons', () => {
     // disable default icon pack by using empty string
     expectedConfig.options!.activeIconPack = '';
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should configure folder icons for light and high contrast', () => {
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     const lightHighContrastFolderIcons: FolderTheme[] = [
       {
         name: 'specific',
@@ -381,7 +368,6 @@ describe('folder icons', () => {
       iconConfig,
       options
     );
-    /* eslint-disable camelcase */
     expectedConfig.iconDefinitions = {
       folder: {
         iconPath: './../icons/folder.svg',
@@ -389,12 +375,14 @@ describe('folder icons', () => {
       'folder-open': {
         iconPath: './../icons/folder-open.svg',
       },
+      // biome-ignore lint/style/useNamingConvention:
       folder_light: {
         iconPath: './../icons/folder_light.svg',
       },
       'folder-open_light': {
         iconPath: './../icons/folder-open_light.svg',
       },
+      // biome-ignore lint/style/useNamingConvention:
       folder_highContrast: {
         iconPath: './../icons/folder_highContrast.svg',
       },
@@ -519,12 +507,11 @@ describe('folder icons', () => {
       },
     };
     expectedConfig.hidesExplorerArrows = false;
-    /* eslint-enable camelcase */
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should hide explorer arrows', () => {
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     options.hidesExplorerArrows = true;
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFolderIconDefinitions(
@@ -533,7 +520,7 @@ describe('folder icons', () => {
       options
     );
 
-    deepStrictEqual(iconDefinitions.hidesExplorerArrows, true);
+    expect(iconDefinitions.hidesExplorerArrows).toBe(true);
   });
 
   it('should generate cloned folder icons config', () => {
@@ -558,7 +545,7 @@ describe('folder icons', () => {
       },
     ];
 
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     const iconConfig = merge({}, new IconConfiguration(), { options });
     const iconDefinitions = loadFolderIconDefinitions(
       folderTheme,
@@ -646,7 +633,7 @@ describe('folder icons', () => {
     };
     expectedConfig.hidesExplorerArrows = false;
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 
   it('should allow interoperability between cloned and user custom associations', () => {
@@ -669,7 +656,7 @@ describe('folder icons', () => {
       },
     ];
 
-    const options = getDefaultIconOptions();
+    const options = getDefaultIconOptions(IconPack.Angular);
     options.folders.associations = {
       baz: 'bar', // assigned to the clone
     };
@@ -731,6 +718,6 @@ describe('folder icons', () => {
     };
     expectedConfig.hidesExplorerArrows = false;
 
-    deepStrictEqual(iconDefinitions, expectedConfig);
+    expect(iconDefinitions).toStrictEqual(expectedConfig);
   });
 });

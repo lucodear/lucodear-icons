@@ -1,19 +1,19 @@
-import { blue, green } from '../../helpers/painter';
-import os from 'os';
-import fs from 'fs';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import { compile } from 'handlebars';
-import path from 'path';
-import {
-  IconDefinition,
-  Theme,
-  getFiles,
-  getFolders,
-  getThemes,
-} from '../icon';
 import {
   lucodearFileIcons,
   lucodearFolderIcons,
 } from '../../../lucodear/icons';
+import { blue, green } from '../../helpers/painter';
+import {
+  type IconDefinition,
+  type Theme,
+  getFiles,
+  getFolders,
+  getThemes,
+} from '../icon';
 
 type SvgIcon = {
   name: string;

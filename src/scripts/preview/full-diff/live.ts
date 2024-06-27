@@ -1,7 +1,7 @@
-import { debounce } from 'lodash';
-import { blue } from '../../helpers/painter';
 import bs from 'browser-sync';
 import chokidar from 'chokidar';
+import { debounce } from 'lodash';
+import { blue } from '../../helpers/painter';
 import { makePage } from './make-page';
 
 makePage().then(() => {

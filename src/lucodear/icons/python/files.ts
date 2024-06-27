@@ -1,5 +1,5 @@
 import { IconPack } from '../../../models';
-import { LucodearFileIcon } from '../../model';
+import type { LucodearFileIcon } from '../../model';
 import { lucodear } from '../utils';
 
 const prefixpy = (...x: string[]) => x.flatMap((x) => [x, `_${x}`, `__${x}`]);

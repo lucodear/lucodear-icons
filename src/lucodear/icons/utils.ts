@@ -1,5 +1,5 @@
 import { IconPack } from '../../models';
-import { LucodearFileIcon, LucodearFolderIcon } from '../model';
+import { type LucodearFileIcon, type LucodearFolderIcon } from '../model';
 
 export type LucodearIconConfig = LucodearFileIcon | LucodearFolderIcon;
 

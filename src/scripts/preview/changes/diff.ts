@@ -1,7 +1,7 @@
 import { exec as cbExec } from 'child_process';
-import { promisify } from 'util';
+import path from 'node:path';
+import { promisify } from 'node:util';
 import { green, magenta, red, yellow } from '../../helpers/painter';
-import path from 'path';
 
 const exec = promisify(cbExec);
 

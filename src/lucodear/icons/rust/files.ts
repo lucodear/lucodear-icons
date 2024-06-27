@@ -1,5 +1,5 @@
 import { IconPack } from '../../../models';
-import { LucodearFileIcon } from '../../model';
+import type { LucodearFileIcon } from '../../model';
 import { lucodear } from '../utils';
 
 const rustDefault = lucodear('rust', [

@@ -1,20 +1,6 @@
-import { env } from 'process';
-import {
-  FileIcon,
-  FileIcons,
-  FolderIcon,
-  FolderTheme,
-  IconAssociations,
-  IconConfiguration,
-  parseIconPack,
-} from '../models';
-import merge from 'lodash.merge';
 import clone from 'lodash.clonedeep';
-import {
-  ExtendedOptions,
-  LucodearFileIcons,
-  LucodearFolderTheme,
-} from './model';
+import merge from 'lodash.merge';
+import { env } from 'process';
 import {
   FileMappingType,
   getEnabledFolderTheme,
@@ -24,16 +10,30 @@ import {
   setFolderNames,
 } from '../icons';
 import {
+  type FileIcon,
+  type FileIcons,
+  type FolderIcon,
+  type FolderTheme,
+  type IconAssociations,
+  IconConfiguration,
+  parseIconPack,
+} from '../models';
+import {
   getCustomFileIcons,
   loadLucodearFileIconDefinitions,
   setFileIconDefinition,
 } from './dups/fileGenerator';
-import { lucodearFileIcons, lucodearFolderIcons } from './icons';
 import {
   getCustomFolderIcons,
   loadLucodearFolderIconDefinitions,
   setFolderIconDefinitions,
 } from './dups/folderGenerator';
+import { lucodearFileIcons, lucodearFolderIcons } from './icons';
+import {
+  type ExtendedOptions,
+  type LucodearFileIcons,
+  type LucodearFolderTheme,
+} from './model';
 
 /**
  * Get addons icon definitions as object.

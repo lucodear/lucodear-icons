@@ -1,5 +1,8 @@
-import { LucodearFolderIcon, LucodearFolderTheme } from '../../lucodear/model';
-import { FolderTheme } from '../../models';
+import {
+  type LucodearFolderIcon,
+  type LucodearFolderTheme,
+} from '../../lucodear/model';
+import type { FolderTheme } from '../../models';
 
 export type IconDefinition = {
   name: string;

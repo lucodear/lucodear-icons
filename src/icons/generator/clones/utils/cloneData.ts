@@ -1,11 +1,11 @@
-import { basename, dirname, join } from 'path';
-import {
+import { existsSync, mkdirSync, rmSync } from 'node:fs';
+import { basename, dirname, join } from 'node:path';
+import type {
   CustomClone,
   FileIconClone,
   FolderIconClone,
   IconConfiguration,
 } from '../../../../models';
-import { existsSync, mkdirSync, rmSync } from 'fs';
 import {
   iconFolderPath,
   lightColorFileEnding,

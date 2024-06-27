@@ -1,14 +1,20 @@
+import { writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { lucodearFileIcons, lucodearFolderIcons } from '../../lucodear/icons';
-import { IconDefinition, Theme, getFiles, getFolders, getThemes } from './icon';
-import { writeFileSync } from 'fs';
+import { green, red } from '../helpers/painter';
+import { createScreenshot } from '../helpers/screenshots';
+import {
+  type IconDefinition,
+  type Theme,
+  getFiles,
+  getFolders,
+  getThemes,
+} from './icon';
 import {
   createPreviewTable,
   getIconDefinitionsMatrix,
   htmlDoctype,
 } from './preview';
-import { createScreenshot } from '../helpers/screenshots';
-import { green, red } from '../helpers/painter';
-import { join } from 'path';
 
 const folderIcons = getFolders([lucodearFolderIcons]);
 const filesIcons = getFiles(lucodearFileIcons.icons);

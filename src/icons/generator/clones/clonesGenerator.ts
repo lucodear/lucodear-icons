@@ -1,23 +1,23 @@
+import { writeFileSync } from 'node:fs';
+import merge from 'lodash.merge';
+import { getFileConfigHash } from '../../../helpers/fileConfig';
 import {
-  CustomClone,
-  FileIconClone,
-  FileIcons,
-  FolderIconClone,
-  FolderTheme,
+  type CustomClone,
+  type FileIconClone,
+  type FileIcons,
+  type FolderIconClone,
+  type FolderTheme,
   IconConfiguration,
-  IconJsonOptions,
+  type IconJsonOptions,
 } from '../../../models';
+import { cloneIconExtension, clonesFolder } from '../constants';
 import {
   Variant,
   clearCloneFolder,
   getCloneData,
   isFolder,
 } from './utils/cloneData';
-import merge from 'lodash.merge';
-import { getFileConfigHash } from '../../../helpers/fileConfig';
 import { cloneIcon, createCloneConfig } from './utils/cloning';
-import { writeFileSync } from 'fs';
-import { cloneIconExtension, clonesFolder } from '../constants';
 
 /**
  * Creates custom icons by cloning already existing icons and changing

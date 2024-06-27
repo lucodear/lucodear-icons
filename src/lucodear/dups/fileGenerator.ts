@@ -1,18 +1,18 @@
 import merge from 'lodash.merge';
 import {
-  FileIcon,
-  IconAssociations,
-  IconConfiguration,
-  IconJsonOptions,
-} from '../../models';
-import {
   FileMappingType,
   highContrastColorFileEnding,
   lightColorFileEnding,
   mapSpecificFileIcons,
 } from '../../icons';
+import type {
+  FileIcon,
+  IconAssociations,
+  IconConfiguration,
+  IconJsonOptions,
+} from '../../models';
 import { lucodearIconsPath } from '../constants';
-import { LucodearFileIcon, LucodearFileIcons } from '../model';
+import type { LucodearFileIcon, LucodearFileIcons } from '../model';
 
 export const loadLucodearFileIconDefinitions = (
   fileIcons: LucodearFileIcons,

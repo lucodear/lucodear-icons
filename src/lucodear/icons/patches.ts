@@ -1,4 +1,4 @@
-import { FolderIcon } from '../../models';
+import type { FolderIcon } from '../../models';
 
 export const folderPatches: Partial<
   FolderIcon & {

@@ -1,4 +1,4 @@
-import { LucodearFileIcon } from '../../model';
+import type { LucodearFileIcon } from '../../model';
 import { lucodear } from '../utils';
 
 export const files: LucodearFileIcon[] = lucodear('misc', [

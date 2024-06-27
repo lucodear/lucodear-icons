@@ -1,9 +1,9 @@
+import bs from 'browser-sync';
+import chokidar from 'chokidar';
 import { debounce } from 'lodash';
 import { /* red,*/ blue } from '../../helpers/painter';
 import { getGitStatus, organizeDiff, printDiff } from './diff';
 import { makePreview } from './diff-preview';
-import bs from 'browser-sync';
-import chokidar from 'chokidar';
 
 export async function makeHtml() {
   console.log(`${blue('> 🍭 lucodear-icons')} [changes-preview]\n`);

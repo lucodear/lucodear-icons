@@ -1,4 +1,4 @@
-import { LucodearFileIcon } from '../../model';
+import type { LucodearFileIcon } from '../../model';
 import { lucodear } from '../utils';
 
 const react = (icon: string, names: string[], light: boolean = false) => ({

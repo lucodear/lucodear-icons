@@ -1,6 +1,14 @@
-import { readdir, readdirSync, statSync } from 'fs';
-import { join, parse } from 'path';
-import { DefaultIcon, FolderIcon, FolderTheme } from '../../../models/index';
+import { readdir, readdirSync, statSync } from 'node:fs';
+import { join, parse } from 'node:path';
+import {
+  lucodearFileIcons,
+  lucodearFolderIcons,
+} from '../../../lucodear/icons';
+import {
+  type DefaultIcon,
+  type FolderIcon,
+  type FolderTheme,
+} from '../../../models/index';
 import { green, magenta, red } from '../../helpers/painter';
 import {
   fileIcons,
@@ -10,10 +18,6 @@ import {
   lightColorFileEnding,
   openedFolder,
 } from './../../../icons';
-import {
-  lucodearFileIcons,
-  lucodearFolderIcons,
-} from '../../../lucodear/icons';
 
 /**
  * Defines the folder where all icon files are located.

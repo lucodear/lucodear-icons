@@ -3,10 +3,46 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.56.0](https://github.com/lucodear/lucodear-icons/compare/v0.55.0...v0.56.0) 
+
+> July 4, 2024 
+
+- ci: 🔄 remove persist-credentials [`8e9cda49`](https://github.com/lucodear/lucodear-icons/commit/8e9cda49)
+- ci: 🔄 remove permissions release action [`7f0a2d30`](https://github.com/lucodear/lucodear-icons/commit/7f0a2d30)
+- ci: 🔄 change release action permission to write [`6416a1b1`](https://github.com/lucodear/lucodear-icons/commit/6416a1b1)
+- feat: ✨ folder storage [`736060a1`](https://github.com/lucodear/lucodear-icons/commit/736060a1)
+- Remove plain black and white from allowed colors [`9b7100ed`](https://github.com/lucodear/lucodear-icons/commit/9b7100ed)
+- Update build directory [`4d71701d`](https://github.com/lucodear/lucodear-icons/commit/4d71701d)
+- ui folder icon [`#2382`](https://github.com/lucodear/lucodear-icons/pull/2382)
+- Added icon for kcl lang [`#2342`](https://github.com/lucodear/lucodear-icons/pull/2342)
+- Added icon for `*.sigstore.json` files [`#2341`](https://github.com/lucodear/lucodear-icons/pull/2341)
+- Add Bicep folder icons [`#2367`](https://github.com/lucodear/lucodear-icons/pull/2367)
+- Update devcontainer settings [`175ad6f7`](https://github.com/lucodear/lucodear-icons/commit/175ad6f7)
+- build(deps): bump oven-sh/setup-bun from 1.2.2 to 2 [`#2373`](https://github.com/lucodear/lucodear-icons/pull/2373)
+- build(deps): bump softprops/action-gh-release from 2.0.5 to 2.0.6 [`#2374`](https://github.com/lucodear/lucodear-icons/pull/2374)
+- Update CONTRIBUTING.md [`#2372`](https://github.com/lucodear/lucodear-icons/pull/2372)
+- Transfer repository to organization [`1aaaaaf4`](https://github.com/lucodear/lucodear-icons/commit/1aaaaaf4)
+- Support for Prisma 5.15 multi-file schema (Closes #2354) [`de76f5a8`](https://github.com/lucodear/lucodear-icons/commit/de76f5a8)
+- Update biome js [`fa79975d`](https://github.com/lucodear/lucodear-icons/commit/fa79975d)
+- add amplify logo (Closes #893) [`#1084`](https://github.com/lucodear/lucodear-icons/pull/1084)
+- Update task json to improve debugging [`b860c846`](https://github.com/lucodear/lucodear-icons/commit/b860c846)
+- chore: provenance [`#2365`](https://github.com/lucodear/lucodear-icons/pull/2365)
+- Update action workflows [`314aba7b`](https://github.com/lucodear/lucodear-icons/commit/314aba7b)
+- fix: remove log information from console (Fixes #2362) [`0c4c0821`](https://github.com/lucodear/lucodear-icons/commit/0c4c0821)
+- Fix #2360 Issue with translation loader [`f11d3e51`](https://github.com/lucodear/lucodear-icons/commit/f11d3e51)
+- feat: improve build performance [`#2359`](https://github.com/lucodear/lucodear-icons/pull/2359)
+- fix: dead README.md link [`#2355`](https://github.com/lucodear/lucodear-icons/pull/2355)
+- Clone Advpl icon files [`#2353`](https://github.com/lucodear/lucodear-icons/pull/2353)
+- feat: Migrate from `prettier`/`eslint` to `biome` [`#2349`](https://github.com/lucodear/lucodear-icons/pull/2349)
+- feat: Added `screwdriver` icon [`#2328`](https://github.com/lucodear/lucodear-icons/pull/2328)
+- Add harmonix icon [`#2348`](https://github.com/lucodear/lucodear-icons/pull/2348)
+- Add bruno icon [`#2345`](https://github.com/lucodear/lucodear-icons/pull/2345)
+ 
 #### [v0.55.0](https://github.com/lucodear/lucodear-icons/compare/v0.54.0...v0.55.0) 
 
 > May 30, 2024 
 
+- release: 🔖 v0.55.0 [`c496bd55`](https://github.com/lucodear/lucodear-icons/commit/c496bd55)
 - feat: ✨ match py colors with ts colors [`498981df`](https://github.com/lucodear/lucodear-icons/commit/498981df)
  
 #### [v0.54.0](https://github.com/lucodear/lucodear-icons/compare/v0.53.0...v0.54.0) 

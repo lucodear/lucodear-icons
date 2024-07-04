@@ -13,18 +13,24 @@ on:
           - minor
           - patch
 
+permissions:
+  contents: read
+
 jobs:
   release:
     runs-on: ubuntu-latest
     env:
       VERSION_CHANGE: ${{ github.event.inputs.versionChange }}
 
+    permissions:
+      contents: write
+      id-token: write
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           fetch-depth: 0
-          # persist-credentials: false
 
       - name: Setup Platform 🛠
         uses: oven-sh/setup-bun@123c6c4e2fea3eb7bffaa91a85eb6b3d505bf7af # v2

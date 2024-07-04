@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.57.0](https://github.com/lucodear/lucodear-icons/compare/v0.56.0...v0.57.0) 
+
+> July 4, 2024 
+
+- ci: 🔄 restore release.yml permissions [`b1ddcf4d`](https://github.com/lucodear/lucodear-icons/commit/b1ddcf4d)
+ 
 #### [v0.56.0](https://github.com/lucodear/lucodear-icons/compare/v0.55.0...v0.56.0) 
 
 > July 4, 2024 
 
+- release: 🔖 v0.56.0 [`66ab3c3e`](https://github.com/lucodear/lucodear-icons/commit/66ab3c3e)
 - ci: 🔄 remove persist-credentials [`8e9cda49`](https://github.com/lucodear/lucodear-icons/commit/8e9cda49)
 - ci: 🔄 remove permissions release action [`7f0a2d30`](https://github.com/lucodear/lucodear-icons/commit/7f0a2d30)
 - ci: 🔄 change release action permission to write [`6416a1b1`](https://github.com/lucodear/lucodear-icons/commit/6416a1b1)

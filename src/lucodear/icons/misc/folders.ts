@@ -184,6 +184,10 @@ export const folders = lucodear('misc', [
     ],
   },
   {
+    name: 'store',
+    folderNames: ['store', 'stores', 'storage'],
+  },
+  {
     name: 'subcommand',
     folderNames: [
       'subcommand',

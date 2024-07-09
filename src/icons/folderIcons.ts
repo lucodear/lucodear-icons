@@ -225,7 +225,7 @@ export const folderIcons: FolderTheme[] = [
       },
       {
         name: 'folder-docker',
-        folderNames: ['docker', 'dockerfiles'],
+        folderNames: ['docker', 'dockerfiles', 'dockerhub'],
       },
       {
         name: 'folder-ngrx-effects',
@@ -738,6 +738,10 @@ export const folderIcons: FolderTheme[] = [
           'moderators',
         ],
       },
+      {
+        name: 'folder-jupyter',
+        folderNames: ['jupyter', 'notebook', 'notebooks'],
+      },
       { name: 'folder-scala', folderNames: ['scala'] },
       {
         name: 'folder-connection',
@@ -789,6 +793,17 @@ export const folderIcons: FolderTheme[] = [
           'contract-testing',
           'contract-test',
           'contract-tests',
+        ],
+      },
+      {
+        name: 'folder-helm',
+        folderNames: [
+          'helm',
+          'helmchart',
+          'helmcharts',
+          '.helm',
+          '.helmchart',
+          '.helmcharts',
         ],
       },
       {

@@ -57,5 +57,5 @@ export interface BasicFileIcon {
  */
 export type FileIcon = RequireAtLeastOne<
   BasicFileIcon,
-  'fileExtensions' | 'fileNames'
+  'fileExtensions' | 'fileNames' | 'patterns'
 >;

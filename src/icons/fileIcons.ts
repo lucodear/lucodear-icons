@@ -975,14 +975,12 @@ export const fileIcons: FileIcons = {
     {
       name: 'postcss',
       fileExtensions: ['pcss', 'sss'],
-      fileNames: [],
       patterns: {
         postcss: FileNamePattern.Cosmiconfig,
       },
     },
     {
       name: 'posthtml',
-      fileNames: [],
       patterns: {
         posthtml: FileNamePattern.Cosmiconfig,
       },
@@ -1531,7 +1529,6 @@ export const fileIcons: FileIcons = {
     {
       name: 'semantic-release',
       light: true,
-      fileNames: [],
       patterns: {
         release: FileNamePattern.Cosmiconfig,
       },
@@ -1806,7 +1803,6 @@ export const fileIcons: FileIcons = {
     { name: 'prolog', fileExtensions: ['p', 'pro', 'pl'] },
     {
       name: 'husky',
-      fileNames: [],
       patterns: {
         husky: FileNamePattern.Cosmiconfig,
       },
@@ -1968,14 +1964,9 @@ export const fileIcons: FileIcons = {
     { name: 'pipeline', fileExtensions: ['pipeline'] },
     {
       name: 'vite',
-      fileNames: [
-        'vite.config.js',
-        'vite.config.mjs',
-        'vite.config.cjs',
-        'vite.config.ts',
-        'vite.config.cts',
-        'vite.config.mts',
-      ],
+      patterns: {
+        'vite.config': FileNamePattern.Ecmascript,
+      },
     },
     {
       name: 'vitest',
@@ -2022,7 +2013,15 @@ export const fileIcons: FileIcons = {
     { name: 'vlang', fileExtensions: ['v'], fileNames: ['vpkg.json', 'v.mod'] },
     { name: 'chess', fileExtensions: ['pgn', 'fen'], light: true },
     { name: 'gemini', fileExtensions: ['gmi', 'gemini'] },
-    { name: 'sentry', fileNames: ['.sentryclirc'] },
+    {
+      name: 'sentry',
+      fileNames: ['.sentryclirc'],
+      patterns: {
+        'sentry.client.config': FileNamePattern.Ecmascript,
+        'sentry.server.config': FileNamePattern.Ecmascript,
+        'sentry.edge.config': FileNamePattern.Ecmascript,
+      },
+    },
     {
       name: 'phpunit',
       fileNames: [
@@ -2195,7 +2194,6 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'svgr',
-      fileNames: [],
       patterns: {
         svgr: FileNamePattern.Cosmiconfig,
       },
@@ -2266,15 +2264,15 @@ export const fileIcons: FileIcons = {
       name: 'nano-staged',
       light: true,
       fileNames: [
-        `.nano-staged.js`,
-        `nano-staged.js`,
-        `.nano-staged.cjs`,
-        `nano-staged.cjs`,
-        `.nano-staged.mjs`,
-        `nano-staged.mjs`,
-        `.nano-staged.json`,
-        `nano-staged.json`,
-        `.nanostagedrc`,
+        '.nano-staged.js',
+        'nano-staged.js',
+        '.nano-staged.cjs',
+        'nano-staged.cjs',
+        '.nano-staged.mjs',
+        'nano-staged.mjs',
+        '.nano-staged.json',
+        'nano-staged.json',
+        '.nanostagedrc',
       ],
     },
     {
@@ -2302,7 +2300,6 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'craco',
-      fileNames: [],
       patterns: {
         craco: FileNamePattern.Cosmiconfig,
       },
@@ -2358,7 +2355,6 @@ export const fileIcons: FileIcons = {
     { name: 'mermaid', fileExtensions: ['mmd', 'mermaid'] },
     {
       name: 'syncpack',
-      fileNames: [],
       patterns: {
         syncpack: FileNamePattern.Cosmiconfig,
       },
@@ -2412,7 +2408,6 @@ export const fileIcons: FileIcons = {
     { name: 'lottie', fileExtensions: ['lottie'] },
     {
       name: 'puppeteer',
-      fileNames: [],
       patterns: {
         puppeteer: FileNamePattern.Cosmiconfig,
       },
@@ -2458,6 +2453,14 @@ export const fileIcons: FileIcons = {
     {
       name: 'bruno',
       fileExtensions: ['bru'],
+    },
+    {
+      name: 'cairo',
+      fileExtensions: ['cairo'],
+    },
+    {
+      name: 'grafana-alloy',
+      fileExtensions: ['alloy'],
     },
   ]),
 };

@@ -3,10 +3,35 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.58.0](https://github.com/lucodear/lucodear-icons/compare/v0.57.0...v0.58.0) 
+
+> July 10, 2024 
+
+- ci: 🔄 update icon review action [`0fa1c9b0`](https://github.com/lucodear/lucodear-icons/commit/0fa1c9b0)
+- Fixed all .md files to conform to markdownlint rules [`#2398`](https://github.com/lucodear/lucodear-icons/pull/2398)
+- Added markdownlint to list of reccomended extensions [`#2400`](https://github.com/lucodear/lucodear-icons/pull/2400)
+- Added cairo icon [`#2393`](https://github.com/lucodear/lucodear-icons/pull/2393)
+- Exclude files from vscode extension bundle [`a3f42ed7`](https://github.com/lucodear/lucodear-icons/commit/a3f42ed7)
+- A new item has been added to the checklist in the PR template [`#2395`](https://github.com/lucodear/lucodear-icons/pull/2395)
+- Remove jq as it's already part of the runner [`#2386`](https://github.com/lucodear/lucodear-icons/pull/2386)
+- Improved preview text [`#2397`](https://github.com/lucodear/lucodear-icons/pull/2397)
+- Added dockerhub folder [`#2399`](https://github.com/lucodear/lucodear-icons/pull/2399)
+- Fixed color checking [`#2392`](https://github.com/lucodear/lucodear-icons/pull/2392)
+- Added grafana alloy icon [`#2391`](https://github.com/lucodear/lucodear-icons/pull/2391)
+- Cleaned icons [`#2383`](https://github.com/lucodear/lucodear-icons/pull/2383)
+- Added labels for issues [`#2394`](https://github.com/lucodear/lucodear-icons/pull/2394)
+- Replace generated image previews instead of creating new ones [`#2386`](https://github.com/lucodear/lucodear-icons/pull/2386)
+- Add Helm folder icon [`#1181`](https://github.com/lucodear/lucodear-icons/pull/1181)
+- Update workflow files [`b1ad1d28`](https://github.com/lucodear/lucodear-icons/commit/b1ad1d28)
+- Add folder icons for Jupyter [`#2368`](https://github.com/lucodear/lucodear-icons/pull/2368)
+- ci: 🔄 persist credentials in release action [`#2385`](https://github.com/lucodear/lucodear-icons/pull/2385)
+- feat: update sentry files [`#2303`](https://github.com/lucodear/lucodear-icons/pull/2303)
+ 
 #### [v0.57.0](https://github.com/lucodear/lucodear-icons/compare/v0.56.0...v0.57.0) 
 
 > July 4, 2024 
 
+- release: 🔖 v0.57.0 [`5d618f24`](https://github.com/lucodear/lucodear-icons/commit/5d618f24)
 - ci: 🔄 restore release.yml permissions [`b1ddcf4d`](https://github.com/lucodear/lucodear-icons/commit/b1ddcf4d)
  
 #### [v0.56.0](https://github.com/lucodear/lucodear-icons/compare/v0.55.0...v0.56.0) 

@@ -30,6 +30,10 @@ export const folders = lucodear('misc', [
     looseFolderIcon: true,
   },
   {
+    name: 'biome',
+    folderNames: ['biome'],
+  },
+  {
     name: 'cocos-cap',
     looseFolderIcon: true,
   },

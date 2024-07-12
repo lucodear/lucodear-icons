@@ -1,9 +1,10 @@
-name: Icon Review
+name: 🔎 » generate preview image
 
 on:
   pull_request_target:
     paths:
-      - 'icons/*.svg'
+      - "icons/*.svg"
+      - "icons-lc/**/*.svg"
 
 permissions:
   contents: read
@@ -88,7 +89,7 @@ jobs:
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          comment-author: 'github-actions[bot]'
+          comment-author: "github-actions[bot]"
           body-includes: This preview shows you how your changes will look on the different themes
 
       - name: Post or update comment in PR ✍️

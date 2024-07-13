@@ -215,6 +215,10 @@ export const folders = lucodear('misc', [
     ],
   },
   {
+    name: 'tailwind',
+    folderNames: ['tailwind', 'tw', 'tailwindcss'],
+  },
+  {
     name: 'tasks',
     folderNames: ['tasks', 'task', 'todo', 'todos'],
   },

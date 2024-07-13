@@ -1606,6 +1606,14 @@ export const fileIcons: FileIcons = {
     { name: 'lisp', fileExtensions: ['lisp', 'lsp', 'cl', 'fast'] },
     {
       name: 'tailwindcss',
+      fileExtensions: [
+        'tw.js',
+        'tw.cjs',
+        'tw.mjs',
+        'tw.ts',
+        'tw.cts',
+        'tw.mts',
+      ],
       fileNames: [
         'tailwind.js',
         'tailwind.ts',

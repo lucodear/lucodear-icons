@@ -3,10 +3,18 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.59.0](https://github.com/lucodear/lucodear-icons/compare/v0.58.0...v0.59.0) 
+
+> July 13, 2024 
+
+- feat: ✨ biome folder [`856d5a1f`](https://github.com/lucodear/lucodear-icons/commit/856d5a1f)
+- ci: 🔄 update icon review action [`77c58e59`](https://github.com/lucodear/lucodear-icons/commit/77c58e59)
+ 
 #### [v0.58.0](https://github.com/lucodear/lucodear-icons/compare/v0.57.0...v0.58.0) 
 
 > July 10, 2024 
 
+- release: 🔖 v0.58.0 [`b01f8aeb`](https://github.com/lucodear/lucodear-icons/commit/b01f8aeb)
 - ci: 🔄 update icon review action [`0fa1c9b0`](https://github.com/lucodear/lucodear-icons/commit/0fa1c9b0)
 - Fixed all .md files to conform to markdownlint rules [`#2398`](https://github.com/lucodear/lucodear-icons/pull/2398)
 - Added markdownlint to list of reccomended extensions [`#2400`](https://github.com/lucodear/lucodear-icons/pull/2400)

@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.60.0](https://github.com/lucodear/lucodear-icons/compare/v0.59.0...v0.60.0) 
+
+> July 13, 2024 
+
+- feat: ✨ add tailwind folder icon [`2f884073`](https://github.com/lucodear/lucodear-icons/commit/2f884073)
+ 
 #### [v0.59.0](https://github.com/lucodear/lucodear-icons/compare/v0.58.0...v0.59.0) 
 
 > July 13, 2024 
 
+- release: 🔖 v0.59.0 [`9627c043`](https://github.com/lucodear/lucodear-icons/commit/9627c043)
 - feat: ✨ biome folder [`856d5a1f`](https://github.com/lucodear/lucodear-icons/commit/856d5a1f)
 - ci: 🔄 update icon review action [`77c58e59`](https://github.com/lucodear/lucodear-icons/commit/77c58e59)
  

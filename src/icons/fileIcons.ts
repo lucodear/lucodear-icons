@@ -2404,7 +2404,7 @@ export const fileIcons: FileIcons = {
       patterns: {
         esbuild: FileNamePattern.Ecmascript,
         'esbuild.config': FileNamePattern.Ecmascript,
-      }
+      },
     },
     { name: 'spwn', fileExtensions: ['spwn'] },
     { name: 'templ', fileExtensions: ['templ'] },

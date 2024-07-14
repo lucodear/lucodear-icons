@@ -2,7 +2,7 @@
   "name": "lucodear-icons",
   "displayName": "lucodear-icons",
   "description": "🍭 lucodear-icons » A PKief's 'Material Icons Theme' fork with my own custom additions. This was made for my personal use",
-  "version": "0.60.0",
+  "version": "0.61.0",
   "scripts": {
     "build": "bun run ./build/build-with-esbuild.ts",
     "watch": "bun run ./build/watch-with-esbuild.ts",

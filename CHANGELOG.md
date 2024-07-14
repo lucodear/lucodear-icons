@@ -3,10 +3,21 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.61.0](https://github.com/lucodear/lucodear-icons/compare/v0.60.0...v0.61.0) 
+
+> July 14, 2024 
+
+- fix: 🚑 fix linting issue [`9a658352`](https://github.com/lucodear/lucodear-icons/commit/9a658352)
+- feat: ✨ vite folder [`a9b6a649`](https://github.com/lucodear/lucodear-icons/commit/a9b6a649)
+- ci(preview): 🔄 add link to check pixel perfectness [`#2405`](https://github.com/lucodear/lucodear-icons/pull/2405)
+- Include `.cts` and `.mts` in `esbuild` icon configuration [`#2404`](https://github.com/lucodear/lucodear-icons/pull/2404)
+- feat: update astro file icon and add astro folder icon [`#2228`](https://github.com/lucodear/lucodear-icons/pull/2228)
+ 
 #### [v0.60.0](https://github.com/lucodear/lucodear-icons/compare/v0.59.0...v0.60.0) 
 
 > July 13, 2024 
 
+- release: 🔖 v0.60.0 [`ff3ebe70`](https://github.com/lucodear/lucodear-icons/commit/ff3ebe70)
 - feat: ✨ add tailwind folder icon [`2f884073`](https://github.com/lucodear/lucodear-icons/commit/2f884073)
  
 #### [v0.59.0](https://github.com/lucodear/lucodear-icons/compare/v0.58.0...v0.59.0) 

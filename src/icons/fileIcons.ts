@@ -258,6 +258,9 @@ export const fileIcons: FileIcons = {
     {
       name: 'astro',
       fileExtensions: ['astro'],
+    },
+    {
+      name: 'astro-config',
       fileNames: [
         'astro.config.js',
         'astro.config.mjs',
@@ -2398,16 +2401,10 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'esbuild',
-      fileNames: [
-        'esbuild.js',
-        'esbuild.ts',
-        'esbuild.cjs',
-        'esbuild.mjs',
-        'esbuild.config.js',
-        'esbuild.config.ts',
-        'esbuild.config.cjs',
-        'esbuild.config.mjs',
-      ],
+      patterns: {
+        esbuild: FileNamePattern.Ecmascript,
+        'esbuild.config': FileNamePattern.Ecmascript,
+      }
     },
     { name: 'spwn', fileExtensions: ['spwn'] },
     { name: 'templ', fileExtensions: ['templ'] },

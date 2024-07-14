@@ -261,6 +261,10 @@ export const folders = lucodear('misc', [
     folderNames: ['version', 'versions', 'vx'],
   },
   {
+    name: 'vite',
+    folderNames: ['vite'],
+  },
+  {
     name: 'workflow',
     folderNames: ['workflow', 'workflows', 'flow', 'flows'],
   },

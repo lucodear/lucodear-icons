@@ -109,8 +109,8 @@ Installation of the dependencies is necessary before running the command, see [D
 
 Continue reading [here](#design-folder-icons) to find out about colors for the folder icons.
 
-|                                              ✅                                               |                                                ❌                                                 |
-| :-------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+| ✅ | ❌ |
+| :-: | :-: |
 | <img src="./images/how-tos/svg-with-spacing.png" alt="Icon with right color" width="200px" /> | <img src="./images/how-tos/svg-with-wrong-color.png" alt="Icon with wrong color" width="200px" /> |
 
 <h3 id="design-folder-icons">Design folder icons</h3>
@@ -125,16 +125,16 @@ For the motive, only colors from the second row in the [color palette](https://p
 
 This uniform color selection makes the folder icons look more consistent and fit well together. This ensures a good quality of the icons.
 
-|                                                            ✅                                                            |                                                           ❌                                                           |
-| :----------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
+| ✅ | ❌ |
+| :-: | :-: |
 | <img src="./images/how-tos/svg-folder-icon-with-correct-colors.svg" width="200px" alt="Folder icon with right colors" /> | <img src="./images/how-tos/svg-folder-icon-with-wrong-colors.svg" alt="Folder icon with wrong colors" width="200px" /> |
 
 <h3 id="icon-spacing">Icon spacing</h3>
 
 All icons have a small distance to the edge. This way they don't seem so pressed together and have a little more air. It is not defined how much margin you have to leave them, because this is always a bit different. Just make sure that there is a space to the outside.
 
-|                                                 ✅                                                 |                                               ❌                                                |
-| :------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+| ✅ | ❌ |
+| :-: | :-: |
 | <img src="./images/how-tos/svg-with-spacing.png" alt="Icon with a spacing around" width="200px" /> | <img src="./images/how-tos/svg-without-spacing.png" alt="Icon without spacing" width="200px" /> |
 
 <h3 id="icon-assignments">Assignment to file and folder names and language ids</h3>
@@ -215,8 +215,8 @@ This will apply the sample.svg icon to all files which could be associated by VS
 
 VS Code can be customized so that the background color is either light or dark. This must also be considered for the icons, because a dark icon on a dark background does not provide the necessary contrast it needs to be recognizable.
 
-|                                                 ✅                                                  |                                                   ❌                                                   |
-| :-------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+| ✅ | ❌ |
+| :-: | :-: |
 | <img src="./images/how-tos/svg-with-light-color.png" alt="Icon with good contrast" width="200px" /> | <img src="./images/how-tos/svg-with-too-dark-color.png" alt="Icon with bad constrast" width="200px" /> |
 
 Preferably, the icon has a color that looks good on both backgrounds. If this is ever not possible because it would otherwise no longer match the icon's branding, different icons can be provided for the respective color scheme.
@@ -268,7 +268,7 @@ To create an icon pack, the following steps have to be completed:
 
 1. Add the name of the icon pack to the enum in [iconPack.ts](src/models/icons/iconPack.ts)
 2. Add translations to the package.nls.\*.json files under the section `configuration.activeIconPack` (at least to [package.nls.json](package.nls.json), the English translation file)
-3. Adjust [package.json](package.json) under `configuration.properties.lucodear-icons.activeIconPack`
+3. Adjust [package.json](package.json) under `configuration.properties.material-icon-theme.activeIconPack`
 4. Use the icon pack inside the [fileIcons.ts](src/icons/fileIcons.ts),[folderIcons.ts](src/icons/folderIcons.ts) or [languageIcons.ts](src/icons/languageIcons.ts) files in the `enabledFor` attribute
 
 <h3 id="pixel-perfect-icons">Designing Pixel-Perfect Icons</h3>
@@ -315,8 +315,8 @@ The following are some tips to help you design nice and sharp-looking icons. The
 
   Now, let's explore a minimalistic approach to communicating the same concept:
 
-  | Concept                                                                                         | Result                                                                                          |
-  | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+  | Concept | Result |
+  | --- | --- |
   | <img src="./images/how-tos/elephant-with-grid.svg" alt="Elephant icon concept" width="150px" /> | <img src="./images/how-tos/elephant-less-detail.svg" alt="Elephant ready icon" width="150px" /> |
 
   Indeed, the minimalistic version may lack the level of detail present in the first icon, particularly when viewed at a larger size. However, on the other hand, we are still effectively communicating the concept. It's unmistakably an elephant. Furthermore, all edges and paths are aligned to the grid.

@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": false,
+      "**/.svn": false,
+      "**/.hg": false,
+      "**/CVS": false,
+      "**/.DS_Store": false,
+      "**/Thumbs.db": true,
+      ".gradle": false,
+      ".idea/": false,
+      ".out/": false,
+      ".settings": false,
+      ".vscode": false,
+      "*.ids": false,
+      "*.iml": false,
+      "*.ipr": false,
+      "*.iws": false,
+      "*.orig": false,
+      "**/.classpath": false,
+      "**/.factorypath": true,
+      "**/.project": false,
+      "**/.settings": true,
+      "bin/": false,
+      "build/": false,
+      "out/": false,
+    },
+    "svg.preview.background": "editor"
+  },
+}
+
+

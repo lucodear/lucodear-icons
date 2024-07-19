@@ -194,12 +194,12 @@ const handleErrors = () => {
     wrongIconNames.languageIcons.length;
   if (amountOfErrors > 0) {
     console.log(
-      '> 🍭 lucodear-icons:',
+      '> Material Icon Theme:',
       red(`Found ${amountOfErrors} error(s) in the icon configuration!`)
     );
   } else {
     console.log(
-      '> 🍭 lucodear-icons:',
+      '> Material Icon Theme:',
       green('Passed icon availability checks!')
     );
   }

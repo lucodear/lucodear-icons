@@ -1,4 +1,3 @@
-import { rm } from 'node:fs/promises';
 import { join } from 'node:path';
 import Puppeteer from 'puppeteer';
 
@@ -27,7 +26,6 @@ export const createScreenshot = async (filePath: string, fileName: string) => {
     });
 
     await browser.close();
-    await rm(filePath);
   } catch (error) {
     console.error(error);
     throw Error('Could not create screenshot for a preview');

@@ -63,7 +63,7 @@ export const loadFolderIconDefinitions = (
 /**
  * Set the default folder icons for the theme.
  */
-export const setDefaultFolderIcons = (
+const setDefaultFolderIcons = (
   theme: FolderTheme,
   manifest: Manifest,
   config: Config
@@ -132,7 +132,7 @@ export const setDefaultFolderIcons = (
 /**
  * Get the object of the current enabled theme.
  */
-export const getEnabledFolderTheme = (
+const getEnabledFolderTheme = (
   themes: FolderTheme[],
   enabledTheme: string | undefined
 ): FolderTheme | undefined => {
@@ -236,7 +236,7 @@ const extendFolderNames = (folderNames: string[]) => {
   return names;
 };
 
-export const setFolderNames = (
+const setFolderNames = (
   iconName: string,
   folderNames: string[],
   appendix: string = ''
@@ -245,7 +245,7 @@ export const setFolderNames = (
     folderNames: {},
     folderNamesExpanded: {},
   };
-  folderNames?.forEach((name) => {
+  folderNames.forEach((name) => {
     if (obj.folderNames) {
       obj.folderNames[name as keyof Manifest] = iconName + appendix;
     }

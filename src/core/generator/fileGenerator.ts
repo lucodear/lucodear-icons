@@ -109,7 +109,7 @@ export const loadFileIconDefinitions = (
 /**
  * Map the file extensions and the filenames to the related icons.
  */
-export const mapSpecificFileIcons = (
+const mapSpecificFileIcons = (
   icon: FileIcon,
   mappingType: FileMappingType,
   manifest: Manifest,
@@ -201,7 +201,7 @@ export const generateFileIcons = (
   }
 
   const fileIcon =
-    'M25.669,10.702,16,2H8A2,2,0,0,0,6,4V28a2,2,0,0,0,2,2H24a2,2,0,0,0,2-2V11.44537A1,1,0,0,0,25.669,10.702ZM24,28H8V4h6V14H24Zm0-16H16V4.69073l8,7.2Z';
+    'M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m5 2H6v16h12v-9h-7V4z';
 
   writeSVGFiles(
     'file',
@@ -228,7 +228,7 @@ const getCustomIcons = (fileAssociations: IconAssociations | undefined) => {
   return icons;
 };
 
-export const enum FileMappingType {
+const enum FileMappingType {
   FileExtensions = 'fileExtensions',
   FileNames = 'fileNames',
 }

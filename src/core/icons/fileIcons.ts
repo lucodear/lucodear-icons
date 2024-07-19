@@ -1079,7 +1079,13 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'nodejs',
-      fileNames: ['.nvmrc', '.esmrc', '.node-version'],
+      fileNames: [
+        'package.json',
+        'package-lock.json',
+        '.nvmrc',
+        '.esmrc',
+        '.node-version',
+      ],
     },
     { name: 'npm', fileNames: ['.npmignore', '.npmrc'] },
     {
@@ -1619,14 +1625,6 @@ export const fileIcons: FileIcons = {
     { name: 'lisp', fileExtensions: ['lisp', 'lsp', 'cl', 'fast'] },
     {
       name: 'tailwindcss',
-      fileExtensions: [
-        'tw.js',
-        'tw.cjs',
-        'tw.mjs',
-        'tw.ts',
-        'tw.cts',
-        'tw.mts',
-      ],
       fileNames: [
         'tailwind.js',
         'tailwind.ts',
@@ -2392,11 +2390,7 @@ export const fileIcons: FileIcons = {
         'panda.config': FileNamePattern.Ecmascript,
       },
     },
-    {
-      name: 'biome',
-      fileNames: ['biome.json', 'biome.jsonc'],
-      fileExtensions: ['biome.json', 'biome.jsonc'],
-    },
+    { name: 'biome', fileNames: ['biome.json', 'biome.jsonc'] },
     {
       name: 'esbuild',
       patterns: {

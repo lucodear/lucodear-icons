@@ -10,26 +10,6 @@ export enum IconPack {
   Qwik = 'qwik',
   Vue = 'vue',
   Vuex = 'vue_vuex',
-
-  // 🍭 » lucode
-  Pest = 'pest',
-  RustFerris = 'rust_ferris',
-  RustFerrisMinimal = 'rust_ferris_minimal',
-  RustFerrisFull = 'rust_ferris_full',
-}
-
-export function parseIconPack(value?: string) {
-  if (!value) {
-    return;
-  }
-
-  for (const key in IconPack) {
-    const val = IconPack[key as keyof typeof IconPack];
-
-    if (val === value) {
-      return val;
-    }
-  }
 }
 
 export type IconPackValue = `${IconPack}` | '';

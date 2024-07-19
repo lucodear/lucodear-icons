@@ -2,70 +2,53 @@
 
 <h1 align="center">
   <br>
-    <img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/logo.png" alt="logo" width="200">
+    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/logo.png" alt="logo" width="200">
   <br><br>
-  lucode.ar icons
+  Material Icon Theme
   <br>
   <br>
 </h1>
 
-> [!IMPORTANT]  
-> This is a fork of [PKief/vscode-material-icon-theme](https://github.com/PKief/vscode-material-icon-theme).
-> It contains custom and **opinionated** modifications and tweaks. It's not meant to be used as a replacement
-> for the original extension and it wasn't made to be used by anyone other than me. My changes are not documented
-> at all and I don't plan to do so. If you want to use this extension, I recommend you to use the original one or
-> to go through the code if you're curious about the changes I made =)
+<h4 align="center">Get the Material Design icons into your VS Code.</h4>
 
 <p align="center">
-    <a href="https://marketplace.visualstudio.com/items?itemName=lucaslabs.lucodear-icons"><img src="https://img.shields.io/visual-studio-marketplace/v/lucaslabs.lucodear-icons?style=for-the-badge&colorA=252526&colorB=43A047&label=VERSION" alt="Version"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=lucaslabs.lucodear-icons"><img src="https://img.shields.io/visual-studio-marketplace/r/lucaslabs.lucodear-icons?style=for-the-badge&colorA=252526&colorB=43A047&label=Rating" alt="Rating"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=lucaslabs.lucodear-icons"><img src="https://img.shields.io/visual-studio-marketplace/i/lucaslabs.lucodear-icons?style=for-the-badge&colorA=252526&colorB=43A047&label=Installs" alt="Installs"></a>&nbsp;
-    <a href="https://marketplace.visualstudio.com/items?itemName=lucaslabs.lucodear-icons"><img src="https://img.shields.io/visual-studio-marketplace/d/lucaslabs.lucodear-icons?style=for-the-badge&colorA=252526&colorB=43A047&label=Downloads" alt="Downloads"></a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"><img src="https://img.shields.io/visual-studio-marketplace/v/PKief.material-icon-theme?style=for-the-badge&colorA=252526&colorB=43A047&label=VERSION" alt="Version"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"><img src="https://img.shields.io/visual-studio-marketplace/r/PKief.material-icon-theme?style=for-the-badge&colorA=252526&colorB=43A047&label=Rating" alt="Rating"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"><img src="https://img.shields.io/visual-studio-marketplace/i/PKief.material-icon-theme?style=for-the-badge&colorA=252526&colorB=43A047&label=Installs" alt="Installs"></a>&nbsp;
+    <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"><img src="https://img.shields.io/visual-studio-marketplace/d/PKief.material-icon-theme?style=for-the-badge&colorA=252526&colorB=43A047&label=Downloads" alt="Downloads"></a>
 </p>
-
-## 🍭 lucodear
-
-<img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/lucodear-icons.png" alt="file icons">
-
-<br><br>
-
----
-
-<br><br>
-
-## Material Icon Theme (original documentation)
 
 ### File icons
 
-<img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/fileIcons.png" alt="file icons">
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/fileIcons.png" alt="file icons">
 
 ### Folder icons
 
-<img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/folderIcons.png" alt="folder icons">
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/folderIcons.png" alt="folder icons">
 
 #### Customize file & folder color
 
 You can change the color of the default file and folder icons using the command palette:
 
-<img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/set-folder-color.gif" alt="custom folder colors">
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/set-folder-color.gif" alt="custom folder colors">
 
 or via user settings:
 
 ```json
-"lucodear-icons.folders.color": "#ef5350",
-"lucodear-icons.files.color": "#42a5f5",
+"material-icon-theme.folders.color": "#ef5350",
+"material-icon-theme.files.color": "#42a5f5",
 ```
 
 #### Folder themes
 
 You can change the design of the folder icons using the command palette:
 
-<img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/set-folder-theme.gif" alt="folder themes">
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/set-folder-theme.gif" alt="folder themes">
 
 or via user settings:
 
 ```json
-"lucodear-icons.folders.theme": "specific"
+"material-icon-theme.folders.theme": "specific"
 ```
 
 ## Custom icon opacity
@@ -73,7 +56,7 @@ or via user settings:
 You can set a custom opacity for the icons:
 
 ```json
-"lucodear-icons.opacity": 0.5
+"material-icon-theme.opacity": 0.5
 ```
 
 ## Custom icon saturation
@@ -81,7 +64,7 @@ You can set a custom opacity for the icons:
 If colors do not make you happy you can change the icons to have less saturation making them look grayish or completely grayscale by setting saturation to 0:
 
 ```json
-"lucodear-icons.saturation": 0.5
+"material-icon-theme.saturation": 0.5
 ```
 
 You can also achieve no saturation (i.e., grayscale) by setting **Toggle Grayscale** to ON.
@@ -97,7 +80,7 @@ With the `*.[extension]` pattern you can define custom file icon associations. F
 If there's no leading `*` it will be automatically configured as filename and not as file extension.
 
 ```json
-"lucodear-icons.files.associations": {
+"material-icon-theme.files.associations": {
     "*.ts": "typescript",
     "**.json": "json",
     "fileName.ts": "angular"
@@ -120,7 +103,7 @@ For example a custom SVG file called `sample.svg` can be placed in an `icons` fo
 In the settings.json (User Settings only!) the icon can be associated to a file name or file extension like this:
 
 ```json
-"lucodear-icons.files.associations": {
+"material-icon-theme.files.associations": {
     "fileName.ts": "../../icons/sample"
 }
 ```
@@ -132,7 +115,7 @@ _Note: The custom file name must be configured in the settings without the file 
 It's also possible to clone existing file icons and change their colors to create new icons that can be associated with file names or file extensions. The following example shows how to clone the `rust` icon:
 
 ```json
-"lucodear-icons.files.customClones": [
+"material-icon-theme.files.customClones": [
   {
     "name": "rust-mod",
     "base": "rust",
@@ -151,17 +134,17 @@ It's also possible to clone existing file icons and change their colors to creat
 
 This will create two new icons called `rust-mod` and `rust-lib` that are associated with the file names `mod.rs` and `lib.rs` respectively. The `base` property defines the icon that should be cloned (in this case the `rust` icon). The `color` property defines the color of the new icon. The `lightColor` property is optional and defines the color of the icon when Visual Studio Code is running with a light color theme. The `fileNames` property defines the file names that should be associated with the new icon. There's also a `fileExtensions` property, which can be used to associate the new icon with file extensions (`"fileExtensions": ["ext", "ext2"]`).
 
-<img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/how-tos/cloned-file-icons-example.png" alt="cloned file icons">
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/how-tos/cloned-file-icons-example.png" alt="cloned file icons">
 
-- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases [here](https://github.com/lucodear/lucodear-icons/blob/main/src/icons/generator/clones/utils/color/materialPalette.ts#L7).
-- You can check the full list of available icons to be used as the `base` [here](https://github.com/lucodear/lucodear-icons/blob/main/src/icons/fileIcons.ts).
+- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases [here](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/src/icons/generator/clones/utils/color/materialPalette.ts#L7).
+- You can check the full list of available icons to be used as the `base` [here](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/src/icons/fileIcons.ts).
 
 ### Folder associations
 
 The following configuration can customize the folder icons. It is also possible to overwrite existing associations and create nice combinations. For example you could change the folder theme to "classic" and define icons only for the folder names you like.
 
 ```json
-"lucodear-icons.folders.associations": {
+"material-icon-theme.folders.associations": {
     "customFolderName": "src",
     "sample": "dist"
 }
@@ -184,7 +167,7 @@ In our example we place them into an `icons` folder inside of the `.vscode/exten
 In the settings.json (User Settings only!) the folder icons can be associated to a folder name (e.g. "src") like this:
 
 ```json
-"lucodear-icons.folders.associations": {
+"material-icon-theme.folders.associations": {
     "src": "../../../../icons/folder-sample"
 }
 ```
@@ -194,7 +177,7 @@ In the settings.json (User Settings only!) the folder icons can be associated to
 It's also possible to clone existing folder icons and change their colors to create new icons that can be associated with folder names. The following example shows how to clone the `admin` folder icon:
 
 ```json
-"lucodear-icons.folders.customClones": [
+"material-icon-theme.folders.customClones": [
   {
     "name": "users-admin",
     "base": "admin",
@@ -213,17 +196,17 @@ It's also possible to clone existing folder icons and change their colors to cre
 
 This will create two new icons called `users-admin` and `roles-admin` that are associated with the folder names `users` and `roles` respectively. The `base` property defines the icon that should be cloned (in this case the `admin` folder icon). The `color` property defines the color of the new icon. The `lightColor` property is optional and defines the color of the icon when Visual Studio Code is running with a light color theme. The `folderNames` property defines the folder names that should be associated with the new icon.
 
-<img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/how-tos/cloned-folder-icons-example.png" alt="cloned folder icons">
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/how-tos/cloned-folder-icons-example.png" alt="cloned folder icons">
 
-- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases [here](https://github.com/lucodear/lucodear-icons/blob/main/src/icons/generator/clones/utils/color/materialPalette.ts#L4).
-- You can check the full list of available icon to be used as the `base` [here](https://github.com/lucodear/lucodear-icons/blob/main/src/icons/folderIcons.ts).
+- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases [here](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/src/icons/generator/clones/utils/color/materialPalette.ts).
+- You can check the full list of available icon to be used as the `base` [here](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/src/icons/folderIcons.ts).
 
 ### Language associations
 
 With the following configuration you can customize the language icons. It is also possible to overwrite existing associations.
 
 ```json
-"lucodear-icons.languages.associations": {
+"material-icon-theme.languages.associations": {
     "languageId": "iconName",
     "json": "json"
 }
@@ -235,7 +218,7 @@ You can see the available icon names in the overview above. See "[Known language
 
 Press `Ctrl-Shift-P` to open the command palette and type `Material Icons`.
 
-<img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/commandPalette.png" alt="commands">
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/commandPalette.png" alt="commands">
 
 <p></p>
 
@@ -258,13 +241,13 @@ Press `Ctrl-Shift-P` to open the command palette and type `Material Icons`.
 
 ## Contributors
 
-<a href="https://github.com/lucodear/lucodear-icons/graphs/contributors">
-    <img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/contributors.png" alt="Contributors">
+<a href="https://github.com/material-extensions/vscode-material-icon-theme/graphs/contributors">
+    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/contributors.png" alt="Contributors">
 </a>
 
 **Would you like to contribute?**
 
-Take a look at the [contribution guidelines](https://github.com/lucodear/lucodear-icons/blob/main/CONTRIBUTING.md) and open a [new issue](https://github.com/lucodear/lucodear-icons/issues) or [pull request](https://github.com/lucodear/lucodear-icons/pulls) on GitHub.
+Take a look at the [contribution guidelines](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/CONTRIBUTING.md) and open a [new issue](https://github.com/material-extensions/vscode-material-icon-theme/issues) or [pull request](https://github.com/material-extensions/vscode-material-icon-theme/pulls) on GitHub.
 
 ## Related extensions
 

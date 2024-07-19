@@ -1,4 +1,4 @@
-name: 🏗️ » build & test
+name: Build + Test
 
 on:
   push:
@@ -12,13 +12,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os:
-          # - windows-latest
-          - ubuntu-latest
-        node-version: [18.x]
+    runs-on: [ubuntu-latest]
 
     name: Build Lucodear Icons 🏗️
 

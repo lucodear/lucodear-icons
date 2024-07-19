@@ -2,7 +2,7 @@ import type { Translation } from '../../models/i18n/translation';
 
 export const translation: Translation = {
   activate: 'Activate',
-  activated: 'lucode.ar icons is active.',
+  activated: 'Material Icon Theme is active.',
   iconPacks: {
     selectPack: 'Select an icon pack',
     description: "Select the '%0' icon pack",

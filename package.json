@@ -50,20 +50,9 @@
     "color": "#11131c",
     "theme": "dark"
   },
-  "categories": [
-    "Themes"
-  ],
-  "keywords": [
-    "icons",
-    "theme",
-    "material",
-    "icon-theme",
-    "customization"
-  ],
-  "extensionKind": [
-    "ui",
-    "workspace"
-  ],
+  "categories": ["Themes"],
+  "keywords": ["icons", "theme", "material", "icon-theme", "customization"],
+  "extensionKind": ["ui", "workspace"],
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true
@@ -275,11 +264,7 @@
             "%configuration.folders.theme.classic%",
             "%configuration.folders.theme.none%"
           ],
-          "enum": [
-            "specific",
-            "classic",
-            "none"
-          ]
+          "enum": ["specific", "classic", "none"]
         },
         "lucodear-icons.folders.color": {
           "type": "string",
@@ -311,38 +296,11 @@
           "minimum": 0,
           "maximum": 1,
           "description": "%configuration.saturation%"
-        },
-        "lucodear-icons.lucodear.enable": {
-          "type": "boolean",
-          "default": false,
-          "description": "%configuration.lucodear.enable%"
-        },
-        "lucodear-icons.lucodear.ignoreLookupPaths": {
-          "type": "array",
-          "default": [
-            "node_modules",
-            ".git",
-            ".venv",
-            "venv",
-            ".yarn"
-          ],
-          "description": "%configuration.lucodear.ignoreLookupPaths%"
-        },
-        "lucodear-icons.lucodear.files.regexAssociations": {
-          "type": "object",
-          "default": {},
-          "description": "%configuration.lucodear.files.regexAssociations%"
-        },
-        "lucodear-icons.lucodear.folders.regexAssociations": {
-          "type": "object",
-          "default": {},
-          "description": "%configuration.lucodear.folders.regexAssociations%"
         }
       }
     }
   },
   "dependencies": {
-    "lodash.clonedeep": "^4.5.0",
     "chroma-js": "^2.4.2",
     "svgson": "^5.3.1"
   },
@@ -355,8 +313,6 @@
     "@types/vscode": "~1.51.0",
     "@vscode/test-electron": "^2.3.9",
     "axios": "^1.4.0",
-    "handlebars": "^4.7.8",
-    "browser-sync": "^3.0.2",
     "bun-types": "^1.1.12",
     "changelog-machine": "^1.0.2",
     "esbuild": "^0.21.4",

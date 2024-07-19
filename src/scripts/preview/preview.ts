@@ -175,6 +175,11 @@ export const generatePreview = (
   );
 };
 
+type IconDefinition = {
+  iconName: string;
+  label: string;
+};
+
 /**
  * Trim the list of icons into the matrix
  * @param iconList List of icons

@@ -1,21 +1,24 @@
 /**
  * This file is meant to be executed exclusively by npm scripts.
  */
-import { env } from 'process';
-import { createIconFile } from './../../icons/index';
 
-env.LUCODEAR_SCRIPT_EXECUTION = 'true';
+import {
+  generateFileIcons,
+  generateFolderIcons,
+  generateManifest,
+  getDefaultConfiguration,
+} from '../../core';
 
-generateJson()
-  .catch((error) => {
-    console.error(error);
-    throw Error('Could not generate json!');
-  })
-  .then(() => {
-    console.log('Icon file generated successfully!');
-  });
+try {
+  // Generate default file and folder icons
+  const config = getDefaultConfiguration();
+  generateFileIcons(config.files.color, config.opacity, config.saturation);
+  generateFolderIcons(config.folders.color, config.opacity, config.saturation);
 
-async function generateJson() {
-  console.log('Generating icon file...');
-  await createIconFile();
+  const manifest = generateManifest();
+  // Print manifest to stdout so that scripts can consume it
+  console.log(JSON.stringify(manifest, undefined, 2));
+} catch (error) {
+  console.error(error);
+  throw Error('An error while generating the manifest occurred!');
 }

@@ -269,3 +269,4 @@ Take a look at the [contribution guidelines](https://github.com/lucodear/lucodea
 ## Related extensions
 
 - [Material Icons for GitHub](https://github.com/Claudiohbsantos/github-material-icons-extension)
+- [Material Product Icons](https://github.com/material-extensions/vscode-material-product-icons)

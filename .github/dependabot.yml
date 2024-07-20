@@ -11,7 +11,7 @@ updates:
     schedule:
       interval: 'weekly'
     assignees:
-      - 'PKief'
+      - 'lucas-labs'
     groups:
       github-actions:
         patterns:

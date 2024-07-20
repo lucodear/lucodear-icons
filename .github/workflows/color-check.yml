@@ -3,7 +3,7 @@ name: 🎨 » color check
 on:
   pull_request:
     paths:
-      - 'icons/*.svg'
+      - "icons/*.svg"
 
 permissions:
   contents: read

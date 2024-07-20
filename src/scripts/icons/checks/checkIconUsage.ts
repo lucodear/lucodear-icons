@@ -1,28 +1,23 @@
-import { readdir, readdirSync, statSync } from 'node:fs';
+import { readdir } from 'node:fs';
 import { join, parse } from 'node:path';
-import {
-  lucodearFileIcons,
-  lucodearFolderIcons,
-} from '../../../lucodear/icons';
+
 import {
   type DefaultIcon,
   type FolderIcon,
   type FolderTheme,
-} from '../../../models/index';
-import { green, magenta, red } from '../../helpers/painter';
-import {
   fileIcons,
   folderIcons,
   highContrastColorFileEnding,
   languageIcons,
   lightColorFileEnding,
   openedFolder,
-} from './../../../icons';
+} from '../../../core';
+import { green, red } from '../../helpers/painter';
 
 /**
  * Defines the folder where all icon files are located.
  */
-const folderPaths = [join('icons'), join('icons-lc')];
+const folderPath = join('icons');
 
 /**
  * Defines an array with all icons that can be found in the file system.
@@ -32,34 +27,22 @@ const availableIcons: { [s: string]: string } = {};
 /**
  * Get all icon file names from the file system.
  */
-const fsReadAllIconFiles = (dir: string) => {
-  const callback = (error: NodeJS.ErrnoException | null, files: string[]) => {
-    if (error) {
-      throw Error(error.message);
-    }
+const fsReadAllIconFiles = (
+  error: NodeJS.ErrnoException | null,
+  files: string[]
+) => {
+  if (error) {
+    throw Error(error.message);
+  }
 
-    files.forEach((file) => {
-      const path = join(dir, file);
+  files.forEach((file) => {
+    const fileName = file;
+    const iconName = parse(file).name.replace('.clone', '');
+    availableIcons[iconName] = fileName;
+  });
 
-      if (statSync(path).isDirectory()) {
-        const cb = fsReadAllIconFiles(path);
-        const childs = readdirSync(path);
-        cb(null, childs);
-        return;
-      }
-
-      if (file.endsWith('.svg')) {
-        const fileName = file;
-        const iconName = parse(file).name.replace('.clone', '');
-        availableIcons[iconName] = fileName;
-      }
-    });
-
-    checkUsageOfAllIcons();
-    handleErrors(dir);
-  };
-
-  return callback;
+  checkUsageOfAllIcons();
+  handleErrors();
 };
 
 const checkUsageOfAllIcons = () => {
@@ -74,17 +57,13 @@ const checkUsageOfAllIcons = () => {
   );
 };
 
-const handleErrors = (dir: string) => {
+const handleErrors = () => {
   const amountOfUnusedIcons = Object.keys(availableIcons).length;
   if (amountOfUnusedIcons === 0) {
-    console.log(
-      '> 🍭 lucodear-icons',
-      magenta(`[${dir}]:`),
-      green('Passed icon usage checks!')
-    );
+    console.log('> Material Icon Theme:', green('Passed icon usage checks!'));
   } else {
     console.log(
-      '> 🍭 lucodear-icons: ' + red(`${amountOfUnusedIcons} unused icon(s):`)
+      '> Material Icon Theme: ' + red(`${amountOfUnusedIcons} unused icon(s):`)
     );
     Object.keys(availableIcons).forEach((icon) => {
       console.log(red(`- ${availableIcons[icon]}`));
@@ -92,6 +71,9 @@ const handleErrors = (dir: string) => {
     throw new Error('Found unused icon files!');
   }
 };
+
+// read from the file system
+export const check = () => readdir(folderPath, fsReadAllIconFiles);
 
 const getAllUsedFileIcons = (): string[] => {
   return [
@@ -109,22 +91,13 @@ const getAllUsedFileIcons = (): string[] => {
     ...fileIcons.icons
       .filter((icon) => icon.highContrast)
       .map((icon) => icon.name + highContrastColorFileEnding),
-    ...lucodearFileIcons.icons.map((icon) => icon.name),
-    ...lucodearFileIcons.icons
-      .filter((icon) => icon.light)
-      .map((icon) => icon.name + lightColorFileEnding),
-    ...lucodearFileIcons.icons
-      .filter((icon) => icon.highContrast)
-      .map((icon) => icon.name + highContrastColorFileEnding),
   ].filter((f) => f !== '');
 };
 
 const getAllUsedFolderIcons = (): string[] => {
   const icons = folderIcons
-    .concat(lucodearFolderIcons as FolderTheme)
     .map((theme) => (theme.name === 'none' ? [] : getAllFolderIcons(theme)))
     .reduce((a, b) => a.concat(b));
-
   return icons
     .map((icon) => {
       return [
@@ -164,11 +137,4 @@ const getAllUsedLanguageIcons = (): string[] => {
       .map((lang) => lang.icon.name + highContrastColorFileEnding),
   ];
   return icons;
-};
-
-// read from the file system
-export const check = () => {
-  for (const folderPath of folderPaths) {
-    readdir(folderPath, fsReadAllIconFiles(folderPath));
-  }
 };

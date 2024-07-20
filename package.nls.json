@@ -43,9 +43,5 @@
   "configuration.files.color": "Change the color of the file icons.",
   "configuration.hidesExplorerArrows": "Hide explorer arrows before folder.",
   "configuration.opacity": "Change the opacity of the icons.",
-  "configuration.saturation": "Change the saturation of the icons.",
-  "configuration.lucodear.enable": "🧉 Enable custom functionalities by lucode.ar",
-  "configuration.lucodear.ignoreLookupPaths": "🧉 Paths to ignore when applying regex icon association",
-  "configuration.lucodear.files.regexAssociations": "🧉 Set custom file icon associations using regex",
-  "configuration.lucodear.folders.regexAssociations": "🧉 Set custom folder icon associations using regex"
+  "configuration.saturation": "Change the saturation of the icons."
 }

@@ -2,19 +2,18 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { green, red } from '../helpers/painter';
 import { createScreenshot } from '../helpers/screenshots';
-import { type IconDefinition } from './icon';
+import { toTitleCase } from './../helpers/titleCase';
 
-export const htmlDoctype = '<!DOCTYPE html>';
-
+const htmlDoctype = '<!DOCTYPE html>';
 const cssFilePath = 'style.css';
-export const styling = `<link rel="stylesheet" href="${cssFilePath}">`;
+const styling = `<link rel="stylesheet" href="${cssFilePath}">`;
 
 const createHTMLTableHeadRow = (amount: number) => {
   const pair = `
         <th class="icon">Icon</th>
         <th class="iconName">Name</th>
     `;
-  const columns = [...Array(amount > 0 ? amount : 5)].map(() => pair).join('');
+  const columns = [...Array(amount)].map(() => pair).join('');
   return `
         <tr>
             ${columns}
@@ -22,28 +21,20 @@ const createHTMLTableHeadRow = (amount: number) => {
     `;
 };
 
-const createHTMLTableBodyRows = (
-  items: IconDefinition[][],
-  iconsPath: string,
-  size: number
-) => {
+const createHTMLTableBodyRows = (items: IconDefinition[][]) => {
   let rows = '';
   items.forEach((row) => {
     const columns = row
-      .map((icon) => {
-        const subpath = icon.theme ? `${icon.theme}/` : '';
-
-        return `
-          <td class="icon">
-              <img style="width: ${size.toFixed(
-                0
-              )}px" src="${iconsPath}/${subpath}${icon.name}.svg" alt="${
-                icon.label
-              }">
-          </td>
-          <td class="iconName">${icon.label ?? icon.name}</td>
-        `;
-      })
+      .map(
+        (icon) => `
+            <td class="icon">
+                <img src="./../../../icons/${icon.iconName}.svg" alt="${
+                  icon.label
+                }">
+            </td>
+            <td class="iconName">${toTitleCase(icon.label)}</td>
+        `
+      )
       .join('');
     const tableRow = `
             <tr>
@@ -62,46 +53,32 @@ const createHTMLTable = (headRow: string, bodyRows: string) => `
     </table>
 `;
 
-const noIconsFound = `
-  <div class="no-icons">
-    Oops, no icons found!
-  </div>
-`;
-
-export const createPreviewTable = (
-  icons: IconDefinition[][],
-  size: number,
-  iconsPath: string,
-  fullPage: boolean = true,
-  iconSize: number = 30
-) => {
+const createPreviewTable = (icons: IconDefinition[][], size: number) => {
   const table =
-    (fullPage ? htmlDoctype : '') +
-    (fullPage ? styling : '') +
+    htmlDoctype +
+    styling +
     createHTMLTable(
       createHTMLTableHeadRow(size),
-      createHTMLTableBodyRows(icons, iconsPath, iconSize)
-    ) +
-    (icons.length === 0 ? noIconsFound : '');
+      createHTMLTableBodyRows(icons)
+    );
   return table;
 };
 
 const savePreview = (
   fileName: string,
   size: number,
-  icons: IconDefinition[][],
-  iconsPath: string
+  icons: IconDefinition[][]
 ) => {
   const filePath = join(__dirname, fileName + '.html');
 
   // write the html file with the icon table
-  writeFileSync(filePath, createPreviewTable(icons, size, iconsPath));
+  writeFileSync(filePath, createPreviewTable(icons, size));
 
   // create the image
   createScreenshot(filePath, fileName)
     .then(() => {
       console.log(
-        '> 🍭 lucodear-icons:',
+        '> Material Icon Theme:',
         green(`Successfully created ${fileName} preview image!`)
       );
     })
@@ -110,26 +87,19 @@ const savePreview = (
     });
 };
 
-export const getIconDefinitionsMatrix = (
+const getIconDefinitionsMatrix = (
   icons: IconDefinition[],
   size: number,
-  excluded: string[] = [],
-  sort: boolean = true,
-  trim: boolean = false
+  excluded: string[] = []
 ): IconDefinition[][] => {
-  const iconList = sort
-    ? icons.sort((a, b) => (a.label ?? a.name).localeCompare(b.label ?? b.name))
-    : icons;
-
-  trim && trimIconListToSize(iconList, size, excluded);
+  const iconList = icons.sort((a, b) => a.label.localeCompare(b.label));
+  trimIconListToSize(iconList, size, excluded);
 
   // list for the columns with the icons
   const matrix: IconDefinition[][] = [];
 
   // calculate the amount of icons per column
   const itemsPerColumn = Math.floor(iconList.length / size);
-  const rest = iconList.length % size;
-  const restItems = iconList.slice(-rest);
 
   // create the columns with the icons
   let counter = 0;
@@ -141,11 +111,6 @@ export const getIconDefinitionsMatrix = (
       matrix[i][s] = iconList[counter];
       counter++;
     }
-  }
-
-  // add another row with the rest of the icons
-  if (rest > 0) {
-    matrix.push(restItems);
   }
 
   return matrix;
@@ -162,17 +127,18 @@ export const generatePreview = (
   name: string,
   icons: IconDefinition[],
   size: number,
-  trimmableIcons: string[] = [],
-  iconsPath: string = './../../../icons'
+  trimmableIcons: string[] = []
 ) => {
-  const safeSize = icons.length >= size ? size : icons.length;
-
   savePreview(
     name,
-    safeSize,
-    getIconDefinitionsMatrix(icons, safeSize, trimmableIcons),
-    iconsPath
+    size,
+    getIconDefinitionsMatrix(icons, size, trimmableIcons)
   );
+};
+
+type IconDefinition = {
+  iconName: string;
+  label: string;
 };
 
 /**
@@ -186,14 +152,10 @@ const trimIconListToSize = (
   size: number,
   trimmableIcons: string[]
 ) => {
-  if (size === 0) {
-    return;
-  }
-
   while (iconList.length % size !== 0) {
     iconList.splice(
       iconList.findIndex(
-        (i) => i.name === trimmableIcons[iconList.length % size]
+        (i) => i.iconName === trimmableIcons[iconList.length % size]
       ),
       1
     );

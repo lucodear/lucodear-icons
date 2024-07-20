@@ -1,5 +1,5 @@
+import { fileIcons, folderIcons, languageIcons } from '../../../core';
 import { green, red } from '../../helpers/painter';
-import { fileIcons, folderIcons, languageIcons } from './../../../icons';
 
 /**
  * Store all icons that are wrong configured
@@ -119,7 +119,7 @@ const handleErrors = () => {
       ...Object.keys(allConflicts.languageIcons),
     ].length > 0
   ) {
-    console.log('> 🍭 lucodear-icons:', red('Icon conflicts:'));
+    console.log('> Material Icon Theme:', red('Icon conflicts:'));
     console.log(red('--------------------------------------'));
 
     printErrorMessage(allConflicts.fileIcons.fileExtensions, 'fileExtension');
@@ -130,11 +130,17 @@ const handleErrors = () => {
     console.log('\n' + red('Please check the wrong icon configurations!\n'));
     process.exit(1);
   } else {
-    console.log('> 🍭 lucodear-icons:', green('Passed icon conflict checks!'));
+    console.log(
+      '> Material Icon Theme:',
+      green('Passed icon conflict checks!')
+    );
   }
 };
 
-const printErrorMessage = (icons: any, definitionType: string) => {
+const printErrorMessage = (
+  icons: Record<string, string[]>,
+  definitionType: string
+) => {
   const keys = Object.keys(icons);
   keys.forEach((key) => {
     const conflictIcons = icons[key];

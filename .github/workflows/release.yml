@@ -7,7 +7,7 @@ on:
         type: choice
         description: Select the version change
         required: true
-        default: 'minor'
+        default: "minor"
         options:
           - major
           - minor
@@ -65,7 +65,7 @@ jobs:
       - name: Push tags 📌
         run: git push
 
-      - name: 'release: ${{ env.VERSION }} 🔆'
+      - name: "release: ${{ env.VERSION }} 🔆"
         uses: softprops/action-gh-release@a74c6b72af54cfa997e81df42d94703d6313a2d0 # v2.0.6
         with:
           files: ${{ env.NAME }}-${{ env.VERSION }}.vsix

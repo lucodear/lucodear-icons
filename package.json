@@ -4,28 +4,30 @@
   "description": "🍭 lucodear-icons » A PKief's 'Material Icons Theme' fork with my own custom additions. This was made for my personal use",
   "version": "0.61.0",
   "scripts": {
-    "build": "bun run ./build/build-with-esbuild.ts",
+    "precompile": "rimraf dist && bun run verify",
+    "compile": "tsc -p ./",
+    "compile:declarations": "tsc -p ./tsconfig.declarations.json",
+    "postcompile": "bun run compile:declarations && bun run generateJson && bun run generateClones && bun run check",
+    "build": "bun run compile && bun run ./build/build-with-esbuild.ts",
     "watch": "bun run ./build/watch-with-esbuild.ts",
     "changelog": "changelog-machine --config changelog.config.json",
     "check-colors": "bun run ./src/scripts/svg/checkSvgColors.ts",
-    "check": "bun ./src/scripts/icons/checks",
-    "contributors": "bun ./src/scripts/contributors/index.ts",
-    "generateJson": "bun ./src/scripts/icons/generateJson.ts",
-    "lint": "bunx @biomejs/biome check ./src",
-    "lint:fix": "bunx @biomejs/biome check --write ./src",
-    "format": "bunx @biomejs/biome format ./src",
-    "format:fix": "bunx @biomejs/biome format --write ./src",
-    "postcompile": "bun run generateJson && bun run check",
+    "check": "bun ./src/scripts/icons/checks/run.ts",
+    "contributors": "bun ./src/scripts/contributors/contributors.ts",
+    "generateJson": "bun ./src/scripts/icons/generateJson.ts > dist/material-icons.json",
+    "generateClones": "bun ./src/scripts/icons/generateClones.ts",
+    "lint": "bunx @biomejs/biome check --write ./src",
+    "format": "bunx @biomejs/biome format --write ./src",
     "preversion": "bun run contributors && bun run preview && git add images/*.png",
-    "preview": "bun ./src/scripts/preview && bun run preview-lc",
-    "preview-lc": "bun ./src/scripts/preview/lucodear-preview",
-    "preview-lc:dev": "bun ./src/scripts/preview/lucodear-preview --dev --size 16 && browser-sync start -c .\\build\\bs-config.js",
-    "preview:dev:diffs": "bun ./src/scripts/preview/changes",
-    "preview:dev:full-diff": "bun ./src/scripts/preview/full-diff",
-    "preview:dev:full-diff:live": "bun ./src/scripts/preview/full-diff/live",
-    "svgo": "svgo -i icons icons-lc -r -q",
+    "preview": "bun ./src/scripts/preview/run.ts && bun run lc:preview",
+    "svgo": "svgo -i icons -o icons -q",
+    "test": "bun test",
     "version": "bun run changelog && git add CHANGELOG.md",
-    "vscode:prepublish": "bun run lint && bun run build && bun run postcompile"
+    "vscode:prepublish": "bun run lint && bun run build",
+    "verify": "bunx sheriff verify",
+    "prepublishOnly": "bun run ./src/scripts/module/prepare.ts",
+    "postpublish": "git checkout package.json && git checkout README.md",
+    "lc:preview": "bun ./src/@lucodear/scripts/preview"
   },
   "publisher": "lucaslabs",
   "author": {
@@ -49,36 +51,22 @@
     "color": "#11131c",
     "theme": "dark"
   },
-  "categories": [
-    "Themes"
-  ],
-  "keywords": [
-    "icons",
-    "theme",
-    "material",
-    "icon-theme",
-    "customization"
-  ],
-  "extensionKind": [
-    "ui",
-    "workspace"
-  ],
+  "categories": ["Themes"],
+  "keywords": ["icons", "theme", "material", "icon-theme", "customization"],
+  "extensionKind": ["ui", "workspace"],
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true
     },
     "virtualWorkspaces": true
   },
-  "activationEvents": [
-    "onStartupFinished"
-  ],
-  "main": "./dist/extension.cjs",
-  "browser": "./dist/web/extension.cjs",
+  "activationEvents": ["onStartupFinished"],
+  "main": "./dist/@lucodear/extension/desktop/extension.cjs",
+  "browser": "./dist/extension/web/extension.cjs",
+  "module": "./dist/module/index.cjs",
+  "types": "./dist/types/module/index.d.ts",
   "sideEffects": false,
-  "files": [
-    "icons",
-    "dist/material-icons.json"
-  ],
+  "files": ["icons", "icons-lc", "dist/material-icons.json"],
   "contributes": {
     "iconThemes": [
       {
@@ -278,11 +266,7 @@
             "%configuration.folders.theme.classic%",
             "%configuration.folders.theme.none%"
           ],
-          "enum": [
-            "specific",
-            "classic",
-            "none"
-          ]
+          "enum": ["specific", "classic", "none"]
         },
         "lucodear-icons.folders.color": {
           "type": "string",
@@ -314,62 +298,31 @@
           "minimum": 0,
           "maximum": 1,
           "description": "%configuration.saturation%"
-        },
-        "lucodear-icons.lucodear.enable": {
-          "type": "boolean",
-          "default": false,
-          "description": "%configuration.lucodear.enable%"
-        },
-        "lucodear-icons.lucodear.ignoreLookupPaths": {
-          "type": "array",
-          "default": [
-            "node_modules",
-            ".git",
-            ".venv",
-            "venv",
-            ".yarn"
-          ],
-          "description": "%configuration.lucodear.ignoreLookupPaths%"
-        },
-        "lucodear-icons.lucodear.files.regexAssociations": {
-          "type": "object",
-          "default": {},
-          "description": "%configuration.lucodear.files.regexAssociations%"
-        },
-        "lucodear-icons.lucodear.folders.regexAssociations": {
-          "type": "object",
-          "default": {},
-          "description": "%configuration.lucodear.folders.regexAssociations%"
         }
       }
     }
   },
   "dependencies": {
-    "lodash.clonedeep": "^4.5.0",
     "chroma-js": "^2.4.2",
-    "lodash.merge": "4.6.2",
     "svgson": "^5.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.2",
+    "@softarc/sheriff-core": "^0.15.1",
     "@types/chroma-js": "^2.4.4",
-    "@types/browser-sync": "^2.29.0",
-    "@types/lodash.clonedeep": "^4.5.9",
-    "@types/lodash.merge": "^4.6.7",
+    "@types/glob": "^7.2.0",
     "@types/puppeteer": "^5.4.6",
     "@types/vscode": "~1.51.0",
     "@vscode/test-electron": "^2.3.9",
     "axios": "^1.4.0",
-    "handlebars": "^4.7.8",
-    "browser-sync": "^3.0.2",
     "bun-types": "^1.1.12",
     "changelog-machine": "^1.0.2",
     "esbuild": "^0.21.4",
     "glob": "^8.0.3",
     "puppeteer": "^22.11.0",
-    "rimraf": "^3.0.2",
+    "rimraf": "^6.0.0",
     "svg-color-linter": "^1.3.0",
     "svgo": "^2.8.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.5.3"
   }
 }

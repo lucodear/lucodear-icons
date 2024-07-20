@@ -9,7 +9,7 @@
   <br>
 </h1>
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This is a fork of [PKief/vscode-material-icon-theme](https://github.com/PKief/vscode-material-icon-theme).
 > It contains custom and **opinionated** modifications and tweaks. It's not meant to be used as a replacement
 > for the original extension and it wasn't made to be used by anyone other than me. My changes are not documented
@@ -233,7 +233,7 @@ You can see the available icon names in the overview above. See "[Known language
 
 ## Commands
 
-Press `Ctrl-Shift-P` to open the command palette and type `Material Icons`.
+Press `Ctrl-Shift-P` to open the command palette and type `lucodear`.
 
 <img src="https://raw.githubusercontent.com/lucodear/lucodear-icons/main/images/commandPalette.png" alt="commands">
 
@@ -269,3 +269,4 @@ Take a look at the [contribution guidelines](https://github.com/lucodear/lucodea
 ## Related extensions
 
 - [Material Icons for GitHub](https://github.com/Claudiohbsantos/github-material-icons-extension)
+- [Material Product Icons](https://github.com/material-extensions/vscode-material-product-icons)

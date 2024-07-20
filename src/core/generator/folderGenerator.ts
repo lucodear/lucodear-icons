@@ -62,8 +62,10 @@ export const loadFolderIconDefinitions = (
 
 /**
  * Set the default folder icons for the theme.
+ *
+ * 🍭 » exported by lucode
  */
-const setDefaultFolderIcons = (
+export const setDefaultFolderIcons = (
   theme: FolderTheme,
   manifest: Manifest,
   config: Config
@@ -131,8 +133,10 @@ const setDefaultFolderIcons = (
 
 /**
  * Get the object of the current enabled theme.
+ *
+ * 🍭 » exported by lucode
  */
-const getEnabledFolderTheme = (
+export const getEnabledFolderTheme = (
   themes: FolderTheme[],
   enabledTheme: string | undefined
 ): FolderTheme | undefined => {
@@ -236,7 +240,10 @@ const extendFolderNames = (folderNames: string[]) => {
   return names;
 };
 
-const setFolderNames = (
+/**
+ * 🍭 » exported by lucode
+ */
+export const setFolderNames = (
   iconName: string,
   folderNames: string[],
   appendix: string = ''

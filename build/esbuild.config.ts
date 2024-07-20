@@ -2,7 +2,7 @@ import type { BuildOptions } from 'esbuild';
 
 const config: BuildOptions = {
   entryPoints: [
-    './src/extension/desktop/extension.ts',
+    './src/@lucodear/extension/desktop/extension.ts',
     './src/extension/web/extension.ts',
     './src/module/index.ts',
   ],
@@ -13,6 +13,7 @@ const config: BuildOptions = {
   target: 'node12',
   outdir: './dist',
   outbase: './src',
+  // sourcemap: true,
   outExtension: {
     '.js': '.cjs',
   },

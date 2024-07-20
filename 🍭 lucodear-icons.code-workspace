@@ -1,8 +1,8 @@
 {
   "folders": [
     {
-      "path": ".",
-    },
+      "path": "."
+    }
   ],
   "settings": {
     "files.exclude": {
@@ -28,10 +28,11 @@
       "**/.settings": true,
       "bin/": false,
       "build/": false,
-      "out/": false,
+      "out/": false
     },
-    "svg.preview.background": "editor"
-  },
+    "svg.preview.background": "editor",
+    "lucodear-icons.folders.associations": {
+      "icons-lc": "lucode-template"
+    }
+  }
 }
-
-

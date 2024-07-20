@@ -2,10 +2,10 @@
  * This file is meant to be executed exclusively by npm scripts.
  */
 
+import { generateManifest } from '../../@lucodear/core/generators/manifest';
 import {
   generateFileIcons,
   generateFolderIcons,
-  generateManifest,
   getDefaultConfiguration,
 } from '../../core';
 
@@ -15,7 +15,10 @@ try {
   generateFileIcons(config.files.color, config.opacity, config.saturation);
   generateFolderIcons(config.folders.color, config.opacity, config.saturation);
 
+  // #region 🍭 » lucode (changed with custom generateManifest)
   const manifest = generateManifest();
+  // #endregion
+
   // Print manifest to stdout so that scripts can consume it
   console.log(JSON.stringify(manifest, undefined, 2));
 } catch (error) {

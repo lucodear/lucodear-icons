@@ -64,7 +64,7 @@
     "virtualWorkspaces": true
   },
   "activationEvents": ["onStartupFinished"],
-  "main": "./dist/extension/desktop/extension.cjs",
+  "main": "./dist/@lucodear/extension/desktop/extension.cjs",
   "browser": "./dist/extension/web/extension.cjs",
   "module": "./dist/module/index.cjs",
   "types": "./dist/types/module/index.d.ts",

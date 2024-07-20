@@ -108,8 +108,10 @@ export const loadFileIconDefinitions = (
 
 /**
  * Map the file extensions and the filenames to the related icons.
+ *
+ * 🍭 » exported by lucodear
  */
-const mapSpecificFileIcons = (
+export const mapSpecificFileIcons = (
   icon: FileIcon,
   mappingType: FileMappingType,
   manifest: Manifest,
@@ -227,8 +229,10 @@ const getCustomIcons = (fileAssociations: IconAssociations | undefined) => {
   });
   return icons;
 };
-
-const enum FileMappingType {
+/**
+ * 🍭 » exported by lucode
+ */
+export const enum FileMappingType {
   FileExtensions = 'fileExtensions',
   FileNames = 'fileNames',
 }

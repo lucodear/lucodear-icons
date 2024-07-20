@@ -1,7 +1,6 @@
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { ConfigurationChangeEvent } from 'vscode';
-import { generateManifest } from '../../@lucodear/core/generators/manifest';
 import {
   type Config,
   applyConfigurationToIcons,
@@ -14,7 +13,11 @@ import {
   resolvePath,
 } from '../../core';
 import { merge } from '../../core/helpers/object';
-import { configPropertyNames, getCurrentConfig } from '../shared/config';
+import {
+  configPropertyNames,
+  getCurrentConfig,
+} from '../../extension/shared/config';
+import { generateManifest } from '../core/generators/manifest';
 
 /** Compare the workspace and the user configurations with the current setup of the icons. */
 export const detectConfigChanges = (event?: ConfigurationChangeEvent) => {
@@ -32,10 +35,7 @@ export const detectConfigChanges = (event?: ConfigurationChangeEvent) => {
   }
 
   renameIconFiles(config);
-
-  // #region 🍭 » lucode (changed to custom generateManifest)
   const manifest = generateManifest(config);
-  // #endregion
 
   // clear the clone folder
   clearCloneFolder(hasCustomClones(config));

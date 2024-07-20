@@ -18,15 +18,16 @@
     "generateClones": "bun ./src/scripts/icons/generateClones.ts",
     "lint": "bunx @biomejs/biome check --write ./src",
     "format": "bunx @biomejs/biome format --write ./src",
-    "preversion": "bun run contributors && git add images/contributors.png && bun run preview && git add images/fileIcons.png && git add images/folderIcons.png && bun run svgo && git add icons/*.svg",
-    "preview": "bun ./src/scripts/preview/run.ts",
+    "preversion": "bun run contributors && bun run preview && git add images/*.png",
+    "preview": "bun ./src/scripts/preview/run.ts && bun run lc:preview",
     "svgo": "svgo -i icons -o icons -q",
     "test": "bun test",
     "version": "bun run changelog && git add CHANGELOG.md",
     "vscode:prepublish": "bun run lint && bun run build",
     "verify": "bunx sheriff verify",
     "prepublishOnly": "bun run ./src/scripts/module/prepare.ts",
-    "postpublish": "git checkout package.json && git checkout README.md"
+    "postpublish": "git checkout package.json && git checkout README.md",
+    "lc:preview": "bun ./src/@lucodear/scripts/preview"
   },
   "publisher": "lucaslabs",
   "author": {

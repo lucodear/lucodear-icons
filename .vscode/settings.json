@@ -46,7 +46,8 @@
     "**/**/tests": true
   },
   "search.exclude": {
-    "out": true
+    "out": true,
+    ".git": true
   },
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome",

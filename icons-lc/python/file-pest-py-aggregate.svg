@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g>
+    <path d="M28,8H24v8H10V28a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V24H14V22H28a2,2,0,0,0,2-2V10A2,2,0,0,0,28,8ZM18,26h4v2H18Z" style="fill: #7e57c2;isolation: isolate"/>
+    <path d="M20,2H10A2,2,0,0,0,8,4V8H18v2H4a2,2,0,0,0-2,2V22a2,2,0,0,0,2,2H8V14H22V4A2,2,0,0,0,20,2ZM14,6H10V4h4Z" style="fill: #7e57c2;isolation: isolate"/>
+  </g>
+</svg>

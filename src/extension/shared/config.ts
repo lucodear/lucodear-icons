@@ -9,7 +9,7 @@ export const getConfig = (section?: string) => {
 
 /** Get list of configuration entries of package.json */
 export const getConfigProperties = (): { [config: string]: unknown } => {
-  return extensions.getExtension('PKief.material-icon-theme')?.packageJSON
+  return extensions.getExtension('lucaslabs.lucodear-icons')?.packageJSON
     ?.contributes?.configuration?.properties;
 };
 
@@ -27,7 +27,7 @@ export const setConfig = (
 
 /** Get current configuration of the theme from the vscode config */
 export const getThemeConfig = <T>(section: string): T | undefined => {
-  const themeConfig = getConfig('material-icon-theme').inspect<T>(section);
+  const themeConfig = getConfig('lucodear-icons').inspect<T>(section);
   return getConfigValue<T | undefined>(themeConfig);
 };
 
@@ -37,7 +37,7 @@ export const setThemeConfig = (
   value: unknown,
   global: boolean = false
 ) => {
-  return getConfig('material-icon-theme').update(section, value, global);
+  return getConfig('lucodear-icons').update(section, value, global);
 };
 
 /**
@@ -47,9 +47,9 @@ export const setThemeConfig = (
 export const isThemeActivated = (global: boolean = false): boolean => {
   return global
     ? getConfig().inspect('workbench.iconTheme')?.globalValue ===
-        'material-icon-theme'
+        'lucodear-icons'
     : getConfig().inspect('workbench.iconTheme')?.workspaceValue ===
-        'material-icon-theme';
+        'lucodear-icons';
 };
 
 /** Checks if the theme is not the active icon theme */

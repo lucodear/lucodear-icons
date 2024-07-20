@@ -1,7 +1,7 @@
 /**
  * Name of the VS Code extension.
  */
-export const extensionName = 'material-icon-theme';
+export const extensionName = 'lucodear-icons';
 
 /**
  * Path where the icons are located.

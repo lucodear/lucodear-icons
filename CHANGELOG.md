@@ -3,10 +3,18 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.65.0](https://github.com/lucodear/lucodear-icons/compare/v0.64.0...v0.65.0) 
+
+> July 22, 2024 
+
+- feat: ✨ improve rust icon + add watcher folder icon [`7bb5f603`](https://github.com/lucodear/lucodear-icons/commit/7bb5f603)
+- feat: ✨ add an icon for the Cargo.lock file [`8e1e9d8c`](https://github.com/lucodear/lucodear-icons/commit/8e1e9d8c)
+ 
 #### [v0.64.0](https://github.com/lucodear/lucodear-icons/compare/v0.63.0...v0.64.0) 
 
 > July 22, 2024 
 
+- release: 🔖 v0.64.0 [`63cd7196`](https://github.com/lucodear/lucodear-icons/commit/63cd7196)
 - feat: ✨ changes colors of the rust ferris icon for main.rs [`640cdd0e`](https://github.com/lucodear/lucodear-icons/commit/640cdd0e)
 - fix: 🚑 svgs renamed even without config changes [`ad56db50`](https://github.com/lucodear/lucodear-icons/commit/ad56db50)
  

@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.63.0](https://github.com/lucodear/lucodear-icons/compare/v0.62.0...v0.63.0) 
+
+> July 22, 2024 
+
+- feat: ✨ remove rust ferris full Icon Pack [`39f6fea2`](https://github.com/lucodear/lucodear-icons/commit/39f6fea2)
+ 
 #### [v0.62.0](https://github.com/lucodear/lucodear-icons/compare/v0.61.0...v0.62.0) 
 
 > July 20, 2024 
 
+- release: 🔖 v0.62.0 [`80146731`](https://github.com/lucodear/lucodear-icons/commit/80146731)
 - fix: 🚑 error publishing extension due to misconfiguration [`e3e3709a`](https://github.com/lucodear/lucodear-icons/commit/e3e3709a)
 - ci: 🔄 add lucodear preview script [`c688ee41`](https://github.com/lucodear/lucodear-icons/commit/c688ee41)
 - feat: ✨ replace references to upstream repo [`7f8219fe`](https://github.com/lucodear/lucodear-icons/commit/7f8219fe)

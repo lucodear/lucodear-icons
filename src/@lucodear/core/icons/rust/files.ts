@@ -18,6 +18,11 @@ const rustDefault = lucodear('rust', [
     light: true,
   },
   {
+    name: 'rust-cargo-lock',
+    fileNames: ['Cargo.lock', 'cargo.lock'],
+    light: true,
+  },
+  {
     name: 'rust-format',
     fileNames: ['rustfmt.toml'],
   },

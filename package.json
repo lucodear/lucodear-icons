@@ -147,7 +147,6 @@
             "%configuration.activeIconPack.pest%",
             "%configuration.activeIconPack.rust_ferris%",
             "%configuration.activeIconPack.rust_ferris_minimal%",
-            "%configuration.activeIconPack.rust_ferris_full%",
             "%configuration.activeIconPack.none%"
           ],
           "enum": [
@@ -162,7 +161,6 @@
             "pest",
             "rust_ferris",
             "rust_ferris_minimal",
-            "rust_ferris_full",
             "none"
           ]
         },

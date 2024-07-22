@@ -3,10 +3,18 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v0.64.0](https://github.com/lucodear/lucodear-icons/compare/v0.63.0...v0.64.0) 
+
+> July 22, 2024 
+
+- feat: ✨ changes colors of the rust ferris icon for main.rs [`640cdd0e`](https://github.com/lucodear/lucodear-icons/commit/640cdd0e)
+- fix: 🚑 svgs renamed even without config changes [`ad56db50`](https://github.com/lucodear/lucodear-icons/commit/ad56db50)
+ 
 #### [v0.63.0](https://github.com/lucodear/lucodear-icons/compare/v0.62.0...v0.63.0) 
 
 > July 22, 2024 
 
+- release: 🔖 v0.63.0 [`e5cee98d`](https://github.com/lucodear/lucodear-icons/commit/e5cee98d)
 - feat: ✨ remove rust ferris full Icon Pack [`39f6fea2`](https://github.com/lucodear/lucodear-icons/commit/39f6fea2)
  
 #### [v0.62.0](https://github.com/lucodear/lucodear-icons/compare/v0.61.0...v0.62.0) 

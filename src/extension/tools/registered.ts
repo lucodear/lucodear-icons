@@ -1,4 +1,5 @@
 import { commands } from 'vscode';
+import { extensionName } from '../../core';
 import { activateIcons } from '../commands/activate';
 import { toggleExplorerArrows } from '../commands/explorerArrows';
 import { changeFileColor } from '../commands/fileColor';
@@ -25,5 +26,8 @@ const extensionCommands: { [commmand: string]: () => Promise<void> } = {
 
 export const registered = Object.keys(extensionCommands).map((commandName) => {
   const callCommand = () => extensionCommands[commandName]();
-  return commands.registerCommand(`lucodear-icons.${commandName}`, callCommand);
+  return commands.registerCommand(
+    `${extensionName}.${commandName}`,
+    callCommand
+  );
 });

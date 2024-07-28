@@ -4,6 +4,16 @@
 export const extensionName = 'lucodear-icons';
 
 /**
+ * Name of the extension publisher.
+ */
+export const extensionPublisher = 'lucaslabs';
+
+/**
+ * Key to identify the log event.
+ */
+export const logEventKey = `${extensionName}-log-event`;
+
+/**
  * Path where the icons are located.
  */
 export const iconFolderPath = './../icons/';

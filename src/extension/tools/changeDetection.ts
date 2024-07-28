@@ -39,7 +39,7 @@ export const detectConfigChanges = async (
 
   await renameIconFiles(config);
 
-  // #region 🍭 » lucode (changed to custom generateManifest)// #region 🍭 » lucode (changed to custom generateManifest)
+  // #region 🍭 » lucode (changed to custom generateManifest)
   const manifest = generateManifest(config);
   // #endregion
 

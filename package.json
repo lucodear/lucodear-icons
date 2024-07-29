@@ -3,6 +3,7 @@
   "displayName": "lucodear-icons",
   "description": "🍭 lucodear-icons » A PKief's 'Material Icons Theme' fork with my own custom additions. This was made for my personal use",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "precompile": "rimraf dist && bun run verify",
     "compile": "tsc -p ./",

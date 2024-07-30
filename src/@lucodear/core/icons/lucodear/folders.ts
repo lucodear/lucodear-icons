@@ -31,4 +31,8 @@ export const folders = lucodear('lucodear', [
     name: 'rustler',
     folderNames: ['rustler', 'rustlers'],
   },
+  {
+    name: 'singleaction',
+    folderNames: ['singleaction', 'single-action', 'sa'],
+  },
 ] satisfies LucodearFolderIcon[]);

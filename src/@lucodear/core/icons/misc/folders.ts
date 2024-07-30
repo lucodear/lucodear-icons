@@ -26,6 +26,17 @@ export const folders = lucodear('misc', [
     ],
   },
   {
+    name: 'cloudflare',
+    folderNames: [
+      'cloudflare',
+      'wrangler',
+      'cf',
+      'cloudflare-workers',
+      'cf-workers',
+      'wrangler-workers',
+    ],
+  },
+  {
     name: 'binance',
     looseFolderIcon: true,
   },
@@ -115,6 +126,11 @@ export const folders = lucodear('misc', [
   {
     name: 'idea',
     folderNames: ['idea', 'ideas', '.idea', '.ideas', '💡'],
+  },
+  {
+    // just a recolor of the upstream layout folder icon from sky blue to a brown-ish
+    name: 'layout',
+    folderNames: ['layout', 'layouts'],
   },
   {
     name: 'metadata',

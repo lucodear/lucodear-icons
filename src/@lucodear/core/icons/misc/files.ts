@@ -111,4 +111,9 @@ export const files: LucodearFileIcon[] = lucodear('misc', [
     ],
     light: true,
   },
+  {
+    name: 'wrangler',
+    fileNames: ['wrangler.toml'],
+    light: true,
+  },
 ] satisfies LucodearFileIcon[]);

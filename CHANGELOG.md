@@ -3,10 +3,22 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.1.0](https://github.com/lucodear/lucodear-icons/compare/v1.0.0...v1.1.0) 
+
+> July 31, 2024 
+
+- feat: ✨ design system folder icon [`50fd3b19`](https://github.com/lucodear/lucodear-icons/commit/50fd3b19)
+- feat: ✨ single-action icon, cloudflare/wrangler + react [`e915b942`](https://github.com/lucodear/lucodear-icons/commit/e915b942)
+- Add license field to package.json [`#2495`](https://github.com/lucodear/lucodear-icons/pull/2495)
+- ci: 🏷️ Add labels for PRs automatically [`#2490`](https://github.com/lucodear/lucodear-icons/pull/2490)
+- feat: ✨ new rust icon [`#2489`](https://github.com/lucodear/lucodear-icons/pull/2489)
+- Improve icon preview workflow [`#2485`](https://github.com/lucodear/lucodear-icons/pull/2485)
+ 
 #### [v1.0.0](https://github.com/lucodear/lucodear-icons/compare/v0.65.0...v1.0.0) 
 
 > July 28, 2024 
 
+- release: 🔖 v1.0.0 [`3ab8cffe`](https://github.com/lucodear/lucodear-icons/commit/3ab8cffe)
 - feat: ✨ cleanup and simplify @lucodear architecture [`6379f668`](https://github.com/lucodear/lucodear-icons/commit/6379f668)
 - Added labels for PR's [`#2487`](https://github.com/lucodear/lucodear-icons/pull/2487)
 - Changed the method of searching for a previous message to search for a hidden comment [`#2485`](https://github.com/lucodear/lucodear-icons/pull/2485)

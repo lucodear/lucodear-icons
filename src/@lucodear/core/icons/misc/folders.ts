@@ -15,6 +15,16 @@ export const folders = lucodear('misc', [
     folderNames: ['bin', 'binary', 'binaries', 'bins'],
   },
   {
+    name: 'design',
+    folderNames: [
+      'ds',
+      'design',
+      'design-system',
+      'design_system',
+      'designsystem',
+    ],
+  },
+  {
     name: 'calendar',
     folderNames: [
       'calendar',

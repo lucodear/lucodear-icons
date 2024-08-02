@@ -2,7 +2,7 @@
   "name": "lucodear-icons",
   "displayName": "lucodear-icons",
   "description": "🍭 lucodear-icons » A PKief's 'Material Icons Theme' fork with my own custom additions. This was made for my personal use",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "scripts": {
     "precompile": "rimraf dist && bun run verify",
@@ -52,16 +52,29 @@
     "color": "#11131c",
     "theme": "dark"
   },
-  "categories": ["Themes"],
-  "keywords": ["icons", "theme", "material", "icon-theme", "customization"],
-  "extensionKind": ["ui", "workspace"],
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "icons",
+    "theme",
+    "material",
+    "icon-theme",
+    "customization"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true
     },
     "virtualWorkspaces": true
   },
-  "activationEvents": ["onStartupFinished"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension/desktop/extension.cjs",
   "browser": "./dist/extension/web/extension.cjs",
   "module": "./dist/module/index.cjs",
@@ -220,7 +233,9 @@
               },
               "activeForPacks": {
                 "type": "array",
-                "default": ["angular"],
+                "default": [
+                  "angular"
+                ],
                 "description": "%configuration.customClones.activeForPacks%",
                 "items": {
                   "type": "string",
@@ -294,7 +309,11 @@
             "%configuration.folders.theme.classic%",
             "%configuration.folders.theme.none%"
           ],
-          "enum": ["specific", "classic", "none"]
+          "enum": [
+            "specific",
+            "classic",
+            "none"
+          ]
         },
         "lucodear-icons.folders.color": {
           "type": "string",
@@ -335,7 +354,11 @@
         "lucodear-icons.logLevel": {
           "type": "string",
           "default": "info",
-          "enum": ["info", "error", "debug"],
+          "enum": [
+            "info",
+            "error",
+            "debug"
+          ],
           "description": "%configuration.logLevel%"
         }
       }

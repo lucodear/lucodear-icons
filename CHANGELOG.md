@@ -3,10 +3,24 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.2.0](https://github.com/lucodear/lucodear-icons/compare/v1.1.0...v1.2.0) 
+
+> August 2, 2024 
+
+- feat: ✨ overriding mechanism [`#95`](https://github.com/lucodear/lucodear-icons/pull/95)
+- docs: 📝 fix broken links [`#2507`](https://github.com/lucodear/lucodear-icons/pull/2507)
+- Fix URL in CONTRIBUTING.md [`#2505`](https://github.com/lucodear/lucodear-icons/pull/2505)
+- Add 'distribution' to folder-dist [`#2500`](https://github.com/lucodear/lucodear-icons/pull/2500)
+- Added `jsr` icon [`#2493`](https://github.com/lucodear/lucodear-icons/pull/2493)
+- Improve icon review workflow [`#2499`](https://github.com/lucodear/lucodear-icons/pull/2499)
+- Improved hint comments [`#2496`](https://github.com/lucodear/lucodear-icons/pull/2496)
+- Add conditionally active custom clones [`#2498`](https://github.com/lucodear/lucodear-icons/pull/2498)
+ 
 #### [v1.1.0](https://github.com/lucodear/lucodear-icons/compare/v1.0.0...v1.1.0) 
 
 > July 31, 2024 
 
+- release: 🔖 v1.1.0 [`2c1f5659`](https://github.com/lucodear/lucodear-icons/commit/2c1f5659)
 - feat: ✨ design system folder icon [`50fd3b19`](https://github.com/lucodear/lucodear-icons/commit/50fd3b19)
 - feat: ✨ single-action icon, cloudflare/wrangler + react [`e915b942`](https://github.com/lucodear/lucodear-icons/commit/e915b942)
 - Add license field to package.json [`#2495`](https://github.com/lucodear/lucodear-icons/pull/2495)

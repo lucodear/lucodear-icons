@@ -171,6 +171,10 @@ export const folders = lucodear('misc', [
     folderNames: ['orm', 'orms'],
   },
   {
+    name: 'postcss',
+    folderNames: ['postcss'],
+  },
+  {
     name: 'provider',
     folderNames: [
       'provider',

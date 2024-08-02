@@ -8,13 +8,18 @@
 
 ## What I added
 
-Most of the main additions have already been merged into the [upstream repository](https://github.com/material-extensions/vscode-material-icon-theme) (icon cloning, pixel-perfect icons, etc); so, this repo now only contains the most opinionated icons that I've created for my own use.
+Most of the main additions have already been merged into the
+[upstream repository](https://github.com/material-extensions/vscode-material-icon-theme) (icon
+cloning, pixel-perfect icons, etc); so, this repo now only contains the most opinionated icons that
+we created for our projects.
 
 ## Architecture
 
 ### How does this extension plugs into the main one?
 
-This extension adds some icon "packs" that are independent from the main extension. They are located in the `/icons-lc` folder and organized in different subfolders (by language, framework, app, or whatever makes sense).
+This extension adds some icon "packs" that are independent from the main extension. They are located
+in the `/icons-lc` folder and organized in different subfolders (by language, framework, app, or
+whatever makes sense).
 
 Currently:
 
@@ -38,9 +43,31 @@ icons-lc
 
 This extensions adds:
 
-- a new generator called [`lucodearIconGenerator`](./core/generators/index.ts), that adds the icons from the `icons-lc` folder to the manifest.
+- a new generator called [`lucodearIconGenerator`](./core/generators/index.ts), that adds the icons
+  from the `icons-lc` folder to the manifest.
 - a new manifest generator: [`generateManifest`](core/generators/manifest.ts)
+- an override mechanism, used to override some configurations from the main extension:
+  - [`applyLucodearOverrides`](./core/generators/override/index.ts)
+  - [`fileIconsOverrides`](./core/overrides/file.ts)
+  - [`folderIconsOverrides`](./core/overrides/folder.ts)
 
-The `generateManifest` function is basically a copy of the main extension's `generateManifest` function, but after all the other generators are run, it runs the `lucodearIconGenerator` to add the icons from the `icons-lc` folder.
+The `generateManifest` function is basically a copy of the main extension's `generateManifest`
+function, but after all the other generators are run, it runs the `lucodearIconGenerator` to add the
+icons from the `icons-lc` folder.
 
-So, all changes left in the main extensions are basically replacing the original `generateManifest` function with the new one. There should be no other changes left.
+So, all changes left in the main extensions are basically replacing the original `generateManifest`
+function with the new one and getting the icons from `applyLucodearOverrides` instead of the
+original `fileIcons` and `folderIcons`.
+
+In all cases, when a change was made to the main extension, it was marked with a region comment like
+the following, so it's easy to find them:
+
+```ts
+// #region 🍭 » lucode (changed with custom generateManifest and overrides)
+const manifest = generateManifest();
+const [fileIcons, folderIcons] = applyLucodearOverrides(
+  originalFileIcons,
+  originalFolderIcons
+);
+// #endregion
+```

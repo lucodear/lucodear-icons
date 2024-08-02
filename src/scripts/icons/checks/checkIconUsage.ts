@@ -1,18 +1,26 @@
 import { readdir } from 'node:fs';
 import { join, parse } from 'node:path';
 
+import { applyLucodearOverrides } from '../../../@lucodear/core/generators/override';
 import {
   type DefaultIcon,
   type FolderIcon,
   type FolderTheme,
-  fileIcons,
-  folderIcons,
   highContrastColorFileEnding,
   languageIcons,
   lightColorFileEnding,
   openedFolder,
+  fileIcons as originalFileIcons,
+  folderIcons as originalFolderIcons,
 } from '../../../core';
 import { green, red } from '../../helpers/painter';
+
+// #region 🍭 » lucode (take overrides into account)
+const [fileIcons, folderIcons] = applyLucodearOverrides(
+  originalFileIcons,
+  originalFolderIcons
+);
+// #endregion
 
 /**
  * Defines the folder where all icon files are located.

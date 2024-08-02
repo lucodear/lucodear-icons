@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.2.1](https://github.com/lucodear/lucodear-icons/compare/v1.2.0...v1.2.1) 
+
+> August 2, 2024 
+
+- feat: ✨ postcss folder [`#96`](https://github.com/lucodear/lucodear-icons/pull/96)
+ 
 #### [v1.2.0](https://github.com/lucodear/lucodear-icons/compare/v1.1.0...v1.2.0) 
 
 > August 2, 2024 
 
+- release: 🔖 v1.2.0 [`abf40f86`](https://github.com/lucodear/lucodear-icons/commit/abf40f86)
 - feat: ✨ overriding mechanism [`#95`](https://github.com/lucodear/lucodear-icons/pull/95)
 - docs: 📝 fix broken links [`#2507`](https://github.com/lucodear/lucodear-icons/pull/2507)
 - Fix URL in CONTRIBUTING.md [`#2505`](https://github.com/lucodear/lucodear-icons/pull/2505)

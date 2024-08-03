@@ -25,13 +25,13 @@ Currently:
 
 ```
 icons-lc
-  ├── ai         # contains icons related to Artificial Intelligence
-  ├── lucodear   # contains icons related to lucodear projects
-  ├── misc       # contains miscellaneous icons *
-  ├── python     # contains icons related to Python and the lucodear's Pest framework
-  ├── react      # contains icons related to React, different from the ones in the main extension
-  ├── rust       # contains icons related to Rust, different from the ones in the main extension (including ferris packs)
-  └── typescript # contains icons related to TypeScript, different from the ones in the main extension
+  ├── ai       # contains icons related to Artificial Intelligence
+  ├── lucodear # contains icons related to lucodear projects
+  ├── misc     # contains miscellaneous icons *
+  ├── python   # contains icons related to Python and the lucodear's Pest framework
+  ├── react    # contains icons related to React, different from the ones in the main extension
+  ├── rust     # contains icons related to Rust, different from the ones in the main extension (including ferris packs)
+  └── node     # contains icons related to ts and js, different from the ones in the main extension
 ```
 
 \* The `misc` folder contains:

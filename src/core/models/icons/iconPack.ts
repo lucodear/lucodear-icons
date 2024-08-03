@@ -15,6 +15,7 @@ export enum IconPack {
   Pest = 'pest',
   RustFerris = 'rust_ferris',
   RustFerrisMinimal = 'rust_ferris_minimal',
+  CloudFlare = 'cloudflare',
   // #endregion
 }
 

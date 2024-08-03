@@ -1,3 +1,4 @@
+import { IconPack } from '../../../../core';
 import type { LucodearFolderIcon } from '../../models';
 import { lucodear } from '../utils';
 
@@ -45,6 +46,11 @@ export const folders = lucodear('misc', [
       'cf-workers',
       'wrangler-workers',
     ],
+  },
+  {
+    name: 'cloudflare',
+    enabledFor: [IconPack.CloudFlare],
+    folderNames: ['functions'],
   },
   {
     name: 'binance',

@@ -3,17 +3,17 @@ import type { LucodearFileIcons, LucodearFolderTheme } from '../models';
 import * as ai from './ai';
 import * as lucodear from './lucodear';
 import * as misc from './misc';
+import * as node from './node';
 import { folderPatches } from './patches';
 import * as python from './python';
 import * as react from './react';
 import * as rust from './rust';
-import * as ts from './typescript';
 
 /** Defines file icons */
 export const lucodearFileIcons: LucodearFileIcons = {
   icons: [
     ...misc.files,
-    ...ts.files,
+    ...node.files,
     ...lucodear.files,
     ...python.files,
     ...react.files,

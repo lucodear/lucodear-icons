@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.3.0](https://github.com/lucodear/lucodear-icons/compare/v1.2.1...v1.3.0) 
+
+> August 3, 2024 
+
+- feat: ✨ cloudflare icon pack [`#97`](https://github.com/lucodear/lucodear-icons/pull/97)
+ 
 #### [v1.2.1](https://github.com/lucodear/lucodear-icons/compare/v1.2.0...v1.2.1) 
 
 > August 2, 2024 
 
+- release: 🔖 v1.2.1 [`0d9c057b`](https://github.com/lucodear/lucodear-icons/commit/0d9c057b)
 - feat: ✨ postcss folder [`#96`](https://github.com/lucodear/lucodear-icons/pull/96)
  
 #### [v1.2.0](https://github.com/lucodear/lucodear-icons/compare/v1.1.0...v1.2.0) 

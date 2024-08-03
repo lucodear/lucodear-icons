@@ -1,3 +1,4 @@
+import { IconPack } from '../../../../core';
 import type { LucodearFileIcon } from '../../models';
 import { lucodear } from '../utils';
 
@@ -7,7 +8,8 @@ const namext = (names: string[]) => ({
   fileExtensions: names,
 });
 
-export const files = lucodear('typescript', [
+/** Defines the icons that are only available by default. */
+export const typescript = lucodear('node', [
   {
     name: 'ts-abstract',
     ...namext(['abstract.ts', 'abs.ts', 'abstracts.ts']),
@@ -69,3 +71,18 @@ export const files = lucodear('typescript', [
     ...namext(['util.ts', 'utils.ts', 'helper.ts', 'helpers.ts']),
   },
 ] satisfies LucodearFileIcon[]);
+
+/** Defines the icons that are only available if the `IconPack.CloudFlare` is enabled. */
+export const cloudflare = lucodear('node', IconPack.CloudFlare, [
+  {
+    name: 'ts-cloudflare-function',
+    fileExtensions: ['api/ts', 'functions/ts'],
+  },
+  {
+    name: 'js-cloudflare-function',
+    fileExtensions: ['api/js', 'functions/js'],
+  },
+] satisfies LucodearFileIcon[]);
+
+/** Defines all the file icons from the node lucodear pack */
+export const files: LucodearFileIcon[] = [...typescript, ...cloudflare];

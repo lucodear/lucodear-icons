@@ -161,6 +161,7 @@
             "%configuration.activeIconPack.pest%",
             "%configuration.activeIconPack.rust_ferris%",
             "%configuration.activeIconPack.rust_ferris_minimal%",
+            "%configuration.activeIconPack.cloudflare%",
             "%configuration.activeIconPack.none%"
           ],
           "enum": [
@@ -175,6 +176,7 @@
             "pest",
             "rust_ferris",
             "rust_ferris_minimal",
+            "cloudflare",
             "none"
           ]
         },

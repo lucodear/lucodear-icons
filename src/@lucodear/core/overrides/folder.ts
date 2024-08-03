@@ -7,5 +7,5 @@ import { type FolderTheme } from '../../../core';
  * [folderIcons.ts](./../../../core/icons/folderIcons.ts)
  */
 export const folderIconsOverrides: Partial<FolderTheme> = {
-  icons: [],
+  icons: [{ name: 'folder-node', folderNames: ['node', 'nodejs'] }],
 };

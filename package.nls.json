@@ -34,6 +34,7 @@
   "configuration.activeIconPack.pest": "Icons for pest-py.",
   "configuration.activeIconPack.rust_ferris": "Rust icons variant with Ferris the crab replacing the Rust logo.",
   "configuration.activeIconPack.rust_ferris_minimal": "Rust icons variant with Ferris the crab replacing the Rust logo in special Rust files.",
+  "configuration.activeIconPack.cloudflare": "Icons for working with Cloudflare stuff.",
   "configuration.activeIconPack.none": "No icon pack enabled.",
   "configuration.folders.theme": "Set the type for the folder icons.",
   "configuration.folders.theme.specific": "Select specific folder icons.",

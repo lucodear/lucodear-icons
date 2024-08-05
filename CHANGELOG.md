@@ -3,10 +3,23 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.5.0](https://github.com/lucodear/lucodear-icons/compare/v1.4.0...v1.5.0) 
+
+> August 5, 2024 
+
+- ci: 🔄 attestations permission [`b54c42a7`](https://github.com/lucodear/lucodear-icons/commit/b54c42a7)
+- ci: 🔄 attestations permission [`099b248c`](https://github.com/lucodear/lucodear-icons/commit/099b248c)
+- ci: 🔄 add predicate to attestation step [`0ec47ae5`](https://github.com/lucodear/lucodear-icons/commit/0ec47ae5)
+- ci: 🔄 add attesation predicate type [`2553c5b8`](https://github.com/lucodear/lucodear-icons/commit/2553c5b8)
+- Feat: Drizzle ORM [`#2127`](https://github.com/lucodear/lucodear-icons/pull/2127)
+- Show nuxt folder icon without pack [`1c8513c9`](https://github.com/lucodear/lucodear-icons/commit/1c8513c9)
+- build(deps): bump actions/attest in the github-actions group [`#2517`](https://github.com/lucodear/lucodear-icons/pull/2517)
+ 
 #### [v1.4.0](https://github.com/lucodear/lucodear-icons/compare/v1.3.0...v1.4.0) 
 
 > August 5, 2024 
 
+- release: 🔖 v1.4.0 [`3d720100`](https://github.com/lucodear/lucodear-icons/commit/3d720100)
 - feat(node): ✨ typescript & javascript script icons [`#98`](https://github.com/lucodear/lucodear-icons/pull/98)
 - Added folder-icon for flutter [`#2511`](https://github.com/lucodear/lucodear-icons/pull/2511)
 - Made pixel-perfect (almost) icons [`#2449`](https://github.com/lucodear/lucodear-icons/pull/2449)

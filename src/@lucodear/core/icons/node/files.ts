@@ -8,6 +8,43 @@ const namext = (names: string[]) => ({
   fileExtensions: names,
 });
 
+const script = (
+  ext: 'js' | 'ts',
+  xfixes: string[],
+  name?: string[]
+): {
+  fileNames: string[];
+  fileExtensions: string[];
+} => {
+  const exts = ext === 'js' ? ['js', 'mjs', 'cjs'] : ['ts', 'mts', 'cts'];
+  return {
+    fileNames: xfixes.flatMap(
+      (xfix) =>
+        exts
+          .flatMap((ext) => {
+            if (name && name.length) {
+              return name.flatMap((n) => [
+                `${n}.${xfix}.${ext}`,
+                `${xfix}/${n}.${ext}`,
+              ]);
+            }
+            return [`${xfix}.${ext}`];
+          })
+          .filter(Boolean) as string[]
+    ),
+    fileExtensions: xfixes.flatMap(
+      (xfix) =>
+        exts
+          .flatMap((ext) => {
+            if (name && name.length) {
+              return name.flatMap((n) => [`${n}.${xfix}.${ext}`]);
+            }
+            return [`${xfix}/${ext}`, `${xfix}.${ext}`];
+          })
+          .filter(Boolean) as string[]
+    ),
+  };
+};
 /** Defines the icons that are only available by default. */
 export const typescript = lucodear('node', [
   {
@@ -84,5 +121,68 @@ export const cloudflare = lucodear('node', IconPack.CloudFlare, [
   },
 ] satisfies LucodearFileIcon[]);
 
+export const scripts = lucodear('node', [
+  {
+    name: 'js-script',
+    ...script('js', ['script', 'scripts']),
+  },
+  {
+    name: 'ts-script',
+    ...script('ts', ['script', 'scripts']),
+  },
+  {
+    name: 'js-script-build',
+    ...script('js', ['script', 'scripts'], ['build', 'compile', 'bundle']),
+  },
+  {
+    name: 'ts-script-build',
+    ...script('ts', ['script', 'scripts'], ['build', 'compile', 'bundle']),
+  },
+  {
+    name: 'js-script-dev',
+    ...script('js', ['script', 'scripts'], ['dev', 'development', 'serve']),
+  },
+  {
+    name: 'ts-script-dev',
+    ...script('ts', ['script', 'scripts'], ['dev', 'development', 'serve']),
+  },
+  {
+    name: 'js-script-preview',
+    ...script('js', ['script', 'scripts'], ['preview']),
+  },
+  {
+    name: 'ts-script-preview',
+    ...script('ts', ['script', 'scripts'], ['preview']),
+  },
+  {
+    name: 'js-script-release',
+    ...script(
+      'js',
+      ['script', 'scripts'],
+      ['release', 'publish', 'version-bump']
+    ),
+  },
+  {
+    name: 'ts-script-release',
+    ...script(
+      'ts',
+      ['script', 'scripts'],
+      ['release', 'publish', 'version-bump']
+    ),
+  },
+  {
+    name: 'js-script-changelog',
+    ...script('js', ['script', 'scripts'], ['changelog', 'chg-log']),
+  },
+  {
+    name: 'ts-script-changelog',
+    ...script('ts', ['script', 'scripts'], ['changelog', 'chg-log']),
+  },
+]);
+
 /** Defines all the file icons from the node lucodear pack */
-export const files: LucodearFileIcon[] = [...typescript, ...cloudflare];
+export const files: LucodearFileIcon[] = [
+  ...typescript,
+  ...cloudflare,
+  ...scripts,
+];

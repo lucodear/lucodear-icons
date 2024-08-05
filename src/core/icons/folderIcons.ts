@@ -20,7 +20,15 @@ export const folderIcons: FolderTheme[] = [
       },
       {
         name: 'folder-dist',
-        folderNames: ['dist', 'out', 'build', 'release', 'bin', 'distribution'],
+        folderNames: [
+          'dist',
+          'out',
+          'output',
+          'build',
+          'release',
+          'bin',
+          'distribution',
+        ],
       },
       {
         name: 'folder-css',
@@ -714,7 +722,6 @@ export const folderIcons: FolderTheme[] = [
       {
         name: 'folder-nuxt',
         folderNames: ['nuxt'],
-        enabledFor: [IconPack.Vuex, IconPack.Vue],
       },
       {
         name: 'folder-vue-directives',
@@ -879,6 +886,10 @@ export const folderIcons: FolderTheme[] = [
       {
         name: 'folder-taskfile',
         folderNames: ['taskfile', 'taskfiles'],
+      },
+      {
+        name: 'folder-drizzle',
+        folderNames: ['drizzle'],
       },
       {
         name: 'folder-cloudflare',

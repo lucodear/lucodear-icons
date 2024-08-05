@@ -68,6 +68,7 @@ jobs:
         with:
           subject-path: '${{ env.NAME }}-${{ env.VERSION }}.vsix'
           predicate-type: 'https://in-toto.io/attestation/release'
+          predicate: '{}'
 
       - name: Push tags 📌
         run: git push

@@ -14,7 +14,9 @@ on:
           - patch
 
 permissions:
+  id-token: write
   contents: read
+  attestations: write
 
 jobs:
   release:

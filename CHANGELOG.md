@@ -3,10 +3,22 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.4.0](https://github.com/lucodear/lucodear-icons/compare/v1.3.0...v1.4.0) 
+
+> August 5, 2024 
+
+- feat(node): ✨ typescript & javascript script icons [`#98`](https://github.com/lucodear/lucodear-icons/pull/98)
+- Added folder-icon for flutter [`#2511`](https://github.com/lucodear/lucodear-icons/pull/2511)
+- Made pixel-perfect (almost) icons [`#2449`](https://github.com/lucodear/lucodear-icons/pull/2449)
+- Added artifact attestation [`#2486`](https://github.com/lucodear/lucodear-icons/pull/2486)
+- Added folder-icon about development. [`#2501`](https://github.com/lucodear/lucodear-icons/pull/2501)
+- Add Phorm AI badge [`#2508`](https://github.com/lucodear/lucodear-icons/pull/2508)
+ 
 #### [v1.3.0](https://github.com/lucodear/lucodear-icons/compare/v1.2.1...v1.3.0) 
 
 > August 3, 2024 
 
+- release: 🔖 v1.3.0 [`83aad1f4`](https://github.com/lucodear/lucodear-icons/commit/83aad1f4)
 - feat: ✨ cloudflare icon pack [`#97`](https://github.com/lucodear/lucodear-icons/pull/97)
  
 #### [v1.2.1](https://github.com/lucodear/lucodear-icons/compare/v1.2.0...v1.2.1) 

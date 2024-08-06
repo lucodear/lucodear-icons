@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.5.1](https://github.com/lucodear/lucodear-icons/compare/v1.5.0...v1.5.1) 
+
+> August 6, 2024 
+
+- feat(ts): ✨ typescript specific icons as folder/ext [`c4807ae3`](https://github.com/lucodear/lucodear-icons/commit/c4807ae3)
+ 
 #### [v1.5.0](https://github.com/lucodear/lucodear-icons/compare/v1.4.0...v1.5.0) 
 
 > August 5, 2024 
 
+- release: 🔖 v1.5.0 [`3eb98273`](https://github.com/lucodear/lucodear-icons/commit/3eb98273)
 - ci: 🔄 attestations permission [`b54c42a7`](https://github.com/lucodear/lucodear-icons/commit/b54c42a7)
 - ci: 🔄 attestations permission [`099b248c`](https://github.com/lucodear/lucodear-icons/commit/099b248c)
 - ci: 🔄 add predicate to attestation step [`0ec47ae5`](https://github.com/lucodear/lucodear-icons/commit/0ec47ae5)

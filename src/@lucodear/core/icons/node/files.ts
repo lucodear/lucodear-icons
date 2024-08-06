@@ -3,9 +3,12 @@ import type { LucodearFileIcon } from '../../models';
 import { lucodear } from '../utils';
 
 /** name + extensions */
-const namext = (names: string[]) => ({
-  fileNames: names,
-  fileExtensions: names,
+const namext = (names: string[], asFolder = false) => ({
+  fileNames: names.flatMap((name) => `${name}.ts`),
+  fileExtensions: names.flatMap((name) => [
+    `${name}.ts`,
+    ...(asFolder ? [`${name}/ts`] : []),
+  ]),
 });
 
 const script = (
@@ -49,63 +52,59 @@ const script = (
 export const typescript = lucodear('node', [
   {
     name: 'ts-abstract',
-    ...namext(['abstract.ts', 'abs.ts', 'abstracts.ts']),
+    ...namext(['abstract', 'abs', 'abstracts']),
   },
   {
     name: 'ts-app',
-    ...namext(['app.ts', 'apps.ts', 'application.ts', 'applications.ts']),
+    ...namext(['app', 'apps', 'application', 'applications']),
   },
   {
     name: 'ts-common',
-    ...namext(['common.ts', 'shared.ts', 'commons.ts']),
+    ...namext(['common', 'shared', 'commons'], true),
   },
   {
     name: 'ts-constants',
-    ...namext(['constants.ts', 'const.ts', 'constant.ts']),
+    ...namext(['constants', 'const', 'constant']),
   },
   {
     name: 'ts-dto',
-    ...namext(['dto.ts', 'dtos.ts']),
+    ...namext(['dto', 'dtos'], true),
   },
   {
     name: 'ts-factory',
-    ...namext(['factory.ts', 'fact.ts']),
+    ...namext(['factory', 'fact']),
   },
   {
     name: 'ts-index',
-    fileNames: ['index.ts'],
+    fileNames: ['index'],
   },
   {
     name: 'ts-interface',
-    ...namext(['interface.ts', 'interfaces.ts']),
+    ...namext(['interface', 'interfaces'], true),
   },
   {
     name: 'ts-main',
-    ...namext(['main.ts']),
+    ...namext(['main']),
   },
   {
     name: 'ts-model',
-    ...namext(['model.ts', 'models.ts', 'entity.ts', 'entities.ts']),
+    ...namext(['model', 'models', 'entity', 'entities'], true),
   },
   {
     name: 'ts-service',
-    ...namext([
-      'service.ts',
-      'services.ts',
-      'provider.ts',
-      'providers.ts',
-      'svc.ts',
-      'svcs.ts',
-    ]),
+    ...namext(
+      ['service', 'services', 'provider', 'providers', 'svc', 'svcs'],
+      true
+    ),
   },
   {
     name: 'ts-types',
-    ...namext(['types.ts', 'type.ts']),
+    ...namext(['types', 'type'], true),
   },
   {
     name: 'ts-utils',
     light: true,
-    ...namext(['util.ts', 'utils.ts', 'helper.ts', 'helpers.ts']),
+    ...namext(['util', 'utils', 'helper', 'helpers'], true),
   },
 ] satisfies LucodearFileIcon[]);
 

@@ -495,6 +495,7 @@ export const folderIcons: FolderTheme[] = [
           'toolbox',
           'toolboxes',
           'tooling',
+          'devtools',
         ],
       },
       { name: 'folder-helper', folderNames: ['helpers', 'helper'] },
@@ -899,6 +900,11 @@ export const folderIcons: FolderTheme[] = [
         name: 'folder-seeders',
         folderNames: ['seeds', 'seeders', 'seed', 'seeding'],
       },
+      {
+        name: 'folder-store',
+        folderNames: ['store', 'stores'],
+        enabledFor: [IconPack.Angular],
+      },
       { name: 'folder-bicep', folderNames: ['bicep'] },
       { name: 'folder-snapcraft', folderNames: ['snap', 'snapcraft'] },
       {
@@ -910,6 +916,7 @@ export const folderIcons: FolderTheme[] = [
         },
       },
       { name: 'folder-flutter', folderNames: ['flutter'] },
+      { name: 'folder-snippet', folderNames: ['snippet', 'snippets'] },
     ],
   },
   {

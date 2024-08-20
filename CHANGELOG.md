@@ -3,10 +3,18 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.5.3](https://github.com/lucodear/lucodear-icons/compare/v1.5.2...v1.5.3) 
+
+> August 20, 2024 
+
+- feat(py): ✨ update ruff file with new logo [`2110ca4b`](https://github.com/lucodear/lucodear-icons/commit/2110ca4b)
+- Add remote(s) folder icon association [`4a3c324f`](https://github.com/lucodear/lucodear-icons/commit/4a3c324f)
+ 
 #### [v1.5.2](https://github.com/lucodear/lucodear-icons/compare/v1.5.1...v1.5.2) 
 
 > August 12, 2024 
 
+- release: 🔖 v1.5.2 [`dc04ec1f`](https://github.com/lucodear/lucodear-icons/commit/dc04ec1f)
 - feat: ✨ add "media" to folder-images [`36a2f983`](https://github.com/lucodear/lucodear-icons/commit/36a2f983)
 - Added emojis in issue template names [`#2532`](https://github.com/lucodear/lucodear-icons/pull/2532)
 - Collapse the walkthrough of coderabbit [`c61a8d1e`](https://github.com/lucodear/lucodear-icons/commit/c61a8d1e)

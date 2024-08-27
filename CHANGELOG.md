@@ -3,10 +3,24 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.6.0](https://github.com/lucodear/lucodear-icons/compare/v1.5.3...v1.6.0) 
+
+> August 27, 2024 
+
+- feat: ✨ Z icons [`f3008fae`](https://github.com/lucodear/lucodear-icons/commit/f3008fae)
+- build(deps): bump actions/attest-build-provenance [`#2554`](https://github.com/lucodear/lucodear-icons/pull/2554)
+- Update marketplace message capitalization [`#2553`](https://github.com/lucodear/lucodear-icons/pull/2553)
+- Added coderabbit icon [`#2549`](https://github.com/lucodear/lucodear-icons/pull/2549)
+- chore: Improve branch protection [`7112da93`](https://github.com/lucodear/lucodear-icons/commit/7112da93)
+- Added `gemini-ai` icon [`#2548`](https://github.com/lucodear/lucodear-icons/pull/2548)
+- feat: ✨ gitea folder icon [`#2552`](https://github.com/lucodear/lucodear-icons/pull/2552)
+- Changed issue templates order [`#2546`](https://github.com/lucodear/lucodear-icons/pull/2546)
+ 
 #### [v1.5.3](https://github.com/lucodear/lucodear-icons/compare/v1.5.2...v1.5.3) 
 
 > August 20, 2024 
 
+- release: 🔖 v1.5.3 [`1e08fa04`](https://github.com/lucodear/lucodear-icons/commit/1e08fa04)
 - feat(py): ✨ update ruff file with new logo [`2110ca4b`](https://github.com/lucodear/lucodear-icons/commit/2110ca4b)
 - Add remote(s) folder icon association [`4a3c324f`](https://github.com/lucodear/lucodear-icons/commit/4a3c324f)
  

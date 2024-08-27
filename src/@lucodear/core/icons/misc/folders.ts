@@ -289,6 +289,10 @@ export const folders = lucodear('misc', [
     ],
   },
   {
+    name: 'prompts',
+    folderNames: ['prompt', 'prompts'],
+  },
+  {
     name: 'tui',
     folderNames: ['tui', 'terminal-ui', 'terminalui', 'terminal-ui'],
   },

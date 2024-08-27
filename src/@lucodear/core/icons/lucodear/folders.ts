@@ -35,4 +35,16 @@ export const folders = lucodear('lucodear', [
     name: 'singleaction',
     folderNames: ['singleaction', 'single-action', 'sa'],
   },
+  {
+    name: 'zai',
+    looseFolderIcon: true,
+  },
+  {
+    name: 'zai-core',
+    looseFolderIcon: true,
+  },
+  {
+    name: 'zai-common',
+    looseFolderIcon: true,
+  },
 ] satisfies LucodearFolderIcon[]);

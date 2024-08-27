@@ -3,10 +3,18 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.6.1](https://github.com/lucodear/lucodear-icons/compare/v1.6.0...v1.6.1) 
+
+> August 27, 2024 
+
+- fix: 🚑 prompt folder icon config [`e1291861`](https://github.com/lucodear/lucodear-icons/commit/e1291861)
+- feat: ✨ prompts folder [`41896007`](https://github.com/lucodear/lucodear-icons/commit/41896007)
+ 
 #### [v1.6.0](https://github.com/lucodear/lucodear-icons/compare/v1.5.3...v1.6.0) 
 
 > August 27, 2024 
 
+- release: 🔖 v1.6.0 [`e9f8be57`](https://github.com/lucodear/lucodear-icons/commit/e9f8be57)
 - feat: ✨ Z icons [`f3008fae`](https://github.com/lucodear/lucodear-icons/commit/f3008fae)
 - build(deps): bump actions/attest-build-provenance [`#2554`](https://github.com/lucodear/lucodear-icons/pull/2554)
 - Update marketplace message capitalization [`#2553`](https://github.com/lucodear/lucodear-icons/pull/2553)

@@ -3,10 +3,18 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.6.2](https://github.com/lucodear/lucodear-icons/compare/v1.6.1...v1.6.2) 
+
+> August 28, 2024 
+
+- refactor: 🔨 move prompts to ai pack [`#103`](https://github.com/lucodear/lucodear-icons/pull/103)
+- Add icon association for UNLICENSE files [`#2556`](https://github.com/lucodear/lucodear-icons/pull/2556)
+ 
 #### [v1.6.1](https://github.com/lucodear/lucodear-icons/compare/v1.6.0...v1.6.1) 
 
 > August 27, 2024 
 
+- release: 🔖 v1.6.1 [`92748cfd`](https://github.com/lucodear/lucodear-icons/commit/92748cfd)
 - fix: 🚑 prompt folder icon config [`e1291861`](https://github.com/lucodear/lucodear-icons/commit/e1291861)
 - feat: ✨ prompts folder [`41896007`](https://github.com/lucodear/lucodear-icons/commit/41896007)
  

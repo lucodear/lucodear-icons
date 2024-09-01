@@ -79,6 +79,12 @@ const pestPack = lucodear('python', IconPack.Pest, [
   ...pyfile('model', ['models', 'entities', 'entity'], false, 'pest-'),
   ...pyfile('module', ['modules', 'mod', 'domain', 'domains'], false, 'pest-'),
   ...pyfile(
+    'exception',
+    ['exceptions', 'ex', 'errors', 'err', 'errs', 'error', 'exc', 'faults'],
+    false,
+    'pest-'
+  ),
+  ...pyfile(
     'provider',
     ['providers', 'infra', 'infrastructure', 'infrastructures'],
     false,

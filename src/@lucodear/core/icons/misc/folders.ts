@@ -157,6 +157,10 @@ export const folders = lucodear('misc', [
     folderNames: ['metadata', 'meta', 'data', 'tags', 'tag'],
   },
   {
+    name: 'mic',
+    folderNames: ['mic', 'microphone', 'speech', 'speech-to-text', 's2t'],
+  },
+  {
     name: 'middleware',
     folderNames: ['middleware', 'middlewares', 'mdw'],
   },

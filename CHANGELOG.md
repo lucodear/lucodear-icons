@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.9.0](https://github.com/lucodear/lucodear-icons/compare/v1.8.0...v1.9.0) 
+
+> September 4, 2024 
+
+- feat: ✨ mic folder [`d4ea146c`](https://github.com/lucodear/lucodear-icons/commit/d4ea146c)
+ 
 #### [v1.8.0](https://github.com/lucodear/lucodear-icons/compare/v1.7.0...v1.8.0) 
 
 > September 1, 2024 
 
+- release: 🔖 v1.8.0 [`b182c71d`](https://github.com/lucodear/lucodear-icons/commit/b182c71d)
 - feat: ✨ pest python exceptions file [`98673484`](https://github.com/lucodear/lucodear-icons/commit/98673484)
  
 #### [v1.7.0](https://github.com/lucodear/lucodear-icons/compare/v1.6.2...v1.7.0) 

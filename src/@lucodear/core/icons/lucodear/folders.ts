@@ -23,6 +23,10 @@ export const folders = lucodear('lucodear', [
     ],
   },
   {
+    name: 'oxidoc',
+    folderNames: ['oxidoc'],
+  },
+  {
     name: 'pest',
     folderNames: ['pest'],
     light: true,

@@ -3,10 +3,31 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.10.0](https://github.com/lucodear/lucodear-icons/compare/v1.9.0...v1.10.0) 
+
+> September 11, 2024 
+
+- feat: ✨ oxidoc folder [`5ae1b1ba`](https://github.com/lucodear/lucodear-icons/commit/5ae1b1ba)
+- build(deps): bump the github-actions group with 2 updates [`#2583`](https://github.com/lucodear/lucodear-icons/pull/2583)
+- feat: ✨ .clang-format-ignore file icon [`#2580`](https://github.com/lucodear/lucodear-icons/pull/2580)
+- Added taze configuration file icon [`#2577`](https://github.com/lucodear/lucodear-icons/pull/2577)
+- added favicons folder icon [`#2578`](https://github.com/lucodear/lucodear-icons/pull/2578)
+- Feat: added sway icon [`#2573`](https://github.com/lucodear/lucodear-icons/pull/2573)
+- added src-tauri folder icon [`#2567`](https://github.com/lucodear/lucodear-icons/pull/2567)
+- refactor: ♻️ Improve scripts in `package.json` [`#2569`](https://github.com/lucodear/lucodear-icons/pull/2569)
+- Added freemarker icon [`#2396`](https://github.com/lucodear/lucodear-icons/pull/2396)
+- Add nest interceptor icon [`#2572`](https://github.com/lucodear/lucodear-icons/pull/2572)
+- Remove coderabbit config [`9f57e5cc`](https://github.com/lucodear/lucodear-icons/commit/9f57e5cc)
+- feat: ✨ .markdownlintignore file icon [`#2565`](https://github.com/lucodear/lucodear-icons/pull/2565)
+- docs: 📝 fix broken links in pull_request_template [`#2566`](https://github.com/lucodear/lucodear-icons/pull/2566)
+- feat: ✨ github actions workflow file icon [`#2559`](https://github.com/lucodear/lucodear-icons/pull/2559)
+- duc Binary file format [`#2212`](https://github.com/lucodear/lucodear-icons/pull/2212)
+ 
 #### [v1.9.0](https://github.com/lucodear/lucodear-icons/compare/v1.8.0...v1.9.0) 
 
 > September 4, 2024 
 
+- release: 🔖 v1.9.0 [`9acd058e`](https://github.com/lucodear/lucodear-icons/commit/9acd058e)
 - feat: ✨ mic folder [`d4ea146c`](https://github.com/lucodear/lucodear-icons/commit/d4ea146c)
  
 #### [v1.8.0](https://github.com/lucodear/lucodear-icons/compare/v1.7.0...v1.8.0) 

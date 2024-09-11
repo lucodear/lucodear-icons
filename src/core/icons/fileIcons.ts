@@ -266,6 +266,7 @@ export const fileIcons: FileIcons = {
         '.yardopts',
         'manifest.mf',
         '.clang-format',
+        '.clang-format-ignore',
         '.clang-tidy',
         '.conf',
       ],
@@ -1832,6 +1833,15 @@ export const fileIcons: FileIcons = {
       fileExtensions: ['resolver.ts', 'resolver.js'],
       enabledFor: [IconPack.Nest],
     },
+    {
+      name: 'nest-interceptor',
+      clone: {
+        base: 'nest',
+        color: 'orange-500',
+      },
+      fileExtensions: ['interceptor.ts', 'interceptor.js'],
+      enabledFor: [IconPack.Nest],
+    },
     { name: 'moon', fileNames: ['moon.yml'] },
     { name: 'moonscript', fileExtensions: ['moon'] },
     { name: 'percy', fileNames: ['.percy.yml'] },
@@ -2013,6 +2023,11 @@ export const fileIcons: FileIcons = {
     { name: 'replit', fileNames: ['.replit'] },
     { name: 'rescript', fileExtensions: ['res'] },
     { name: 'rescript-interface', fileExtensions: ['resi'] },
+    {
+      name: 'duc',
+      fileNames: ['duc.fbs'],
+      fileExtensions: ['duc'],
+    },
     {
       name: 'snowpack',
       fileNames: [
@@ -2538,6 +2553,10 @@ export const fileIcons: FileIcons = {
       fileNames: ['.clangd'],
     },
     {
+      name: 'freemarker',
+      fileExtensions: ['ftl'],
+    },
+    {
       name: 'markdownlint',
       fileNames: [
         '.markdownlint.json',
@@ -2548,6 +2567,7 @@ export const fileIcons: FileIcons = {
         '.markdownlint-cli2.yaml',
         '.markdownlint-cli2.cjs',
         '.markdownlint-cli2.mjs',
+        '.markdownlintignore',
       ],
     },
     {
@@ -2587,6 +2607,16 @@ export const fileIcons: FileIcons = {
     {
       name: 'gemini-ai',
       fileNames: ['.aiexclude'],
+    },
+    {
+      name: 'taze',
+      patterns: {
+        'taze.config': FileNamePattern.Ecmascript,
+      },
+    },
+    {
+      name: 'sway',
+      fileExtensions: ['sw'],
     },
   ]),
 };

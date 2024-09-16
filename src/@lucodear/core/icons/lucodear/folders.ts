@@ -3,6 +3,10 @@ import { lucodear } from '../utils';
 
 export const folders = lucodear('lucodear', [
   {
+    name: 'coco',
+    folderNames: ['coco'],
+  },
+  {
     name: 'kurv',
     folderNames: ['kurv'],
     light: true,

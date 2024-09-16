@@ -3,10 +3,20 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.11.0](https://github.com/lucodear/lucodear-icons/compare/v1.10.0...v1.11.0) 
+
+> September 16, 2024 
+
+- feat: ✨ coco folder icon [`80faf6ca`](https://github.com/lucodear/lucodear-icons/commit/80faf6ca)
+- build(deps): bump actions/create-github-app-token [`#2591`](https://github.com/lucodear/lucodear-icons/pull/2591)
+- Add `ts`, `cjs` ext for `quasar` [`#2590`](https://github.com/lucodear/lucodear-icons/pull/2590)
+- Added icon for `wxt.config.ts` file 🧩 [`#2576`](https://github.com/lucodear/lucodear-icons/pull/2576)
+ 
 #### [v1.10.0](https://github.com/lucodear/lucodear-icons/compare/v1.9.0...v1.10.0) 
 
 > September 11, 2024 
 
+- release: 🔖 v1.10.0 [`a315c882`](https://github.com/lucodear/lucodear-icons/commit/a315c882)
 - feat: ✨ oxidoc folder [`5ae1b1ba`](https://github.com/lucodear/lucodear-icons/commit/5ae1b1ba)
 - build(deps): bump the github-actions group with 2 updates [`#2583`](https://github.com/lucodear/lucodear-icons/pull/2583)
 - feat: ✨ .clang-format-ignore file icon [`#2580`](https://github.com/lucodear/lucodear-icons/pull/2580)

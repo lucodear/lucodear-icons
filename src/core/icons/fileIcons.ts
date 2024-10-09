@@ -1170,14 +1170,18 @@ export const fileIcons: FileIcons = {
         '.env.dist',
         '.env.prod',
         '.env.production',
+        '.env.stg',
         '.env.stage',
         '.env.staging',
         '.env.preview',
         '.env.test',
         '.env.testing',
+        '.env.dev.local',
         '.env.development.local',
         '.env.qa.local',
+        '.env.prod.local',
         '.env.production.local',
+        '.env.stg.local',
         '.env.staging.local',
         '.env.test.local',
         '.env.uat',
@@ -1711,6 +1715,8 @@ export const fileIcons: FileIcons = {
         'vac',
         'vdp',
         'vox',
+        'gltf',
+        'glb',
       ],
     },
     { name: 'buildkite', fileNames: ['buildkite.yml', 'buildkite.yaml'] },
@@ -1728,7 +1734,25 @@ export const fileIcons: FileIcons = {
     {
       name: 'svelte',
       fileExtensions: ['svelte'],
-      fileNames: ['svelte.config.js', 'svelte.config.cjs'],
+      patterns: {
+        'svelte.config': FileNamePattern.Ecmascript,
+      },
+    },
+    {
+      name: 'svelte_js',
+      fileExtensions: ['svelte.js'],
+      clone: {
+        base: 'svelte',
+        color: 'amber-400',
+      },
+    },
+    {
+      name: 'svelte_ts',
+      fileExtensions: ['svelte.ts'],
+      clone: {
+        base: 'svelte',
+        color: 'light-blue-700',
+      },
     },
     {
       name: 'vim',
@@ -1846,6 +1870,7 @@ export const fileIcons: FileIcons = {
     { name: 'moonscript', fileExtensions: ['moon'] },
     { name: 'percy', fileNames: ['.percy.yml'] },
     { name: 'gitpod', fileNames: ['.gitpod.yml'] },
+    { name: 'stackblitz', fileNames: ['.stackblitzrc'] },
     { name: 'advpl', fileExtensions: ['prw', 'prx'] },
     {
       name: 'advpl-ptm',
@@ -2048,7 +2073,16 @@ export const fileIcons: FileIcons = {
     { name: 'grain', fileExtensions: ['gr'] },
     { name: 'lolcode', fileExtensions: ['lol'] },
     { name: 'idris', fileExtensions: ['idr', 'ibc'] },
-    { name: 'quasar', fileNames: ['quasar.conf.js', 'quasar.config.js', 'quasar.conf.ts', 'quasar.config.ts', 'quasar.config.cjs'] },
+    {
+      name: 'quasar',
+      fileNames: [
+        'quasar.conf.js',
+        'quasar.config.js',
+        'quasar.conf.ts',
+        'quasar.config.ts',
+        'quasar.config.cjs',
+      ],
+    },
     { name: 'dependabot', fileNames: ['dependabot.yml', 'dependabot.yaml'] },
     { name: 'pipeline', fileExtensions: ['pipeline'] },
     {
@@ -2623,6 +2657,37 @@ export const fileIcons: FileIcons = {
     {
       name: 'sway',
       fileExtensions: ['sw'],
+    },
+    {
+      name: 'lefthook',
+      fileNames: [
+        '.lefthook-local.json',
+        '.lefthook-local.toml',
+        '.lefthook-local.yaml',
+        '.lefthook-local.yml',
+        '.lefthook.json',
+        '.lefthook.toml',
+        '.lefthook.yaml',
+        '.lefthook.yml',
+        '.lefthookrc',
+        'lefthook-local.json',
+        'lefthook-local.toml',
+        'lefthook-local.yaml',
+        'lefthook-local.yml',
+        'lefthook.json',
+        'lefthook.toml',
+        'lefthook.yaml',
+        'lefthook.yml',
+        'lefthookrc',
+      ],
+    },
+    {
+      name: 'zeabur',
+      fileExtensions: ['zeabur'],
+      patterns: {
+        zeabur: FileNamePattern.Configuration,
+      },
+      light: true,
     },
   ]),
 };

@@ -84,6 +84,7 @@ const pestPack = lucodear('python', IconPack.Pest, [
     false,
     'pest-'
   ),
+  ...pyfile('guard', ['guard', 'guards'], false, 'pest-'),
   ...pyfile(
     'provider',
     ['providers', 'infra', 'infrastructure', 'infrastructures'],

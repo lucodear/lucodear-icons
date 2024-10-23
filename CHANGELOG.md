@@ -3,10 +3,23 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.13.0](https://github.com/lucodear/lucodear-icons/compare/v1.12.0...v1.13.0) 
+
+> October 23, 2024 
+
+- Add `label` icon for `.github/labeler.yml` file [`#2607`](https://github.com/lucodear/lucodear-icons/pull/2607)
+- feat: add Copilot icon for `.github/copilot-instructions.md` file [`#2632`](https://github.com/lucodear/lucodear-icons/pull/2632)
+- Add events package in package.json [`#2630`](https://github.com/lucodear/lucodear-icons/pull/2630)
+- add Bahasa Indonesia (id) translation [`#2627`](https://github.com/lucodear/lucodear-icons/pull/2627)
+- feat: :sparkles: Add `.tazerc` and `.tazerc.json` filenames for `taze` icon [`#2628`](https://github.com/lucodear/lucodear-icons/pull/2628)
+- build(deps): bump actions/checkout in the github-actions group [`#2626`](https://github.com/lucodear/lucodear-icons/pull/2626)
+- feat: ✨ pest guard icon [`#107`](https://github.com/lucodear/lucodear-icons/pull/107)
+ 
 #### [v1.12.0](https://github.com/lucodear/lucodear-icons/compare/v1.11.0...v1.12.0) 
 
 > October 9, 2024 
 
+- release: 🔖 v1.12.0 [`4c80b05c`](https://github.com/lucodear/lucodear-icons/commit/4c80b05c)
 - feat: ✨ bruno folder [`52aff923`](https://github.com/lucodear/lucodear-icons/commit/52aff923)
 - Added env abbreviations on tune icon recognized names [`#2624`](https://github.com/lucodear/lucodear-icons/pull/2624)
 - Add stackblitz file icon [`#2621`](https://github.com/lucodear/lucodear-icons/pull/2621)

@@ -2647,6 +2647,7 @@ export const fileIcons: FileIcons = {
       patterns: {
         'taze.config': FileNamePattern.Ecmascript,
       },
+      fileNames: ['.tazerc', '.tazerc.json'],
     },
     {
       name: 'wxt',
@@ -2682,6 +2683,10 @@ export const fileIcons: FileIcons = {
       ],
     },
     {
+      name: 'label',
+      fileNames: ['.github/labeler.yml', '.github/labeler.yaml'],
+    },
+    {
       name: 'zeabur',
       fileExtensions: ['zeabur'],
       patterns: {
@@ -2689,5 +2694,10 @@ export const fileIcons: FileIcons = {
       },
       light: true,
     },
+    {
+      name: 'copilot',
+      fileNames: ['.github/copilot-instructions.md'],
+      light: true
+    }
   ]),
 };

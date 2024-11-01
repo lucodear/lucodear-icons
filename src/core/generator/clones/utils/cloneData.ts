@@ -1,5 +1,5 @@
 import { existsSync } from 'node:fs';
-import { mkdir, rm } from 'node:fs/promises';
+import { mkdir, readdir, rm } from 'node:fs/promises';
 import { basename, dirname, join } from 'node:path';
 import { resolvePath } from '../../../helpers/resolvePath';
 import type {
@@ -71,14 +71,22 @@ export const getCloneData = (
         ? getFolderIconCloneData(base, cloneOpts, hash, subFolder, ext)
         : getFileIconCloneData(base, cloneOpts, hash, subFolder, ext);
 
+      // #region 🍭 » lucode / make it work with icons-lc icons
+      let folderPath = iconFolderPath;
+
+      if (base.path.includes('icons-lc')) {
+        const baseDirName = basename(dirname(base.path));
+        const parentDirName = basename(dirname(dirname(base.path)));
+        folderPath = `./../${parentDirName}/${baseDirName}/`;
+      }
+      // #endregion
+
       return {
         name: getIconName(cloneOpts.name, base),
         color: isDark(base)
           ? cloneOpts.color
           : cloneOpts.lightColor ?? cloneOpts.color,
-        inConfigPath: `${iconFolderPath}${subFolder}${basename(
-          cloneIcon.path
-        )}`,
+        inConfigPath: `${folderPath}${subFolder}${basename(cloneIcon.path)}`,
         base,
         ...cloneIcon,
       };
@@ -212,6 +220,15 @@ const getFolderIconCloneData = (
   return { type: base.type, variant: base.variant, path };
 };
 
+// #region 🍭 » lucode
+const getFolderNames = async (dirPath: string): Promise<string[]> => {
+  const items = await readdir(dirPath, { withFileTypes: true });
+  return items
+    .filter((item) => item.isDirectory())
+    .map((folder) => folder.name);
+};
+// #endregion
+
 /**
  * removes the clones folder if it exists
  * and creates a new one if `keep` is true
@@ -226,6 +243,21 @@ export const clearCloneFolder = async (keep = true): Promise<void> => {
   if (keep) {
     await mkdir(clonesFolderPath);
   }
+
+  // #region 🍭 » lucode / remove lucodear clones folders
+  const lcThemes = await getFolderNames(resolvePath('./../icons-lc'));
+  for (const theme of lcThemes) {
+    const themePath = resolvePath(`./../icons-lc/${theme}/clones`);
+
+    if (existsSync(themePath)) {
+      await rm(themePath, { recursive: true });
+    }
+
+    if (keep) {
+      await mkdir(themePath);
+    }
+  }
+  // #endregion
 };
 
 const getIconName = (baseName: string, data: IconData): string => {

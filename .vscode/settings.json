@@ -8,7 +8,7 @@
 
     // ⚙️ » config
     // "sheriff.config.ts": true,
-    "**/**/tsconfig*": true,
+    // "**/**/tsconfig*json": true,
     "svgo.config.js": true,
     "**/**/*code-workspace": true,
     // "package.nls*.json": true, // all i18n package.json files

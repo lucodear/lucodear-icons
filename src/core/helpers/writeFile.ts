@@ -1,4 +1,6 @@
-import { writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { mkdir, writeFile } from 'node:fs/promises';
+import { dirname } from 'node:path';
 import { logger } from '../logging/logger';
 
 /**
@@ -16,6 +18,15 @@ export const writeToFile = async (
     logger.error('Invalid file path or data to write! File path: ' + filePath);
     return;
   }
+
+  // #region 🍭 » lucode create intermediate directories if they don't exist
+  const dir = dirname(filePath);
+  if (!existsSync(dir)) {
+    logger.debug('Creating directory: ' + dir);
+    await mkdir(dir, { recursive: true });
+  }
+  // #endregion
+
   logger.debug('Writing to file: ' + filePath);
   await writeFile(filePath, data, encoding);
 };

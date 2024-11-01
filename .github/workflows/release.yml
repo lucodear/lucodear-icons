@@ -1,5 +1,5 @@
-name: 🔖 » release and publish
-run-name: 🔖 » release and publish
+name: 🚀 » release and publish
+run-name: 🚀 » release and publish
 on:
   workflow_dispatch:
     inputs:
@@ -38,14 +38,14 @@ jobs:
       - name: Setup Platform 🛠
         uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2
         with:
-          bun-version: 1.1.18
+          bun-version-file: ".bun-version"
 
-      - name: Install dependencies 📦
+      - name: 📦 Install dependencies
         run: |
           bun install --frozen-lockfile
           bun add -g npm
 
-      - name: Update version ↗
+      - name: 🔄 Update version
         run: |
           git status
           git config --global user.name 'Lucas Colombo'
@@ -53,7 +53,7 @@ jobs:
           git config --global push.followTags true
           npm version ${{ env.VERSION_CHANGE }} -m "release: 🔖 v%s"
 
-      - name: Get metadata 🔍
+      - name: 📝 Get metadata
         run: |
           VERSION=$(bun --print "(await import('./package.json')).version")
           NAME=$(bun --print "(await import('./package.json')).name")
@@ -62,7 +62,7 @@ jobs:
           echo NAME=$NAME >> $GITHUB_ENV
           echo DISPLAY_NAME=$DISPLAY_NAME >> $GITHUB_ENV
 
-      - name: Build ⚒️
+      - name: 🛠️ Build
         run: bunx @vscode/vsce package
 
       - name: Attest artifacts ✅
@@ -73,10 +73,10 @@ jobs:
           predicate-type: 'https://in-toto.io/attestation/release'
           predicate: '{}'
 
-      - name: Push tags 📌
+      - name: 📌 Push tags
         run: git push
 
-      - name: Release ${{ env.VERSION }} 🔆
+      - name: 🚀 Release ${{ env.VERSION }}
         uses: softprops/action-gh-release@c062e08bd532815e2082a85e87e3ef29c3e6d191 # v2.0.8
         with:
           files: ${{ env.NAME }}-${{ env.VERSION }}.vsix
@@ -84,7 +84,7 @@ jobs:
           name: ${{ env.DISPLAY_NAME }} v${{ env.VERSION }}
           generate_release_notes: true
 
-      - name: Publish to Open VSX Registry 🌐
+      - name: 🌐 Publish to Open VSX Registry
         uses: HaaLeo/publish-vscode-extension@28e2d3f5817fccf23c1f219eb0cecc903132d1a2 # v1.6.2
         # disable for now
         if: ${{ false }}

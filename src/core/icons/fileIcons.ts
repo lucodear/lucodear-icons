@@ -750,7 +750,8 @@ export const fileIcons: FileIcons = {
     { name: 'mxml', fileExtensions: ['mxml'] },
     { name: 'autohotkey', fileExtensions: ['ahk'] },
     { name: 'flash', fileExtensions: ['swf'] },
-    { name: 'swc', fileExtensions: ['swc'] },
+    { name: 'adobe-swc', fileExtensions: ['swc'] },
+    { name: 'swc', fileExtensions: ['swcrc'] },
     {
       name: 'cmake',
       fileExtensions: ['cmake'],
@@ -2371,7 +2372,7 @@ export const fileIcons: FileIcons = {
       fileExtensions: ['swagger.json', 'swagger.yml', 'swagger.yaml'],
       fileNames: ['swagger.json', 'swagger.yml', 'swagger.yaml'],
     },
-    { name: 'bun', fileNames: ['bun.lockb', 'bunfig.toml'], light: true },
+    { name: 'bun', fileNames: ['bun.lockb', 'bunfig.toml', ".bun-version"], light: true },
     { name: 'antlr', fileExtensions: ['g4'] },
     { name: 'stylable', fileExtensions: ['st.css'] },
     { name: 'pinejs', fileExtensions: ['pine'] },
@@ -2527,6 +2528,17 @@ export const fileIcons: FileIcons = {
     },
     { name: 'apps-script', fileExtensions: ['gs'] },
     {
+      name: 'garden',
+      fileNames: [
+        'garden.yml',
+        'garden.yaml',
+        'project.garden.yml',
+        'project.garden.yaml',
+        '.gardenignore',
+      ],
+      fileExtensions: ['.garden.yml', '.garden.yaml'],
+    },
+    {
       name: 'pkl',
       fileExtensions: ['pkl'],
       fileNames: ['PklProject', 'PklProject.deps.json'],
@@ -2607,6 +2619,12 @@ export const fileIcons: FileIcons = {
     {
       name: 'tsil',
       fileExtensions: ['ц'],
+    },
+    {
+      name: 'trigger',
+      patterns: {
+        'trigger.config': FileNamePattern.Ecmascript,
+      },
     },
     {
       name: 'deepsource',
@@ -2698,6 +2716,47 @@ export const fileIcons: FileIcons = {
       name: 'copilot',
       fileNames: ['.github/copilot-instructions.md'],
       light: true
-    }
+    },
+    {
+      name: 'bench-ts',
+      fileExtensions: [
+        'bench.ts',
+        'bench.cts',
+        'bench.mts',
+      ],
+    },
+    {
+      name: 'bench-jsx',
+      fileExtensions: [
+        'bench.jsx',
+        'bench.tsx',
+      ],
+    },
+    {
+      name: 'bench-js',
+      fileExtensions: [
+        'bench.js',
+        'bench.cjs',
+        'bench.mjs',
+      ],
+    },
+    {
+      name: 'pre-commit',
+      fileNames: ['.pre-commit-config.yaml', '.pre-commit-hooks.yaml'],
+    },
+    {
+      name: 'controller',
+      fileExtensions: ['controller.js', 'controller.ts'],
+      enabledFor: [
+        // Not for Nest
+        IconPack.Angular,
+        IconPack.Ngrx,
+        IconPack.Qwik,
+        IconPack.React,
+        IconPack.Redux,
+        IconPack.Vue,
+        IconPack.Vuex,
+      ],
+    },
   ]),
 };

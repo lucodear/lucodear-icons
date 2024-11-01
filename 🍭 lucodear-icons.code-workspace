@@ -33,6 +33,20 @@
     "svg.preview.background": "editor",
     "lucodear-icons.folders.associations": {
       "icons-lc": "lucode-template"
-    }
+    },
+    "github.copilot.chat.codeGeneration.instructions": [
+      {
+        "file": "/CONTRIBUTING.md"
+      },
+      {
+        "file": "/src/architecture.md"
+      }
+    ],
+    "github.copilot.chat.reviewSelection.instructions": [
+      {
+        "file": "/CONTRIBUTING.md"
+      }
+    ],
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true
   }
 }

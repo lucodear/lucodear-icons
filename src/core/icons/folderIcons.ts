@@ -71,7 +71,7 @@ export const folderIcons: FolderTheme[] = [
         name: 'folder-scripts',
         folderNames: ['script', 'scripts', 'scripting'],
       },
-      { name: 'folder-node', folderNames: ['node_modules'] },
+      { name: 'folder-node', folderNames: ['node', 'nodejs', 'node_modules'] },
       {
         name: 'folder-javascript',
         folderNames: ['js', 'javascript', 'javascripts'],
@@ -319,7 +319,7 @@ export const folderIcons: FolderTheme[] = [
         name: 'folder-temp',
         folderNames: ['temp', 'tmp', 'cached', 'cache'],
       },
-      { name: 'folder-aws', folderNames: ['aws'] },
+      { name: 'folder-aws', folderNames: ['aws', 'azure', 'gcp']},
       {
         name: 'folder-audio',
         folderNames: [

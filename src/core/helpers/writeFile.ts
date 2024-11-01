@@ -21,8 +21,7 @@ export const writeToFile = async (
 
   // #region 🍭 » lucode create intermediate directories if they don't exist
   const dir = dirname(filePath);
-  if (!existsSync(dir)) {
-    logger.debug('Creating directory: ' + dir);
+  if (!existsSync(dir) && dir.includes('icons-lc')) {
     await mkdir(dir, { recursive: true });
   }
   // #endregion

@@ -3,10 +3,38 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.14.0](https://github.com/lucodear/lucodear-icons/compare/v1.13.0...v1.14.0) 
+
+> November 1, 2024 
+
+- fix: 🚑 clonining not working with lucodear added icons [`#110`](https://github.com/lucodear/lucodear-icons/pull/110)
+- fix(workflows): :bug: fix failing `icon-review` workflow [`#2651`](https://github.com/lucodear/lucodear-icons/pull/2651)
+- fix: materialized `swc` icon [`#1975`](https://github.com/lucodear/lucodear-icons/pull/1975)
+- feat: :sparkles: add icon for `.bun-version` file [`#2649`](https://github.com/lucodear/lucodear-icons/pull/2649)
+- fix(workflows): rollback Bun version (`1.1.33` ⇢ `1.1.28`) [`#2648`](https://github.com/lucodear/lucodear-icons/pull/2648)
+- feat(workflows): add emojis to the names of workflows [`#2645`](https://github.com/lucodear/lucodear-icons/pull/2645)
+- feat(workflows): use Bun version from `.bun-version` file [`#2644`](https://github.com/lucodear/lucodear-icons/pull/2644)
+- chore(docs): add useful comments and update issue templates [`#2643`](https://github.com/lucodear/lucodear-icons/pull/2643)
+- feat: trigger [`#2570`](https://github.com/lucodear/lucodear-icons/pull/2570)
+- feat: add Copilot instructions [`#2640`](https://github.com/lucodear/lucodear-icons/pull/2640)
+- docs: :fire: Remove Phorm.ai badge [`#2641`](https://github.com/lucodear/lucodear-icons/pull/2641)
+- fix: 🚑 fix `swc` icon colors [`#2638`](https://github.com/lucodear/lucodear-icons/pull/2638)
+- feat: add `.swcrc` icon for SWC and rename `swc` to `adobe-swc` [`#2232`](https://github.com/lucodear/lucodear-icons/pull/2232)
+- feat: add `controller` icon [`#1634`](https://github.com/lucodear/lucodear-icons/pull/1634)
+- feat: add `pre-commit` configuration icon [`#1643`](https://github.com/lucodear/lucodear-icons/pull/1643)
+- feat: add benchmark icon for [`#2206`](https://github.com/lucodear/lucodear-icons/pull/2206)
+- feat: icon for all the cloud channels [`#1320`](https://github.com/lucodear/lucodear-icons/pull/1320)
+- feat: use Perl's own logo instead copying Tor's [`#876`](https://github.com/lucodear/lucodear-icons/pull/876)
+- feat: add garden file icon [`#2176`](https://github.com/lucodear/lucodear-icons/pull/2176)
+- build(deps): bump `actions/checkout` from `4.2.1` to `4.2.2` [`#2635`](https://github.com/lucodear/lucodear-icons/pull/2635)
+- feat: add `node` and `nodejs` to folderIcons.ts [`#2636`](https://github.com/lucodear/lucodear-icons/pull/2636)
+- ci: update pixp url in icon-review.yml [`#2633`](https://github.com/lucodear/lucodear-icons/pull/2633)
+ 
 #### [v1.13.0](https://github.com/lucodear/lucodear-icons/compare/v1.12.0...v1.13.0) 
 
 > October 23, 2024 
 
+- release: 🔖 v1.13.0 [`f650a240`](https://github.com/lucodear/lucodear-icons/commit/f650a240)
 - Add `label` icon for `.github/labeler.yml` file [`#2607`](https://github.com/lucodear/lucodear-icons/pull/2607)
 - feat: add Copilot icon for `.github/copilot-instructions.md` file [`#2632`](https://github.com/lucodear/lucodear-icons/pull/2632)
 - Add events package in package.json [`#2630`](https://github.com/lucodear/lucodear-icons/pull/2630)

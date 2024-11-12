@@ -20,6 +20,7 @@ export const folders = lucodear('ai', [
   folder('prompt', 'prompts'),
   light(folder('chain', 'chains')),
   folder('chromadb', 'chroma'),
+  folder('graph', 'graphs', 'langgraph'),
   folder('huggingface', 'hf', 'hugging_face', 'hugging-face'),
   light(
     folder(

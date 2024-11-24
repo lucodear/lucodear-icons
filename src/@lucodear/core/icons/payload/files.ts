@@ -15,11 +15,25 @@ const p = (
     color,
     lightColor,
   },
-  fileNames: [icon, ...names].flatMap((name) => [`${name}.tsx`, `${name}.jsx`]),
+  fileNames: [icon, ...names].flatMap((name) => [
+    `${name}.tsx`,
+    `${name}.ts`,
+    `${name}.jsx`,
+    `${name}.js`,
+  ]),
   fileExtensions: [icon, ...names].flatMap((name) =>
-    [`${name}.tsx`, `${name}.jsx`].concat(
+    [`${name}.tsx`, `${name}.jsx`, `${name}.ts`, `${name}.js`].concat(
       folderExtensionConfig
-        ? [`${name}/tsx`, `${name}/jsx`, `(${name})/tsx`, `(${name})/jsx`]
+        ? [
+            `${name}/tsx`,
+            `${name}/ts`,
+            `${name}/jsx`,
+            `${name}/js`,
+            `(${name})/tsx`,
+            `(${name})/ts`,
+            `(${name})/jsx`,
+            `(${name})/js`,
+          ]
         : []
     )
   ),

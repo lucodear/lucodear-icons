@@ -51,6 +51,7 @@ const payloadPack = lucodear('payload', IconPack.Payload, [
     name: 'payload-types',
     patterns: {
       'payload.types': FileNamePattern.Ecmascript,
+      'payload-types': FileNamePattern.Ecmascript,
     },
   },
   {

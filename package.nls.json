@@ -32,6 +32,7 @@
   "configuration.activeIconPack.vue": "Icons for Vue.",
   "configuration.activeIconPack.vue_vuex": "Icons for Vue and Vuex.",
   "configuration.activeIconPack.nest": "Icons for NestJS.",
+  "configuration.activeIconPack.payload": "Icons for Payload.",
   "configuration.activeIconPack.pest": "Icons for pest-py.",
   "configuration.activeIconPack.rust_ferris": "Rust icons variant with Ferris the crab replacing the Rust logo.",
   "configuration.activeIconPack.rust_ferris_minimal": "Rust icons variant with Ferris the crab replacing the Rust logo in special Rust files.",

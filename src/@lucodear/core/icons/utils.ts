@@ -1,4 +1,4 @@
-import { IconPack } from '../../../core';
+import { type FileIcon, IconPack, parseByPattern } from '../../../core';
 import type { LucodearFileIcon, LucodearFolderIcon } from '../models';
 
 export type LucodearIconConfig = LucodearFileIcon | LucodearFolderIcon;
@@ -54,7 +54,7 @@ export function lucodear<T extends LucodearIconConfig>(
     result = addPack(packs, icons);
   }
 
-  return addTheme(path, result);
+  return addTheme(path, parseByPattern(result as FileIcon[]) as T[]);
 }
 
 function addPrefixes<T extends LucodearIconConfig>(

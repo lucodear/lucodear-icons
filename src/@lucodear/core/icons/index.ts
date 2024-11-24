@@ -5,6 +5,7 @@ import * as lucodear from './lucodear';
 import * as misc from './misc';
 import * as node from './node';
 import { folderPatches } from './patches';
+import * as payload from './payload';
 import * as python from './python';
 import * as react from './react';
 import * as rust from './rust';
@@ -18,6 +19,7 @@ export const lucodearFileIcons: LucodearFileIcons = {
     ...python.files,
     ...react.files,
     ...rust.files,
+    ...payload.files,
   ],
 };
 
@@ -32,6 +34,7 @@ export const lucodearFolderIcons: LucodearFolderTheme = {
     ...python.folders,
     ...ai.folders,
     ...rust.folders,
+    ...payload.folders,
   ],
 };
 

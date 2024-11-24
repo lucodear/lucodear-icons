@@ -504,9 +504,13 @@ export const folderIcons: FolderTheme[] = [
         name: 'folder-client',
         folderNames: [
           'client',
+          '(client)',
           'clients',
+          '(clients)',
           'frontend',
+          '(frontend)',
           'frontends',
+          '(frontends)',
           'pwa',
           'spa',
         ],

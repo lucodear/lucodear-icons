@@ -8,6 +8,8 @@ export type IconDefinition = {
   name: string;
   label?: string;
   theme?: string;
+  isClone?: boolean;
+  clone?: object;
 };
 
 export const filterDuplicates = <T extends { name: string }>(icons: T[]) => {
@@ -31,6 +33,7 @@ export const getFolders = (
               .map((i) => ({
                 name: i.name,
                 theme: (i as LucodearFolderIcon).theme,
+                isClone: i.clone !== undefined,
               }))
           );
         }
@@ -41,6 +44,7 @@ export const getFolders = (
     name: i.name,
     label: i.name.replace('folder-', ''),
     theme: i.theme,
+    isClone: i.isClone,
   }));
 };
 
@@ -49,6 +53,7 @@ export const getFiles = (icons: IconDefinition[]): IconDefinition[] => {
     name: i.name,
     label: i.name.replace('file-', ''),
     theme: i.theme,
+    isClone: i.clone !== undefined,
   }));
 };
 

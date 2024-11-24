@@ -185,12 +185,13 @@ const createHTMLTableBodyRows = (
     const columns = row
       .map((icon) => {
         const subpath = icon.theme ? `${icon.theme}/` : '';
+        const sufix = icon.isClone ? '.clone' : '';
 
         return `
           <td class="icon">
               <img style="width: ${size.toFixed(
                 0
-              )}px" src="${iconsPath}/${subpath}${icon.name}.svg" alt="${
+              )}px" src="${iconsPath}/${subpath}${icon.name}${sufix}.svg" alt="${
                 icon.label
               }">
           </td>

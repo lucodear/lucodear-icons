@@ -45,6 +45,9 @@ jobs:
           bun install --frozen-lockfile
           bun add -g npm
 
+      - name: 🛠️ Build
+        run: bunx @vscode/vsce package
+
       - name: 🔄 Update version
         run: |
           git status
@@ -61,9 +64,6 @@ jobs:
           echo VERSION=$VERSION >> $GITHUB_ENV
           echo NAME=$NAME >> $GITHUB_ENV
           echo DISPLAY_NAME=$DISPLAY_NAME >> $GITHUB_ENV
-
-      - name: 🛠️ Build
-        run: bunx @vscode/vsce package
 
       - name: Attest artifacts ✅
         uses: actions/attest@2da0b136720d14f01f4dbeeafd1d5a4d76cbe21d # v1.4.0

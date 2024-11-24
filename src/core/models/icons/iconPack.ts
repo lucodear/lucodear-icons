@@ -13,6 +13,7 @@ export enum IconPack {
   Vuex = 'vue_vuex',
 
   // #region 🍭 » lucodear
+  Payload = 'payload',
   Pest = 'pest',
   RustFerris = 'rust_ferris',
   RustFerrisMinimal = 'rust_ferris_minimal',

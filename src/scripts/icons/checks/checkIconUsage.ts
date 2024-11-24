@@ -3,12 +3,18 @@ import { join, parse } from 'node:path';
 
 import { applyLucodearOverrides } from '../../../@lucodear/core/generators/override';
 import {
+  lucodearFileIcons,
+  lucodearFolderIcons,
+} from '../../../@lucodear/core/icons';
+import {
   type DefaultIcon,
+  type FileIcons,
   type FolderIcon,
   type FolderTheme,
   highContrastColorFileEnding,
   languageIcons,
   lightColorFileEnding,
+  merge,
   openedFolder,
   fileIcons as originalFileIcons,
   folderIcons as originalFolderIcons,
@@ -17,8 +23,8 @@ import { green, red } from '../../helpers/painter';
 
 // #region 🍭 » lucode (take overrides into account)
 const [fileIcons, folderIcons] = applyLucodearOverrides(
-  originalFileIcons,
-  originalFolderIcons
+  merge(originalFileIcons, lucodearFileIcons as FileIcons),
+  [...originalFolderIcons, lucodearFolderIcons] as FolderTheme[]
 );
 // #endregion
 

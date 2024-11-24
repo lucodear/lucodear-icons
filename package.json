@@ -52,29 +52,16 @@
     "color": "#11131c",
     "theme": "dark"
   },
-  "categories": [
-    "Themes"
-  ],
-  "keywords": [
-    "icons",
-    "theme",
-    "material",
-    "icon-theme",
-    "customization"
-  ],
-  "extensionKind": [
-    "ui",
-    "workspace"
-  ],
+  "categories": ["Themes"],
+  "keywords": ["icons", "theme", "material", "icon-theme", "customization"],
+  "extensionKind": ["ui", "workspace"],
   "capabilities": {
     "untrustedWorkspaces": {
       "supported": true
     },
     "virtualWorkspaces": true
   },
-  "activationEvents": [
-    "onStartupFinished"
-  ],
+  "activationEvents": ["onStartupFinished"],
   "main": "./dist/extension/desktop/extension.cjs",
   "browser": "./dist/extension/web/extension.cjs",
   "module": "./dist/module/index.cjs",
@@ -159,6 +146,7 @@
             "%configuration.activeIconPack.vue%",
             "%configuration.activeIconPack.vue_vuex%",
             "%configuration.activeIconPack.nest%",
+            "%configuration.activeIconPack.payload%",
             "%configuration.activeIconPack.pest%",
             "%configuration.activeIconPack.rust_ferris%",
             "%configuration.activeIconPack.rust_ferris_minimal%",
@@ -175,6 +163,7 @@
             "vue",
             "vue_vuex",
             "nest",
+            "payload",
             "pest",
             "rust_ferris",
             "rust_ferris_minimal",
@@ -237,9 +226,7 @@
               },
               "activeForPacks": {
                 "type": "array",
-                "default": [
-                  "angular"
-                ],
+                "default": ["angular"],
                 "description": "%configuration.customClones.activeForPacks%",
                 "items": {
                   "type": "string",
@@ -314,11 +301,7 @@
             "%configuration.folders.theme.classic%",
             "%configuration.folders.theme.none%"
           ],
-          "enum": [
-            "specific",
-            "classic",
-            "none"
-          ]
+          "enum": ["specific", "classic", "none"]
         },
         "lucodear-icons.folders.color": {
           "type": "string",
@@ -359,11 +342,7 @@
         "lucodear-icons.logLevel": {
           "type": "string",
           "default": "info",
-          "enum": [
-            "info",
-            "error",
-            "debug"
-          ],
+          "enum": ["info", "error", "debug"],
           "description": "%configuration.logLevel%"
         }
       }

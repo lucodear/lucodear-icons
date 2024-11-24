@@ -7,7 +7,7 @@ export type LucodearFileIcon = RequireAtLeastOne<
     looseFileIcon?: true;
     theme?: string;
   },
-  'fileExtensions' | 'fileNames' | 'looseFileIcon'
+  'fileExtensions' | 'fileNames' | 'looseFileIcon' | 'patterns'
 >;
 
 export interface LucodearFileIcons {

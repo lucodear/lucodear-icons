@@ -3,10 +3,20 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.16.1](https://github.com/lucodear/lucodear-icons/compare/v1.16.0...v1.16.1) 
+
+> November 24, 2024 
+
+- ci: 🔄 release [`77d2c31a`](https://github.com/lucodear/lucodear-icons/commit/77d2c31a)
+- fix: 🚑 lint issue [`ce891a29`](https://github.com/lucodear/lucodear-icons/commit/ce891a29)
+- fix: 🚑 fix payload-types icon config [`e8f3d9a1`](https://github.com/lucodear/lucodear-icons/commit/e8f3d9a1)
+- chore: 🧹 include clones in lucode icons preview image [`da17ef45`](https://github.com/lucodear/lucodear-icons/commit/da17ef45)
+ 
 #### [v1.16.0](https://github.com/lucodear/lucodear-icons/compare/v1.15.0...v1.16.0) 
 
 > November 24, 2024 
 
+- release: 🔖 v1.16.0 [`112f3292`](https://github.com/lucodear/lucodear-icons/commit/112f3292)
 - feat: ✨ payload pack [`#114`](https://github.com/lucodear/lucodear-icons/pull/114)
 - feat: Add `CITATION.cff` icon and update fileIcons [`#2338`](https://github.com/lucodear/lucodear-icons/pull/2338)
 - feat: update `installation` file icon associations [`#2713`](https://github.com/lucodear/lucodear-icons/pull/2713)

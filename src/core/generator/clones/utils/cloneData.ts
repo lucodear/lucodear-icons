@@ -87,7 +87,7 @@ export const getCloneData = (
         name: getIconName(cloneOpts.name, base),
         color: isDark(base)
           ? cloneOpts.color
-          : cloneOpts.lightColor ?? cloneOpts.color,
+          : (cloneOpts.lightColor ?? cloneOpts.color),
         inConfigPath: `${folderPath}${subFolder}${basename(cloneIcon.path)}`,
         base,
         ...cloneIcon,

@@ -3,10 +3,29 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.16.0](https://github.com/lucodear/lucodear-icons/compare/v1.15.0...v1.16.0) 
+
+> November 24, 2024 
+
+- feat: ✨ payload pack [`#114`](https://github.com/lucodear/lucodear-icons/pull/114)
+- feat: Add `CITATION.cff` icon and update fileIcons [`#2338`](https://github.com/lucodear/lucodear-icons/pull/2338)
+- feat: update `installation` file icon associations [`#2713`](https://github.com/lucodear/lucodear-icons/pull/2713)
+- feat: add `hosts` file icons [`#1015`](https://github.com/lucodear/lucodear-icons/pull/1015)
+- feat: add `.dev.vars` association to `env` file icon [`#2711`](https://github.com/lucodear/lucodear-icons/pull/2711)
+- feat: add `.hgtags` icon [`#2706`](https://github.com/lucodear/lucodear-icons/pull/2706)
+- fix: update headline in changelog [`5e2a44e6`](https://github.com/lucodear/lucodear-icons/commit/5e2a44e6)
+- chore(release): v5.14.1 [`3ca5ef9a`](https://github.com/lucodear/lucodear-icons/commit/3ca5ef9a)
+- fix(workflows): changelog generation in release process [`#2704`](https://github.com/lucodear/lucodear-icons/pull/2704)
+- fix(workflows): ensure similar formatting with pipeline [`#2705`](https://github.com/lucodear/lucodear-icons/pull/2705)
+- fix: add changelog of v5.14.0 [`25fcdc1b`](https://github.com/lucodear/lucodear-icons/commit/25fcdc1b)
+- feat: add new icons for directive folder [`#2690`](https://github.com/lucodear/lucodear-icons/pull/2690)
+- feat: 🩹 add comments to patch for changelogen [`#2701`](https://github.com/lucodear/lucodear-icons/pull/2701)
+ 
 #### [v1.15.0](https://github.com/lucodear/lucodear-icons/compare/v1.14.0...v1.15.0) 
 
 > November 12, 2024 
 
+- release: 🔖 v1.15.0 [`341b94f6`](https://github.com/lucodear/lucodear-icons/commit/341b94f6)
 - feat(ai): ✨ graphs folder [`#112`](https://github.com/lucodear/lucodear-icons/pull/112)
 - chore(deps): update softprops/action-gh-release action to v2.1.0 [`#2700`](https://github.com/lucodear/lucodear-icons/pull/2700)
 - feat: add toml icon [`#1535`](https://github.com/lucodear/lucodear-icons/pull/1535)

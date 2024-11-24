@@ -45,16 +45,17 @@ jobs:
           bun install --frozen-lockfile
           bun add -g npm
 
-      - name: 🛠️ Build
-        run: bunx @vscode/vsce package
-
       - name: 🔄 Update version
         run: |
           git status
           git config --global user.name 'Lucas Colombo'
           git config --global user.email 'lucasncolombo@gmail.com'
           git config --global push.followTags true
+          bun run build
           npm version ${{ env.VERSION_CHANGE }} -m "release: 🔖 v%s"
+
+      - name: 🛠️ Build
+        run: bunx @vscode/vsce package
 
       - name: 📝 Get metadata
         run: |

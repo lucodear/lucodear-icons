@@ -12,11 +12,15 @@ export const common = lucodear('payload', [
   p('payload', ['payload']),
 ] as LucodearFolderIcon[]);
 
-export const payloadPack = lucodear('payload', IconPack.Payload, [
-  p('payload-block', ['block', 'blocks']),
-  p('payload-collection', ['collection', 'collections']),
-  p('payload-field', ['field', 'fields']),
-  p('payload-global', ['global', 'globals']),
-] as LucodearFolderIcon[]);
+export const payloadPack = lucodear(
+  'payload',
+  [IconPack.Payload, IconPack.Keystatic],
+  [
+    p('payload-block', ['block', 'blocks']),
+    p('payload-collection', ['collection', 'collections']),
+    p('payload-field', ['field', 'fields']),
+    p('payload-global', ['global', 'globals']),
+  ] as LucodearFolderIcon[]
+);
 
 export const folders: LucodearFolderIcon[] = [...common, ...payloadPack];

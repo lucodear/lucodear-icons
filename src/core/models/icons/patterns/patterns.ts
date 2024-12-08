@@ -4,6 +4,11 @@ export enum FileNamePattern {
   /** Adds the following extensions to the file name: `js`, `mjs`, `cjs`, `ts`, `mts`, `cts`. */
   Ecmascript = 'ecmascript',
 
+  // #region 🍭 » lucode: new pattern
+  /** Adds the following (react) extensions: `tsx`, `jsx`, plus all in `Ecmascript`. */
+  React = 'react',
+  // #endregion
+
   /** Adds the following extensions to the file name: `json`, `jsonc`, `json5`, `yaml`, `yml`, `toml`. */
   Configuration = 'configuration',
 

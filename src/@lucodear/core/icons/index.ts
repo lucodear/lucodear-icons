@@ -1,6 +1,7 @@
 import type { FolderTheme } from '../../../core';
 import type { LucodearFileIcons, LucodearFolderTheme } from '../models';
 import * as ai from './ai';
+import * as keystatic from './keystatic';
 import * as lucodear from './lucodear';
 import * as misc from './misc';
 import * as node from './node';
@@ -20,6 +21,7 @@ export const lucodearFileIcons: LucodearFileIcons = {
     ...react.files,
     ...rust.files,
     ...payload.files,
+    ...keystatic.files,
   ],
 };
 
@@ -35,6 +37,7 @@ export const lucodearFolderIcons: LucodearFolderTheme = {
     ...ai.folders,
     ...rust.folders,
     ...payload.folders,
+    ...keystatic.folders,
   ],
 };
 

@@ -25,6 +25,20 @@ const mapPatterns = (patterns: Patterns): string[] => {
           `${fileName}.cts`,
         ];
 
+      // #region 🍭 » lucode: react Pattern
+      case FileNamePattern.React:
+        return [
+          `${fileName}.tsx`,
+          `${fileName}.jsx`,
+          `${fileName}.js`,
+          `${fileName}.mjs`,
+          `${fileName}.cjs`,
+          `${fileName}.ts`,
+          `${fileName}.mts`,
+          `${fileName}.cts`,
+        ];
+      // #endregion
+
       case FileNamePattern.Configuration:
         return [
           `${fileName}.json`,

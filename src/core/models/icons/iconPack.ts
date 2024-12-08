@@ -14,6 +14,7 @@ export enum IconPack {
 
   // #region 🍭 » lucodear
   Payload = 'payload',
+  Keystatic = 'keystatic',
   Pest = 'pest',
   RustFerris = 'rust_ferris',
   RustFerrisMinimal = 'rust_ferris_minimal',

@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.17.0](https://github.com/lucodear/lucodear-icons/compare/v1.16.2...v1.17.0) 
+
+> December 8, 2024 
+
+- feat: ✨ keystatic [`4f002bcb`](https://github.com/lucodear/lucodear-icons/commit/4f002bcb)
+ 
 #### [v1.16.2](https://github.com/lucodear/lucodear-icons/compare/v1.16.1...v1.16.2) 
 
 > November 24, 2024 
 
+- release: 🔖 v1.16.2 [`efd5a382`](https://github.com/lucodear/lucodear-icons/commit/efd5a382)
 - fix: 🚑 support .ts extensions in payload pack [`ef96ee95`](https://github.com/lucodear/lucodear-icons/commit/ef96ee95)
  
 #### [v1.16.1](https://github.com/lucodear/lucodear-icons/compare/v1.16.0...v1.16.1) 

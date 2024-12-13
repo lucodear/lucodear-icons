@@ -3,10 +3,37 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.18.0](https://github.com/lucodear/lucodear-icons/compare/v1.17.0...v1.18.0) 
+
+> December 13, 2024 
+
+- ci: 🔄 downgrade relase action to ubuntu 22.04 [`1c34d0ae`](https://github.com/lucodear/lucodear-icons/commit/1c34d0ae)
+- chore: 🧹 add log to contributors image when errors [`9bb64a3e`](https://github.com/lucodear/lucodear-icons/commit/9bb64a3e)
+- feat: ✨ keystatic + mdoc file icons [`#2744`](https://github.com/lucodear/lucodear-icons/pull/2744)
+- fix(workflows): invalid command argument in color check workflow [`692644be`](https://github.com/lucodear/lucodear-icons/commit/692644be)
+- feat: use plugins icon for addins directory [`#2743`](https://github.com/lucodear/lucodear-icons/pull/2743)
+- chore(deps): update dependency svg-color-linter to v3 [`#2741`](https://github.com/lucodear/lucodear-icons/pull/2741)
+- feat: :technologist: add husky pre-commit hooks [`#2720`](https://github.com/lucodear/lucodear-icons/pull/2720)
+- feat: enhance textlint configuration files [`#2740`](https://github.com/lucodear/lucodear-icons/pull/2740)
+- feat: add `.do` file association for `tcl` icon [`#2739`](https://github.com/lucodear/lucodear-icons/pull/2739)
+- chore(workflows): update workflow paths [`4e688982`](https://github.com/lucodear/lucodear-icons/commit/4e688982)
+- chore(deps): update actions/attest-build-provenance action to v2.1.0 [`#2737`](https://github.com/lucodear/lucodear-icons/pull/2737)
+- feat: add 'cypher' and 'cipher' folder names to the folder-secure icon [`#2369`](https://github.com/lucodear/lucodear-icons/pull/2369)
+- feat: pm2 ecosystem file icon [`#2708`](https://github.com/lucodear/lucodear-icons/pull/2708)
+- ci: ♻️ use limited file scope for triggering build workflow [`#2727`](https://github.com/lucodear/lucodear-icons/pull/2727)
+- chore(deps): update dependency markdownlint-cli to ^0.43.0 [`#2734`](https://github.com/lucodear/lucodear-icons/pull/2734)
+- chore(deps): update dependency bun to v1.1.38 [`#2719`](https://github.com/lucodear/lucodear-icons/pull/2719)
+- feat: ✨ add markdownlint automatization [`#2709`](https://github.com/lucodear/lucodear-icons/pull/2709)
+- feat: 🏞️ add `subtitles` icon [`#2732`](https://github.com/lucodear/lucodear-icons/pull/2732)
+- chore(deps): update actions/attest-build-provenance action [`#2733`](https://github.com/lucodear/lucodear-icons/pull/2733)
+- chore(release): v5.15.0 [`16099413`](https://github.com/lucodear/lucodear-icons/commit/16099413)
+- chore(deps): update actions/attest-build-provenance action to v2 [`#2730`](https://github.com/lucodear/lucodear-icons/pull/2730)
+ 
 #### [v1.17.0](https://github.com/lucodear/lucodear-icons/compare/v1.16.2...v1.17.0) 
 
 > December 8, 2024 
 
+- release: 🔖 v1.17.0 [`56882402`](https://github.com/lucodear/lucodear-icons/commit/56882402)
 - feat: ✨ keystatic [`4f002bcb`](https://github.com/lucodear/lucodear-icons/commit/4f002bcb)
  
 #### [v1.16.2](https://github.com/lucodear/lucodear-icons/compare/v1.16.1...v1.16.2) 

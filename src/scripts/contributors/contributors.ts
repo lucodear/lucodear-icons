@@ -113,8 +113,8 @@ const init = async () => {
         green(`Successfully created ${fileName} image!`)
       );
     })
-    .catch(() => {
-      throw Error(red(`Error while creating ${fileName} image`));
+    .catch((e) => {
+      throw Error(red(`Error while creating ${fileName} image: ${e}`));
     });
 };
 

@@ -54,17 +54,12 @@ const common = lucodear('keystatic', [
 
 // // #region keystatic pack
 const keystaticPack = lucodear('keystatic', IconPack.Keystatic, [
-  // k('component', ['comp', 'cmp', 'components', 'c'], 'lime-600', 'lime-800'),
-  // k(
-  //   'context',
-  //   ['ctx', 'contexts', 'provider', 'store', 'stores'],
-  //   'teal-400',
-  //   'teal-600'
-  // ),
-  // k('hook', ['hooks', 'hk'], 'deep-purple-A100', 'deep-purple-400'),
-  // k('layout', ['template', 'layouts', 'templates', 'tmpl', 'lyt'], 'brown-300'),
-  // k('page', ['pages', 'pg', 'pag'], 'deep-orange-400'),
-  k('global', ['globals', 'glb'], 'blue-gray-500', 'blue-gray-700'),
+  k(
+    'global',
+    ['globals', 'glb', 'singleton', 'singletons'],
+    'blue-gray-500',
+    'blue-gray-700'
+  ),
   k('field', ['fields', 'fld'], 'orange-400'),
   k('block', ['blocks', 'blk'], 'red-400'),
   k('collection', ['collections', 'clct'], 'indigo-400'),

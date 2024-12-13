@@ -318,6 +318,13 @@ export const fileIcons: FileIcons = {
       name: 'typescript-def',
       fileExtensions: ['d.ts', 'd.cts', 'd.mts'],
     },
+    { name: 'markdoc', fileExtensions: ['mdoc', 'markdoc', 'markdoc.md'] },
+    {
+      name: 'markdoc-config',
+      patterns: {
+        'markdoc.config': FileNamePattern.Ecmascript,
+      },
+    },
     { name: 'markojs', fileExtensions: ['marko'] },
     {
       name: 'astro',
@@ -564,6 +571,15 @@ export const fileIcons: FileIcons = {
         'sha256sums',
       ],
       fileNames: ['.htpasswd', 'sha256sums', '.secrets'],
+    },
+    {
+      name: 'keystatic',
+      fileNames: [
+        'keystatic.config.tsx',
+        'keystatic.config.ts',
+        'keystatic.config.jsx',
+        'keystatic.config.js',
+      ],
     },
     {
       name: 'font',
@@ -1988,7 +2004,7 @@ export const fileIcons: FileIcons = {
       name: 'fortran',
       fileExtensions: ['f', 'f77', 'f90', 'f95', 'f03', 'f08'],
     },
-    { name: 'tcl', fileExtensions: ['tcl'] },
+    { name: 'tcl', fileExtensions: ['tcl', 'do'] },
     { name: 'liquid', fileExtensions: ['liquid'] },
     { name: 'prolog', fileExtensions: ['p', 'pro', 'pl'] },
     {
@@ -2203,9 +2219,11 @@ export const fileIcons: FileIcons = {
       fileNames: [
         '.textlintrc',
         '.textlintrc.js',
+        '.textlintrc.cjs',
         '.textlintrc.json',
         '.textlintrc.yml',
         '.textlintrc.yaml',
+        '.textlintignore',
       ],
     },
     { name: 'scala', fileExtensions: ['scala', 'sc'] },
@@ -2879,10 +2897,20 @@ export const fileIcons: FileIcons = {
         '.umirc': FileNamePattern.Ecmascript,
       },
     },
+    {
+      name: 'pm2-ecosystem',
+      patterns: {
+        'ecosystem.config': FileNamePattern.Ecmascript,
+      },
+    },
     { name: 'hosts', fileNames: ['hosts'], light: true },
     {
       name: 'citation',
       fileNames: ['citation.cff'],
+    },
+    {
+      name: 'subtitles',
+      fileExtensions: ['srt', 'ssa', 'ttml', 'sbv', 'dfxp', 'vtt'],
     },
   ]),
 };

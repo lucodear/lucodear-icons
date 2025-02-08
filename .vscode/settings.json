@@ -1,7 +1,4 @@
 {
-  "files.readonlyInclude": {
-    "bun.lock": true
-  },
   "files.exclude": {
     // 📙 » others
     ".github": true,
@@ -42,7 +39,7 @@
     ".vscode-test": true,
     // ".vscode": true,
     "bunfig.toml": true,
-    "bun.lockb": true,
+    // "bun.lockb": true,
 
     // 🧪 » tests
     "**/**/test": true,

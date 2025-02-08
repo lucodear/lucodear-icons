@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  thank_you:
+  thank-you:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
 

@@ -20,6 +20,8 @@ import {
 import { merge } from '../../../../core/helpers/object';
 import type { LucodearFolderIcon, LucodearFolderTheme } from '../../models';
 
+// TODO: implement root folder icons
+
 export const loadLucodearFolderIconDefinitions = (
   folderIcons: LucodearFolderTheme[],
   config: Config,
@@ -43,17 +45,22 @@ export const loadLucodearFolderIconDefinitions = (
     if (icon.disabled) return;
     const folderNames = extendFolderNames(icon.folderNames);
     manifest = setIconDefinitions(manifest, icon);
-    manifest = merge(manifest, setFolderNames(icon.name, folderNames));
+    manifest = merge(manifest, setFolderNames(icon.name, folderNames, []));
     manifest.light = icon.light
       ? merge(
           manifest.light,
-          setFolderNames(icon.name, folderNames, lightColorFileEnding)
+          setFolderNames(icon.name, folderNames, [], lightColorFileEnding)
         )
       : manifest.light;
     manifest.highContrast = icon.highContrast
       ? merge(
           manifest.highContrast,
-          setFolderNames(icon.name, folderNames, highContrastColorFileEnding)
+          setFolderNames(
+            icon.name,
+            folderNames,
+            [],
+            highContrastColorFileEnding
+          )
         )
       : manifest.highContrast;
   });

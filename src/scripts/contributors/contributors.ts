@@ -113,8 +113,9 @@ const init = async () => {
         green(`Successfully created ${fileName} image!`)
       );
     })
-    .catch((e) => {
-      throw Error(red(`Error while creating ${fileName} image: ${e}`));
+    .catch((error) => {
+      console.log('> Material Icon Theme:', red(`Error: ${error}`));
+      throw Error(red(`Error while creating ${fileName} image`));
     });
 };
 

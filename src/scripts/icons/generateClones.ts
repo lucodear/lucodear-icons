@@ -1,35 +1,24 @@
 import { generateManifest } from '../../@lucodear/core/generators/manifest';
-import { applyLucodearOverrides } from '../../@lucodear/core/generators/override';
+import {} from '../../@lucodear/core/icons';
 import {
-  lucodearFileIcons,
-  lucodearFolderIcons,
-} from '../../@lucodear/core/icons';
-import {
-  type FileIcons,
-  type FolderTheme,
-  generateConfiguredClones,
-  merge,
-  fileIcons as originalFileIcons,
-  folderIcons as originalFolderIcons,
+  fileIcons,
+  folderIcons,
+  generateConfiguredFileIconClones,
+  generateConfiguredFolderIconClones,
+  generateConfiguredLanguageIconClones,
+  languageIcons,
 } from '../../core';
+import { yellow } from '../helpers/painter';
 
 /**
  * This file is meant to be executed exclusively by npm scripts.
  */
 try {
-  console.log('Generating icon clones...');
-  // #region 🍭 » lucode (changed with custom generateManifest and overrides)
+  console.log('> Material Icon Theme:', yellow('Generating icon clones...'));
   const manifest = generateManifest();
-  let [fileIcons, folderIcons] = applyLucodearOverrides(
-    originalFileIcons,
-    originalFolderIcons
-  );
-
-  fileIcons = merge(fileIcons, lucodearFileIcons as FileIcons);
-  folderIcons = [...folderIcons, ...[lucodearFolderIcons as FolderTheme]];
-  // #endregion
-  generateConfiguredClones(folderIcons, manifest);
-  generateConfiguredClones(fileIcons, manifest);
+  generateConfiguredFileIconClones(fileIcons, manifest);
+  generateConfiguredFolderIconClones(folderIcons, manifest);
+  generateConfiguredLanguageIconClones(languageIcons, manifest);
 } catch (error) {
   console.error(error);
   throw Error('Could not generate clones!');

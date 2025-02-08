@@ -74,7 +74,7 @@ export const patchFolders = (folders: FolderTheme[]) => {
           }, [] as string[])
         : patch.folderNames;
 
-      existing.folderNames.push(...(folderNames || []));
+      existing.folderNames?.push(...(folderNames || []));
 
       // make unique
       existing.folderNames = Array.from(new Set(existing.folderNames));

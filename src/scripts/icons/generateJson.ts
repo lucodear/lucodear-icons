@@ -6,6 +6,7 @@ import { generateManifest } from '../../@lucodear/core/generators/manifest';
 import {
   generateFileIcons,
   generateFolderIcons,
+  generateRootFolderIcons,
   getDefaultConfig,
 } from '../../core';
 
@@ -14,6 +15,11 @@ try {
   const config = getDefaultConfig();
   generateFileIcons(config.files.color, config.opacity, config.saturation);
   generateFolderIcons(config.folders.color, config.opacity, config.saturation);
+  generateRootFolderIcons(
+    config.rootFolders.color,
+    config.opacity,
+    config.saturation
+  );
 
   // #region 🍭 » lucode (changed with custom generateManifest)
   const manifest = generateManifest();

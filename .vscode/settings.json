@@ -1,4 +1,7 @@
 {
+  "files.readonlyInclude": {
+    "bun.lock": true
+  },
   "files.exclude": {
     // 📙 » others
     ".github": true,

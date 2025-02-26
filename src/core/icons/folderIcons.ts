@@ -90,7 +90,7 @@ export const folderIcons: FolderTheme[] = [
       },
       {
         name: 'folder-directive',
-        folderNames: ['directive, directives'],
+        folderNames: ['directive', 'directives'],
       },
       {
         name: 'folder-jinja',
@@ -1120,8 +1120,10 @@ export const folderIcons: FolderTheme[] = [
       },
       { name: 'folder-obsidian', folderNames: ['obsidian'] },
       { name: 'folder-trash', folderNames: ['trash'] },
+      { name: 'folder-cline', folderNames: ['cline_docs'] },
       { name: 'folder-liquibase', folderNames: ['liquibase'] },
       { name: 'folder-dart', folderNames: ['dart', 'dart_tool', 'dart_tools'] },
+      { name: 'folder-zeabur', folderNames: ['zeabur'] },
     ],
   },
   {

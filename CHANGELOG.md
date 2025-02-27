@@ -3,10 +3,42 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.19.2](https://github.com/lucodear/lucodear-icons/compare/v1.19.1...v1.19.2) 
+
+> February 26, 2025 
+
+- feat: update folder transformation icons with new colors and shapes [`#118`](https://github.com/lucodear/lucodear-icons/pull/118)
+ 
+#### [v1.19.1](https://github.com/lucodear/lucodear-icons/compare/v1.19.0...v1.19.1) 
+
+> February 26, 2025 
+
+- release: 🔖 v1.19.1 [`58c972ed`](https://github.com/lucodear/lucodear-icons/commit/58c972ed)
+- feat: update prettier icon [`#2904`](https://github.com/lucodear/lucodear-icons/pull/2904)
+- feat: .taskrc.yml files [`#2903`](https://github.com/lucodear/lucodear-icons/pull/2903)
+- chore(deps): update haaleo/publish-vscode-extension action to v2 [`#2902`](https://github.com/lucodear/lucodear-icons/pull/2902)
+- chore(deps): update haaleo/publish-vscode-extension action to v1.7.0 [`#2901`](https://github.com/lucodear/lucodear-icons/pull/2901)
+- feat: update database file extensions [`#2899`](https://github.com/lucodear/lucodear-icons/pull/2899)
+- chore(deps): update dependency bun to v1.2.3 [`#2900`](https://github.com/lucodear/lucodear-icons/pull/2900)
+- feat: update JS and CSS icons to be more pixel perfect [`#2895`](https://github.com/lucodear/lucodear-icons/pull/2895)
+- feat: add folder icon for zeabur [`#2897`](https://github.com/lucodear/lucodear-icons/pull/2897)
+- feat: add uv icon [`#2898`](https://github.com/lucodear/lucodear-icons/pull/2898)
+- feat: add `.sub` extension to subtitle files [`#2894`](https://github.com/lucodear/lucodear-icons/pull/2894)
+- fix: wrong mappings in `fileIcons.ts` [`#2893`](https://github.com/lucodear/lucodear-icons/pull/2893)
+- fix: wrong mapping in folderIcons.ts [`#2892`](https://github.com/lucodear/lucodear-icons/pull/2892)
+- feat: enhance GraphQL Config files [`#2890`](https://github.com/lucodear/lucodear-icons/pull/2890)
+- chore(deps): update actions/create-github-app-token action to v1.11.5 [`#2888`](https://github.com/lucodear/lucodear-icons/pull/2888)
+- chore(deps): update dependency esbuild to ^0.25.0 [`#2880`](https://github.com/lucodear/lucodear-icons/pull/2880)
+- feat: add icon for `commitizen` [`#2874`](https://github.com/lucodear/lucodear-icons/pull/2874)
+- feat: update typescript icons [`#2878`](https://github.com/lucodear/lucodear-icons/pull/2878)
+- feat: add cline icons [`#2879`](https://github.com/lucodear/lucodear-icons/pull/2879)
+- chore: update .vscodeignore to refine included files for extension packaging [`43de9092`](https://github.com/lucodear/lucodear-icons/commit/43de9092)
+ 
 #### [v1.19.0](https://github.com/lucodear/lucodear-icons/compare/v1.18.0...v1.19.0) 
 
 > February 8, 2025 
 
+- release: 🔖 v1.19.0 [`1b1b2a5e`](https://github.com/lucodear/lucodear-icons/commit/1b1b2a5e)
 - chore: 🧹 update to bun v1.2.x [`15708101`](https://github.com/lucodear/lucodear-icons/commit/15708101)
 - chore: update VSCode settings to exclude bun.lockb file [`42fd9da9`](https://github.com/lucodear/lucodear-icons/commit/42fd9da9)
 - chore(deps): update actions/create-github-app-token action to v1.11.3 [`#2875`](https://github.com/lucodear/lucodear-icons/pull/2875)

@@ -102,6 +102,11 @@ export const files: LucodearFileIcon[] = lucodear('misc', [
     light: true,
   },
   {
+    name: 'uv-lock',
+    fileNames: ['uv.lock'],
+    light: true,
+  },
+  {
     name: 'workflow',
     fileExtensions: [
       'workflow/yml',

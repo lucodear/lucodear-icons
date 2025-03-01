@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.20.1](https://github.com/lucodear/lucodear-icons/compare/v1.20.0...v1.20.1) 
+
+> March 1, 2025 
+
+- fix: cloned configured icons not working for lucodear specific icons [`5656ed3c`](https://github.com/lucodear/lucodear-icons/commit/5656ed3c)
+ 
 #### [v1.20.0](https://github.com/lucodear/lucodear-icons/compare/v1.19.2...v1.20.0) 
 
 > February 27, 2025 
 
+- release: 🔖 v1.20.0 [`ddc713f6`](https://github.com/lucodear/lucodear-icons/commit/ddc713f6)
 - feat: uv.lock file icon [`#119`](https://github.com/lucodear/lucodear-icons/pull/119)
  
 #### [v1.19.2](https://github.com/lucodear/lucodear-icons/compare/v1.19.1...v1.19.2) 

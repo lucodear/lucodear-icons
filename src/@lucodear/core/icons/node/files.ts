@@ -76,7 +76,7 @@ export const typescript = lucodear('node', [
   },
   {
     name: 'ts-index',
-    fileNames: ['index'],
+    fileNames: ['index.ts'],
   },
   {
     name: 'ts-interface',

@@ -469,7 +469,14 @@ export const folderIcons: FolderTheme[] = [
       { name: 'folder-graphql', folderNames: ['graphql', 'gql'] },
       {
         name: 'folder-routes',
-        folderNames: ['routes', 'router', 'routers'],
+        folderNames: [
+          'routes',
+          'router',
+          'routers',
+          'navigation',
+          'navigations',
+          'routing',
+        ],
       },
       { name: 'folder-ci', folderNames: ['ci'] },
       {
@@ -785,7 +792,19 @@ export const folderIcons: FolderTheme[] = [
       { name: 'folder-windows', folderNames: ['windows', 'win', 'win32'] },
       {
         name: 'folder-macos',
-        folderNames: ['macos', 'mac', 'osx', 'DS_Store'],
+        folderNames: [
+          'macos',
+          'mac',
+          'osx',
+          'DS_Store',
+          'iPhone',
+          'iPad',
+          'iPod',
+          'macbook',
+          'macbook-air',
+          'macosx',
+          'apple',
+        ],
       },
       {
         name: 'folder-error',
@@ -911,6 +930,19 @@ export const folderIcons: FolderTheme[] = [
       },
       { name: 'folder-stencil', folderNames: ['stencil'] },
       { name: 'folder-firebase', folderNames: ['firebase'] },
+      {
+        name: 'folder-firestore',
+        folderNames: ['firestore', 'cloud-firestore', 'firebase-firestore'],
+      },
+      {
+        name: 'folder-cloud-functions',
+        folderNames: [
+          'cloud-functions',
+          'cloudfunctions',
+          'firebase-cloud-functions',
+          'firebase-cloudfunctions',
+        ],
+      },
       { name: 'folder-svelte', folderNames: ['svelte', 'svelte-kit'] },
       {
         name: 'folder-update',
@@ -1124,6 +1156,7 @@ export const folderIcons: FolderTheme[] = [
       { name: 'folder-liquibase', folderNames: ['liquibase'] },
       { name: 'folder-dart', folderNames: ['dart', 'dart_tool', 'dart_tools'] },
       { name: 'folder-zeabur', folderNames: ['zeabur'] },
+      { name: 'folder-kusto', folderNames: ['kusto', 'kql'] },
     ],
   },
   {

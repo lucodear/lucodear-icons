@@ -84,22 +84,12 @@ export const files: LucodearFileIcon[] = lucodear('misc', [
     light: true,
   },
   {
-    name: 'illustrator',
-    fileExtensions: ['ai'],
-    light: true,
-  },
-  {
     name: 'package-json',
     fileNames: ['package.json'],
   },
   {
     name: 'package-lock',
     fileNames: ['package-lock.json'],
-  },
-  {
-    name: 'photoshop',
-    fileExtensions: ['psd'],
-    light: true,
   },
   {
     name: 'pureref',

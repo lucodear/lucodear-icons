@@ -79,6 +79,11 @@ export const files: LucodearFileIcon[] = lucodear('misc', [
     light: true,
   },
   {
+    name: 'shadcn',
+    fileNames: ['components.json'],
+    light: true,
+  },
+  {
     name: 'illustrator',
     fileExtensions: ['ai'],
     light: true,

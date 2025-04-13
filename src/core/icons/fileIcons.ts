@@ -324,7 +324,7 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'typescript-def',
-      fileExtensions: ['d.ts', 'd.cts', 'd.mts'],
+      fileExtensions: ['d.ts', 'd.cts', 'd.mts', 'd.ets'],
     },
     { name: 'markdoc', fileExtensions: ['mdoc', 'markdoc', 'markdoc.md'] },
     {
@@ -1389,7 +1389,7 @@ export const fileIcons: FileIcons = {
     {
       name: 'turborepo',
       light: true,
-      fileNames: ['turbo.json'],
+      fileNames: ['turbo.json', 'turbo.jsonc'],
     },
     {
       name: 'babel',

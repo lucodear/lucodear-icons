@@ -3,10 +3,45 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.21.0](https://github.com/lucodear/lucodear-icons/compare/v1.20.2...v1.21.0) 
+
+> April 6, 2025 
+
+- feat: add shadcn file icon [`3ec2896c`](https://github.com/lucodear/lucodear-icons/commit/3ec2896c)
+- chore(deps): update actions/create-github-app-token action to v2 [`#2958`](https://github.com/lucodear/lucodear-icons/pull/2958)
+- chore(release): v5.21.1 [`a0bad6b3`](https://github.com/lucodear/lucodear-icons/commit/a0bad6b3)
+- fix: 🚑 firebase icon not working (#2957) [`#2956`](https://github.com/lucodear/lucodear-icons/pull/2956)
+- chore(deps): update dependency bun to v1.2.8 [`#2951`](https://github.com/lucodear/lucodear-icons/pull/2951)
+- chore(release): v5.21.0 [`058ea1ce`](https://github.com/lucodear/lucodear-icons/commit/058ea1ce)
+- chore(deps): update actions/create-github-app-token action to v1.12.0 [`#2952`](https://github.com/lucodear/lucodear-icons/pull/2952)
+- feat: add support for more Python-adjacent file types [`#2954`](https://github.com/lucodear/lucodear-icons/pull/2954)
+- chore(deps): update dependency bun to v1.2.6 [`#2949`](https://github.com/lucodear/lucodear-icons/pull/2949)
+- feat: add folder icons for kusto [`#2936`](https://github.com/lucodear/lucodear-icons/pull/2936)
+- chore(deps): update actions/create-github-app-token action to v1.11.7 [`#2945`](https://github.com/lucodear/lucodear-icons/pull/2945)
+- feat: add the subtitle icon to `.ass` files [`#2944`](https://github.com/lucodear/lucodear-icons/pull/2944)
+- fix(ci): pr title workflow should be executed on updates [`34b85492`](https://github.com/lucodear/lucodear-icons/commit/34b85492)
+- feat: add file icon for Adobe Illustrator files [`#2933`](https://github.com/lucodear/lucodear-icons/pull/2933)
+- feat: add file icon for photoshop [`#2940`](https://github.com/lucodear/lucodear-icons/pull/2940)
+- feat: add icons for firestore & cloud-functions [`#2924`](https://github.com/lucodear/lucodear-icons/pull/2924)
+- feat: generate icons as 16×16 [`#2837`](https://github.com/lucodear/lucodear-icons/pull/2837)
+- feat: add routing icon support for `*.route.ts` and `*.route.tsx` [`#2917`](https://github.com/lucodear/lucodear-icons/pull/2917)
+- chore(deps): update dependency bun to v1.2.5 [`#2934`](https://github.com/lucodear/lucodear-icons/pull/2934)
+- feat: add navigation folder icon [`#2927`](https://github.com/lucodear/lucodear-icons/pull/2927)
+- feat: ✨ enhance cloning so two-color icons adhere to same-palette rule [`#2932`](https://github.com/lucodear/lucodear-icons/pull/2932)
+- chore(deps): update actions/attest-build-provenance action to v2.2.3 [`#2925`](https://github.com/lucodear/lucodear-icons/pull/2925)
+- feat: apple related associations for the apple folder icon [`#2918`](https://github.com/lucodear/lucodear-icons/pull/2918)
+- chore(deps): update actions/create-github-app-token action to v1.11.6 [`#2919`](https://github.com/lucodear/lucodear-icons/pull/2919)
+- chore(release): v5.20.0 [`74d52f68`](https://github.com/lucodear/lucodear-icons/commit/74d52f68)
+- chore(deps): update actions/attest-build-provenance action to v2.2.2 [`#2908`](https://github.com/lucodear/lucodear-icons/pull/2908)
+- chore(deps): update dependency changelogen to ^0.6.0 [`#2906`](https://github.com/lucodear/lucodear-icons/pull/2906)
+- chore(deps): update dependency bun to v1.2.4 [`#2905`](https://github.com/lucodear/lucodear-icons/pull/2905)
+- chore(deps): update actions/attest-build-provenance action to v2.2.1 [`#2907`](https://github.com/lucodear/lucodear-icons/pull/2907)
+ 
 #### [v1.20.2](https://github.com/lucodear/lucodear-icons/compare/v1.20.1...v1.20.2) 
 
 > April 3, 2025 
 
+- release: 🔖 v1.20.2 [`4eb94d68`](https://github.com/lucodear/lucodear-icons/commit/4eb94d68)
 - fix: update fileNames for ts-index to include .ts extension [`7ff4e712`](https://github.com/lucodear/lucodear-icons/commit/7ff4e712)
  
 #### [v1.20.1](https://github.com/lucodear/lucodear-icons/compare/v1.20.0...v1.20.1) 

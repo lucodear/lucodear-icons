@@ -3,10 +3,28 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.22.0](https://github.com/lucodear/lucodear-icons/compare/v1.21.0...v1.22.0) 
+
+> April 13, 2025 
+
+- feat: ✨ impl folder icon [`5ff37168`](https://github.com/lucodear/lucodear-icons/commit/5ff37168)
+- feat: add `supabase.ts` to list of supabase icons [`#2970`](https://github.com/lucodear/lucodear-icons/pull/2970)
+- feat: add bench and perf to benchmark folder icon [`#2968`](https://github.com/lucodear/lucodear-icons/pull/2968)
+- feat: add policy folder [`#2960`](https://github.com/lucodear/lucodear-icons/pull/2960)
+- chore(deps): update dependency bun to v1.2.9 [`#2964`](https://github.com/lucodear/lucodear-icons/pull/2964)
+- feat: add song and songs to audio folder icon [`#2967`](https://github.com/lucodear/lucodear-icons/pull/2967)
+- feat(icons): add PackShip package builder icon [`#2947`](https://github.com/lucodear/lucodear-icons/pull/2947)
+- feat: add plural folder names for folder-sandbox icon [`#2965`](https://github.com/lucodear/lucodear-icons/pull/2965)
+- feat: associate the `.ets` and `.d.ets` extensions to typescript icon to support the ArkTS language [`#2966`](https://github.com/lucodear/lucodear-icons/pull/2966)
+- feat(icons): add support for `turbo.jsonc` file in turborepo icon [`#2963`](https://github.com/lucodear/lucodear-icons/pull/2963)
+- feat: add new icons for CSS [`#2710`](https://github.com/lucodear/lucodear-icons/pull/2710)
+- fix(icons): fix `react-components` folder icons [`#2961`](https://github.com/lucodear/lucodear-icons/pull/2961)
+ 
 #### [v1.21.0](https://github.com/lucodear/lucodear-icons/compare/v1.20.2...v1.21.0) 
 
 > April 6, 2025 
 
+- release: 🔖 v1.21.0 [`2a7826ce`](https://github.com/lucodear/lucodear-icons/commit/2a7826ce)
 - feat: add shadcn file icon [`3ec2896c`](https://github.com/lucodear/lucodear-icons/commit/3ec2896c)
 - chore(deps): update actions/create-github-app-token action to v2 [`#2958`](https://github.com/lucodear/lucodear-icons/pull/2958)
 - chore(release): v5.21.1 [`a0bad6b3`](https://github.com/lucodear/lucodear-icons/commit/a0bad6b3)

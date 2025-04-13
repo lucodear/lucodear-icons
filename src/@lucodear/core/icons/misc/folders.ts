@@ -152,6 +152,10 @@ export const folders = lucodear('misc', [
     folderNames: ['idea', 'ideas', '.idea', '.ideas', '💡'],
   },
   {
+    name: 'impl',
+    folderNames: ['impl', 'impls', 'implementation', 'implementations'],
+  },
+  {
     // just a recolor of the upstream layout folder icon from sky blue to a brown-ish
     name: 'layout',
     folderNames: ['layout', 'layouts'],

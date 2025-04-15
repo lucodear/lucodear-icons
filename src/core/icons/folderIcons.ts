@@ -229,6 +229,8 @@ export const folderIcons: FolderTheme[] = [
           'colors',
           'design',
           'designs',
+          'palette',
+          'palettes',
         ],
       },
       { name: 'folder-webpack', folderNames: ['webpack'] },
@@ -675,7 +677,10 @@ export const folderIcons: FolderTheme[] = [
           'clis',
         ],
       },
-      { name: 'folder-constant', folderNames: ['constant', 'constants'] },
+      {
+        name: 'folder-constant',
+        folderNames: ['constant', 'constants', 'const', 'consts'],
+      },
       {
         name: 'folder-container',
         folderNames: ['container', 'containers', 'devcontainer'],

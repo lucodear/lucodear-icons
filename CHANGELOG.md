@@ -3,10 +3,30 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.23.0](https://github.com/lucodear/lucodear-icons/compare/v1.22.0...v1.23.0) 
+
+> April 30, 2025 
+
+- feat: add 'satlite' folder [`26799abf`](https://github.com/lucodear/lucodear-icons/commit/26799abf)
+- chore(deps): update dependency bun to v1.2.11 [`#2994`](https://github.com/lucodear/lucodear-icons/pull/2994)
+- feat: recreate different icons for hooks and triggers folders [`#2985`](https://github.com/lucodear/lucodear-icons/pull/2985)
+- feat: add icon for attachments folder [`#2988`](https://github.com/lucodear/lucodear-icons/pull/2988)
+- chore(deps): update actions/attest-build-provenance action to v2.3.0 [`#2992`](https://github.com/lucodear/lucodear-icons/pull/2992)
+- feat: add icon for hadolint configuration files [`#2984`](https://github.com/lucodear/lucodear-icons/pull/2984)
+- feat: associate archive folder to a new icon [`#2989`](https://github.com/lucodear/lucodear-icons/pull/2989)
+- chore(deps): update oven-sh/setup-bun digest to 735343b [`#2991`](https://github.com/lucodear/lucodear-icons/pull/2991)
+- refactor: update citation icon to match rounded style [`#2990`](https://github.com/lucodear/lucodear-icons/pull/2990)
+- feat(icons): add Snakemake icon [`#2980`](https://github.com/lucodear/lucodear-icons/pull/2980)
+- feat: associate Docker icon to `dockerbake` language ID [`#2982`](https://github.com/lucodear/lucodear-icons/pull/2982)
+- chore(deps): update dependency bun to v1.2.10 [`#2975`](https://github.com/lucodear/lucodear-icons/pull/2975)
+- feat: add palette and palettes to theme folder icon [`#2973`](https://github.com/lucodear/lucodear-icons/pull/2973)
+- feat: add const and consts to constant folder icon [`#2972`](https://github.com/lucodear/lucodear-icons/pull/2972)
+ 
 #### [v1.22.0](https://github.com/lucodear/lucodear-icons/compare/v1.21.0...v1.22.0) 
 
 > April 13, 2025 
 
+- release: 🔖 v1.22.0 [`1cd4e2f7`](https://github.com/lucodear/lucodear-icons/commit/1cd4e2f7)
 - feat: ✨ impl folder icon [`5ff37168`](https://github.com/lucodear/lucodear-icons/commit/5ff37168)
 - feat: add `supabase.ts` to list of supabase icons [`#2970`](https://github.com/lucodear/lucodear-icons/pull/2970)
 - feat: add bench and perf to benchmark folder icon [`#2968`](https://github.com/lucodear/lucodear-icons/pull/2968)

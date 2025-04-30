@@ -40,6 +40,10 @@ export const folders = lucodear('lucodear', [
     folderNames: ['rustler', 'rustlers'],
   },
   {
+    name: 'satlite',
+    folderNames: ['satlite'],
+  },
+  {
     name: 'singleaction',
     folderNames: ['singleaction', 'single-action', 'sa'],
   },

@@ -645,12 +645,11 @@ export const folderIcons: FolderTheme[] = [
       },
       {
         name: 'folder-archive',
+        folderNames: ['arc', 'arcs', 'archive', 'archives', 'archival'],
+      },
+      {
+        name: 'folder-backup',
         folderNames: [
-          'arc',
-          'arcs',
-          'archive',
-          'archives',
-          'archival',
           'bkp',
           'bkps',
           'bak',
@@ -738,7 +737,11 @@ export const folderIcons: FolderTheme[] = [
       },
       {
         name: 'folder-hook',
-        folderNames: ['hook', 'hooks', 'trigger', 'triggers'],
+        folderNames: ['hook', 'hooks'],
+      },
+      {
+        name: 'folder-trigger',
+        folderNames: ['trigger', 'triggers'],
       },
       { name: 'folder-job', folderNames: ['job', 'jobs'] },
       {
@@ -1167,6 +1170,7 @@ export const folderIcons: FolderTheme[] = [
       { name: 'folder-zeabur', folderNames: ['zeabur'] },
       { name: 'folder-kusto', folderNames: ['kusto', 'kql'] },
       { name: 'folder-policy', folderNames: ['policy', 'policies'] },
+      { name: 'folder-attachment', folderNames: ['attachment', 'attachments'] },
     ],
   },
   {

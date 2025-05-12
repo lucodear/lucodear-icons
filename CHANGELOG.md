@@ -3,10 +3,21 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.23.1](https://github.com/lucodear/lucodear-icons/compare/v1.23.0...v1.23.1) 
+
+> May 12, 2025 
+
+- feat: ✨ update CSS icons to new design [`41c6b000`](https://github.com/lucodear/lucodear-icons/commit/41c6b000)
+- feat: add icons for `*.bib` files and BibTeX language IDs [`#2986`](https://github.com/lucodear/lucodear-icons/pull/2986)
+- feat: add new icons for TeX/LaTeX related files [`#2997`](https://github.com/lucodear/lucodear-icons/pull/2997)
+- feat(icons): add Excalidraw icon [`#2995`](https://github.com/lucodear/lucodear-icons/pull/2995)
+- feat: add icon for links folder [`#2987`](https://github.com/lucodear/lucodear-icons/pull/2987)
+ 
 #### [v1.23.0](https://github.com/lucodear/lucodear-icons/compare/v1.22.0...v1.23.0) 
 
 > April 30, 2025 
 
+- release: 🔖 v1.23.0 [`d7c31e1b`](https://github.com/lucodear/lucodear-icons/commit/d7c31e1b)
 - feat: add 'satlite' folder [`26799abf`](https://github.com/lucodear/lucodear-icons/commit/26799abf)
 - chore(deps): update dependency bun to v1.2.11 [`#2994`](https://github.com/lucodear/lucodear-icons/pull/2994)
 - feat: recreate different icons for hooks and triggers folders [`#2985`](https://github.com/lucodear/lucodear-icons/pull/2985)

@@ -3,10 +3,28 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.24.0](https://github.com/lucodear/lucodear-icons/compare/v1.23.1...v1.24.0) 
+
+> May 14, 2025 
+
+- feat: ✨ ts hook icon [`429edea0`](https://github.com/lucodear/lucodear-icons/commit/429edea0)
+- feat: add .xsh to console icon [`#3012`](https://github.com/lucodear/lucodear-icons/pull/3012)
+- chore(deps): update dependency bun to v1.2.13 [`#3010`](https://github.com/lucodear/lucodear-icons/pull/3010)
+- feat: add cpn icon [`#3005`](https://github.com/lucodear/lucodear-icons/pull/3005)
+- fix: Icon "*.cls" Apex Salesforce not found [`faa509b6`](https://github.com/lucodear/lucodear-icons/commit/faa509b6)
+- chore(deps): update dependency bun to v1.2.12 [`#3002`](https://github.com/lucodear/lucodear-icons/pull/3002)
+- fix: update username in changelog [`8d79f38c`](https://github.com/lucodear/lucodear-icons/commit/8d79f38c)
+- chore(deps): update actions/create-github-app-token action to v2.0.6 [`#3001`](https://github.com/lucodear/lucodear-icons/pull/3001)
+- fix: update changelog (replace emails with usernames) [`12df8f5a`](https://github.com/lucodear/lucodear-icons/commit/12df8f5a)
+- chore(deps): update actions/create-github-app-token action to v2.0.5 [`#2999`](https://github.com/lucodear/lucodear-icons/pull/2999)
+- chore(deps): update actions/create-github-app-token action to v2.0.4 [`#2998`](https://github.com/lucodear/lucodear-icons/pull/2998)
+- chore(release): v5.22.0 [`334a0a75`](https://github.com/lucodear/lucodear-icons/commit/334a0a75)
+ 
 #### [v1.23.1](https://github.com/lucodear/lucodear-icons/compare/v1.23.0...v1.23.1) 
 
 > May 12, 2025 
 
+- release: 🔖 v1.23.1 [`0c0b9397`](https://github.com/lucodear/lucodear-icons/commit/0c0b9397)
 - feat: ✨ update CSS icons to new design [`41c6b000`](https://github.com/lucodear/lucodear-icons/commit/41c6b000)
 - feat: add icons for `*.bib` files and BibTeX language IDs [`#2986`](https://github.com/lucodear/lucodear-icons/pull/2986)
 - feat: add new icons for TeX/LaTeX related files [`#2997`](https://github.com/lucodear/lucodear-icons/pull/2997)

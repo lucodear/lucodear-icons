@@ -531,6 +531,7 @@ export const fileIcons: FileIcons = {
         'fish',
         'exp',
         'nu',
+        'xsh',
       ],
       fileNames: ['commit-msg', 'pre-commit', 'pre-push', 'post-merge'],
     },
@@ -772,11 +773,6 @@ export const fileIcons: FileIcons = {
       name: 'sty',
       fileExtensions: ['sty'],
       clone: { base: 'tex', color: 'deep-purple-A200' },
-    },
-    {
-      name: 'cls',
-      fileExtensions: ['cls'],
-      clone: { base: 'tex', color: 'pink-A200' },
     },
     {
       name: 'ltx',
@@ -3135,6 +3131,10 @@ export const fileIcons: FileIcons = {
         '.hadolint': FileNamePattern.Yaml,
         hadolint: FileNamePattern.Yaml,
       },
+    },
+    {
+      name: 'coloredpetrinets',
+      fileExtensions: ['cpn', 'pnml'],
     },
   ]),
 };

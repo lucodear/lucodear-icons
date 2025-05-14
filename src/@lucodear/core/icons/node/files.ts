@@ -75,6 +75,10 @@ export const typescript = lucodear('node', [
     ...namext(['factory', 'fact']),
   },
   {
+    name: 'ts-hook',
+    ...namext(['hook', 'hooks'], true),
+  },
+  {
     name: 'ts-index',
     fileNames: ['index.ts'],
   },

@@ -355,10 +355,13 @@ export const folderIcons: FolderTheme[] = [
           color: 'light-green-500',
         },
       },
+
       {
         name: 'folder-react-components',
         folderNames: [
-          'components',
+          // #region 🍭 » lucode: disable react component folder
+          // 'components',
+          // #endregion
           'react',
           'jsx',
           'reactjs',

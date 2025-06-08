@@ -1587,6 +1587,7 @@ export const fileIcons: FileIcons = {
         '.mocharc.yml',
         '.mocharc.yaml',
         '.mocharc.js',
+        '.mocharc.cjs',
         '.mocharc.json',
         '.mocharc.jsonc',
       ],
@@ -1894,7 +1895,11 @@ export const fileIcons: FileIcons = {
       fileNames: ['vagrantfile'],
       fileExtensions: ['vagrantfile'],
     },
-    { name: 'prisma', fileNames: ['prisma.yml'], fileExtensions: ['prisma'] },
+    {
+      name: 'prisma',
+      fileNames: ['prisma.yml', 'prisma.config.ts'],
+      fileExtensions: ['prisma'],
+    },
     { name: 'razor', fileExtensions: ['cshtml', 'vbhtml'] },
     { name: 'abc', fileExtensions: ['abc'] },
     { name: 'asciidoc', fileExtensions: ['ad', 'adoc', 'asciidoc'] },
@@ -1906,6 +1911,7 @@ export const fileIcons: FileIcons = {
         '.nycrc.yaml',
         '.nycrc.yml',
         'nyc.config.js',
+        'nyc.config.cjs',
         '.istanbul.yml',
       ],
     },
@@ -3135,6 +3141,10 @@ export const fileIcons: FileIcons = {
     {
       name: 'coloredpetrinets',
       fileExtensions: ['cpn', 'pnml'],
+    },
+    {
+      name: 'pytorch',
+      fileExtensions: ['pt', 'pth', 'pwf'],
     },
   ]),
 };

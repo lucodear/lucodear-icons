@@ -3,10 +3,25 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.25.0](https://github.com/lucodear/lucodear-icons/compare/v1.24.0...v1.25.0) 
+
+> June 8, 2025 
+
+- feat: ✨ disable components folder icon for react pack [`1e58f3e7`](https://github.com/lucodear/lucodear-icons/commit/1e58f3e7)
+- fix(icons): `.mocharc.cjs` and `nyc.config.cjs` are valid names for those config files [`#3039`](https://github.com/lucodear/lucodear-icons/pull/3039)
+- chore(deps): update dependency bun to v1.2.15 [`#3036`](https://github.com/lucodear/lucodear-icons/pull/3036)
+- feat: add new config file for Prisma [`#3035`](https://github.com/lucodear/lucodear-icons/pull/3035)
+- chore(deps): update dependency bun to v1.2.14 [`#3027`](https://github.com/lucodear/lucodear-icons/pull/3027)
+- feat: add PyTorch file and folder icons [`#3014`](https://github.com/lucodear/lucodear-icons/pull/3014)
+- chore(deps): update dependency lint-staged to v16 [`#3011`](https://github.com/lucodear/lucodear-icons/pull/3011)
+- chore(deps): update dependency markdownlint-cli to ^0.45.0 [`#3020`](https://github.com/lucodear/lucodear-icons/pull/3020)
+- chore(release): v5.23.0 [`27f19ebf`](https://github.com/lucodear/lucodear-icons/commit/27f19ebf)
+ 
 #### [v1.24.0](https://github.com/lucodear/lucodear-icons/compare/v1.23.1...v1.24.0) 
 
 > May 14, 2025 
 
+- release: 🔖 v1.24.0 [`ea5007eb`](https://github.com/lucodear/lucodear-icons/commit/ea5007eb)
 - feat: ✨ ts hook icon [`429edea0`](https://github.com/lucodear/lucodear-icons/commit/429edea0)
 - feat: add .xsh to console icon [`#3012`](https://github.com/lucodear/lucodear-icons/pull/3012)
 - chore(deps): update dependency bun to v1.2.13 [`#3010`](https://github.com/lucodear/lucodear-icons/pull/3010)

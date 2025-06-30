@@ -113,6 +113,10 @@ export const folders = lucodear('misc', [
     folderNames: ['factory', 'factories'],
   },
   {
+    name: 'filter',
+    folderNames: ['filter', 'filters', 'extractor', 'extractors', 'extract'],
+  },
+  {
     name: 'gh-issue-template',
     folderNames: ['.github/ISSUE_TEMPLATE'],
   },

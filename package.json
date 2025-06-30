@@ -169,6 +169,7 @@
             "%configuration.activeIconPack.pest%",
             "%configuration.activeIconPack.rust_ferris%",
             "%configuration.activeIconPack.rust_ferris_minimal%",
+            "%configuration.activeIconPack.atomic-design%",
             "%configuration.activeIconPack.cloudflare%",
             "%configuration.activeIconPack.none%"
           ],
@@ -188,6 +189,7 @@
             "rust_ferris",
             "rust_ferris_minimal",
             "cloudflare",
+            "atomic-design",
             "none"
           ]
         },

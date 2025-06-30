@@ -1,4 +1,5 @@
 import { type FileIcons, parseByPattern } from '../../../core';
+import { atomicOverrides } from '../icons/atomic';
 
 /**
  * Defines lucodear's file icons overrides. The content of this object will be merged with the
@@ -17,5 +18,6 @@ export const fileIconsOverrides: Partial<FileIcons> = {
       fileExtensions: ['base.tsconfig.json', 'tsconfig.base.json'],
       fileNames: ['base.tsconfig.json', 'tsconfig.base.json'],
     },
+    ...atomicOverrides,
   ]),
 };

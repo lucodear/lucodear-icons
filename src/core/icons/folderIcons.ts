@@ -30,6 +30,8 @@ export const folderIcons: FolderTheme[] = [
           'release',
           'bin',
           'distribution',
+          'built',
+          'compiled',
         ],
       },
       {
@@ -39,7 +41,18 @@ export const folderIcons: FolderTheme[] = [
       { name: 'folder-sass', folderNames: ['sass', 'scss'] },
       { name: 'folder-television', folderNames: ['tv', 'television'] },
       { name: 'folder-desktop', folderNames: ['desktop', 'display'] },
-      { name: 'folder-console', folderNames: ['console'] },
+      {
+        name: 'folder-console',
+        folderNames: [
+          'console',
+          'xbox',
+          'ps4',
+          'ps5',
+          'switch',
+          'game',
+          'games',
+        ],
+      },
       {
         name: 'folder-images',
         folderNames: [
@@ -67,6 +80,8 @@ export const folderIcons: FolderTheme[] = [
           'photos',
           'photograph',
           'photographs',
+          'texture',
+          'textures',
         ],
       },
       {
@@ -79,10 +94,13 @@ export const folderIcons: FolderTheme[] = [
       },
       {
         name: 'folder-javascript',
-        folderNames: ['js', 'javascript', 'javascripts'],
+        folderNames: ['js', 'javascript', 'javascripts', 'cjs', 'mjs'],
       },
-      { name: 'folder-json', folderNames: ['json', 'jsons'] },
-      { name: 'folder-font', folderNames: ['font', 'fonts'] },
+      { name: 'folder-json', folderNames: ['json', 'jsons', 'jsonc', 'jsonl'] },
+      {
+        name: 'folder-font',
+        folderNames: ['font', 'fonts', 'typeface', 'typefaces'],
+      },
       { name: 'folder-bower', folderNames: ['bower_components'] },
       {
         name: 'folder-test',
@@ -164,6 +182,8 @@ export const folderIcons: FolderTheme[] = [
           'prefs',
           'preference',
           'preferences',
+          'props',
+          'properties',
         ],
       },
       {
@@ -471,7 +491,15 @@ export const folderIcons: FolderTheme[] = [
       { name: 'folder-turborepo', folderNames: ['turbo'] },
       {
         name: 'folder-typescript',
-        folderNames: ['typescript', 'ts', 'typings', '@types', 'types'],
+        folderNames: [
+          'typescript',
+          'ts',
+          'typings',
+          '@types',
+          'types',
+          'cts',
+          'mts',
+        ],
       },
       { name: 'folder-graphql', folderNames: ['graphql', 'gql'] },
       {
@@ -524,6 +552,7 @@ export const folderIcons: FolderTheme[] = [
           'gulpfile.mjs',
           'gulpfile.ts',
           'gulpfile.babel.js',
+          'gulpfiles',
         ],
       },
       {
@@ -803,8 +832,38 @@ export const folderIcons: FolderTheme[] = [
       },
       { name: 'folder-supabase', folderNames: ['supabase'] },
       { name: 'folder-private', folderNames: ['private'] },
-      { name: 'folder-linux', folderNames: ['linux', 'linuxbsd', 'unix'] },
-      { name: 'folder-windows', folderNames: ['windows', 'win', 'win32'] },
+      {
+        name: 'folder-linux',
+        folderNames: [
+          'linux',
+          'linuxbsd',
+          'unix',
+          'wsl',
+          'ubuntu',
+          'deb',
+          'debian',
+          'deepin',
+          'centos',
+          'popos',
+          'mint',
+        ],
+      },
+      {
+        name: 'folder-windows',
+        folderNames: [
+          'windows',
+          'win',
+          'win32',
+          'windows11',
+          'windows10',
+          'windowsxp',
+          'windowsnt',
+          'win11',
+          'win10',
+          'winxp',
+          'winnt',
+        ],
+      },
       {
         name: 'folder-macos',
         folderNames: [
@@ -1180,6 +1239,16 @@ export const folderIcons: FolderTheme[] = [
       },
       { name: 'folder-link', folderNames: ['link', 'links'] },
       { name: 'folder-pytorch', folderNames: ['pytorch', 'torch'] },
+      {
+        name: 'folder-blender',
+        folderNames: [
+          'blender',
+          'blender-assets',
+          'blender-files',
+          'blender-project',
+          'blender-models',
+        ],
+      },
     ],
   },
   {

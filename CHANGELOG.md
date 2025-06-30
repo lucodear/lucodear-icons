@@ -3,10 +3,32 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.26.0](https://github.com/lucodear/lucodear-icons/compare/v1.25.0...v1.26.0) 
+
+> June 30, 2025 
+
+- feat: ✨ atomic design pack [`84a3077e`](https://github.com/lucodear/lucodear-icons/commit/84a3077e)
+- feat: ✨ add filter/extractor icon [`a5774fc0`](https://github.com/lucodear/lucodear-icons/commit/a5774fc0)
+- chore(deps): update dependency bun to v1.2.17 [`#3060`](https://github.com/lucodear/lucodear-icons/pull/3060)
+- feat: Update fileicons.ts and folderIcons.ts [`#3062`](https://github.com/lucodear/lucodear-icons/pull/3062)
+- refactor: remove icons for `tex` and `ltx` file extensions [`#3065`](https://github.com/lucodear/lucodear-icons/pull/3065)
+- fix: correct phpstan icon file patterns [`#3063`](https://github.com/lucodear/lucodear-icons/pull/3063)
+- feat: enhance excalidraw file icon support with additional file names [`#3064`](https://github.com/lucodear/lucodear-icons/pull/3064)
+- feat: Update fileIcons.ts [`#3054`](https://github.com/lucodear/lucodear-icons/pull/3054)
+- chore(release): v5.24.0 [`1ce77952`](https://github.com/lucodear/lucodear-icons/commit/1ce77952)
+- feat: add Blender file and folder icons [`#3046`](https://github.com/lucodear/lucodear-icons/pull/3046)
+- feat: update vscode icon [`#3049`](https://github.com/lucodear/lucodear-icons/pull/3049)
+- feat: add additional common 3d file extensions [`#3047`](https://github.com/lucodear/lucodear-icons/pull/3047)
+- feat: Add CMake icon to CMakePresets.json [`#3045`](https://github.com/lucodear/lucodear-icons/pull/3045)
+- chore(deps): update dependency bun to v1.2.16 [`#3048`](https://github.com/lucodear/lucodear-icons/pull/3048)
+- chore(deps): update actions/attest-build-provenance action to v2.4.0 [`#3044`](https://github.com/lucodear/lucodear-icons/pull/3044)
+- feat: add new icons for TeX/LaTeX related files and set better colors [`#3042`](https://github.com/lucodear/lucodear-icons/pull/3042)
+ 
 #### [v1.25.0](https://github.com/lucodear/lucodear-icons/compare/v1.24.0...v1.25.0) 
 
 > June 8, 2025 
 
+- release: 🔖 v1.25.0 [`bd4ebad9`](https://github.com/lucodear/lucodear-icons/commit/bd4ebad9)
 - feat: ✨ disable components folder icon for react pack [`1e58f3e7`](https://github.com/lucodear/lucodear-icons/commit/1e58f3e7)
 - fix(icons): `.mocharc.cjs` and `nyc.config.cjs` are valid names for those config files [`#3039`](https://github.com/lucodear/lucodear-icons/pull/3039)
 - chore(deps): update dependency bun to v1.2.15 [`#3036`](https://github.com/lucodear/lucodear-icons/pull/3036)

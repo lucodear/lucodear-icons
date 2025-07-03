@@ -31,6 +31,16 @@ export const folders = lucodear('lucodear', [
     folderNames: ['oxidoc'],
   },
   {
+    name: 'parla',
+    folderNames: [
+      'parla',
+      'parla-server',
+      'parla-app',
+      'parla_server',
+      'parla_app',
+    ],
+  },
+  {
     name: 'pest',
     folderNames: ['pest'],
     light: true,

@@ -52,6 +52,19 @@ export const files = lucodear('lucodear', [
     ],
   },
   {
+    name: 'parla',
+    fileNames: [
+      'parla.toml',
+      'parla.json',
+      'parla.jsonc',
+      'parla.json5',
+      'parla.yml',
+      'parla.yaml',
+      '.parlarc',
+      'parlarc',
+    ],
+  },
+  {
     name: 'lucode',
     fileNames: [
       'lucode.toml',

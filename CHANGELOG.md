@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.27.0](https://github.com/lucodear/lucodear-icons/compare/v1.26.0...v1.27.0) 
+
+> July 3, 2025 
+
+- feat: ✨ speaker + parla [`584a5d2c`](https://github.com/lucodear/lucodear-icons/commit/584a5d2c)
+ 
 #### [v1.26.0](https://github.com/lucodear/lucodear-icons/compare/v1.25.0...v1.26.0) 
 
 > June 30, 2025 
 
+- release: 🔖 v1.26.0 [`66cbc079`](https://github.com/lucodear/lucodear-icons/commit/66cbc079)
 - feat: ✨ atomic design pack [`84a3077e`](https://github.com/lucodear/lucodear-icons/commit/84a3077e)
 - feat: ✨ add filter/extractor icon [`a5774fc0`](https://github.com/lucodear/lucodear-icons/commit/a5774fc0)
 - chore(deps): update dependency bun to v1.2.17 [`#3060`](https://github.com/lucodear/lucodear-icons/pull/3060)

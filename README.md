@@ -1,4 +1,4 @@
-<!-- markdownlint-disable heading-start-left first-line-h1 -->
+<!-- markdownlint-disable -->
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable no-inline-html heading-increment -->
@@ -60,7 +60,7 @@ or via user settings:
 "lucodear-icons.files.color": "#42a5f5",
 ```
 
-#### Folder themes
+### Folder themes
 
 You can change the design of the folder icons using the command palette:
 
@@ -72,7 +72,7 @@ or via user settings:
 "lucodear-icons.folders.theme": "specific"
 ```
 
-## Custom icon opacity
+### Custom icon opacity
 
 You can set a custom opacity for the icons:
 
@@ -80,7 +80,7 @@ You can set a custom opacity for the icons:
 "lucodear-icons.opacity": 0.5
 ```
 
-## Custom icon saturation
+### Custom icon saturation
 
 If colors do not make you happy you can change the icons to have less saturation making them look grayish or completely grayscale by setting saturation to 0:
 
@@ -90,11 +90,11 @@ If colors do not make you happy you can change the icons to have less saturation
 
 You can also achieve no saturation (i.e., grayscale) by setting **Toggle Grayscale** to ON.
 
-## Custom icon associations
+### Custom icon associations
 
 You can customize the icon associations directly in the user settings.
 
-### File associations
+#### File associations
 
 With the `*.[extension]` pattern you can define custom file icon associations. For example you could define an icon for `*.sample` and every file that ends with `.sample` will have the defined icon. However, not all files with the same file extension always have the same icon. For some specific file names there is a special icon. In order to overwrite all the specific file icons as well, two asterisks must be set instead of one, i.e. `**.[extension]`.
 
@@ -160,7 +160,7 @@ This will create two new icons called `rust-mod` and `rust-lib` that are associa
 - Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases [here](https://github.com/lucodear/lucodear-icons/blob/main/src/core/generator/clones/utils/color/materialPalette.ts).
 - You can check the full list of available icons to be used as the `base` [here](https://github.com/lucodear/lucodear-icons/blob/main/src/core/icons/fileIcons.ts).
 
-### Folder associations
+#### Folder associations
 
 The following configuration can customize the folder icons. It is also possible to overwrite existing associations and create nice combinations. For example you could change the folder theme to "classic" and define icons only for the folder names you like.
 
@@ -224,7 +224,27 @@ This will create two new icons called `users-admin` and `roles-admin` that are a
 - Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases [here](https://github.com/lucodear/lucodear-icons/blob/main/src/core/generator/clones/utils/color/materialPalette.ts#L4).
 - You can check the full list of available icon to be used as the `base` [here](https://github.com/lucodear/lucodear-icons/blob/main/src/core/icons/folderIcons.ts).
 
-### Language associations
+#### Root folder associations
+
+You can customize the icon for your workspace's root folder. This is helpful if you want a distinct icon for the main folder in your project.
+
+To assign an icon (e.g. the server folder icon) to a root folder (e.g., `backend`), use the following configuration:
+
+```json
+"material-icon-theme.rootFolders.associations": {
+  "backend": "server"
+}
+```
+
+#### Customize root folder icon color
+
+To change the color of root folder icons, add this setting:
+
+```json
+"material-icon-theme.rootFolders.color": "#F4511E"
+```
+
+#### Language associations
 
 With the following configuration you can customize the language icons. It is also possible to overwrite existing associations.
 
@@ -257,8 +277,8 @@ This will create a new icon called `ahk-clone` which is associated with the lang
 
 ![cloned language icons](https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/main/images/how-tos/cloned-language-icons-example.png)
 
-- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases [here](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/src/core/generator/clones/utils/color/materialPalette.ts).
-- You can check the full list of available icons to be used as the `base` [here](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/src/core/icons/fileIcons.ts).
+- Although you can use any `#RRGGBB` color for the `color` and `lightColor` properties, if you want to stick with colors from the material palette, you can check the full list of allowed aliases in the [materialPalette.ts](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/src/core/generator/clones/utils/color/materialPalette.ts).
+- You can check the full list of available icons to be used as the `base` in the [fileIcons.ts](https://github.com/material-extensions/vscode-material-icon-theme/blob/main/src/core/icons/fileIcons.ts).
 
 ## Commands
 
@@ -269,17 +289,18 @@ Press `Ctrl-Shift-P` to open the command palette and type `lucodear`.
 ![commands](https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/main/images/commandPalette.png)
 
 | Command                           | Description                                                                         |
-| --------------------------------- | ----------------------------------------------------------------------------------- |
-| **Activate Icon Theme**           | Activate the icon theme.                                                            |
-| **Change File Color**             | Change the color of the file icons.                                                 |
-| **Change Folder Color**           | Change the color of the folder icons.                                               |
-| **Change Folder Theme**           | Change the design of the folder icons.                                              |
-| **Change Opacity**                | Change the opacity of the icons.                                                    |
-| **Change Saturation**             | Change the saturation value of the icons.                                           |
-| **Configure Icon Packs**          | Selects an icon pack that enables additional icons (e.g. for Angular, React, Ngrx). |
-| **Toggle Explorer Arrows**        | Show or hide the arrows next to the folder icons.                                   |
-| **Restore Default Configuration** | Reset to the default configuration.                                                 |
-| **Toggle Grayscale**              | Set icon saturation to `0` (grayscale), or `1` (color).                             |
+|------------------------------------|-------------------------------------------------------------------------------------|
+| **Activate Icon Theme**            | Activate the icon theme.                                                            |
+| **Change File Color**              | Change the color of the file icons.                                                 |
+| **Change Folder Color**            | Change the color of the folder icons.                                               |
+| **Change Folder Theme**            | Change the design of the folder icons.                                              |
+| **Change Opacity**                 | Change the opacity of the icons.                                                    |
+| **Change Root Folder Color**       | Change the color of the root folder icons.                                          |
+| **Change Saturation**              | Change the saturation value of the icons.                                           |
+| **Configure Icon Packs**           | Selects an icon pack that enables additional icons (e.g. for Angular, React, Ngrx). |
+| **Restore Default Configuration**  | Reset to the default configuration.                                                 |
+| **Toggle Explorer Arrows**         | Show or hide the arrows next to the folder icons.                                   |
+| **Toggle Grayscale**               | Set icon saturation to `0` (grayscale), or `1` (color).                             |
 
 ## Icon sources
 
@@ -298,3 +319,17 @@ Take a look at the [contribution guidelines](https://github.com/lucodear/lucodea
 
 - [Material Icons for GitHub](https://github.com/material-extensions/material-icons-browser-extension)
 - [Material Product Icons](https://github.com/material-extensions/vscode-material-product-icons)
+- [Material Icons NPM Package](https://www.npmjs.com/package/material-icon-theme)
+
+<br />
+
+
+---
+
+<p align="center">
+  <a href="https://github.com/sponsors/material-extensions"><img src="https://img.shields.io/badge/Sponsor-GitHub-blue?logo=github-sponsors&style=for-the-badge&colorA=263238&colorB=EC407A" alt="Sponsor on GitHub"></a>
+  <a href="https://github.com/material-extensions/vscode-material-icon-theme"><img src="https://img.shields.io/github/stars/material-extensions/vscode-material-icon-theme?style=for-the-badge&label=Star%20on%20GitHub&colorA=263238&colorB=1976D2" alt="Star on GitHub"></a>
+</p>
+<p align="center">
+  <em>Enjoying Material Icon Theme? Support the project by starring it or becoming a sponsor!</em>
+</p>

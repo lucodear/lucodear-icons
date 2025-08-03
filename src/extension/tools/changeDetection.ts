@@ -3,8 +3,8 @@ import deepEqual from 'fast-deep-equal';
 import type { ConfigurationChangeEvent, ExtensionContext } from 'vscode';
 import { generateManifest } from '../../@lucodear/core/generators/manifest';
 import {
-  type Config,
   applyConfigToIcons,
+  type Config,
   clearCloneFolder,
   customClonesIcons,
   extensionName,

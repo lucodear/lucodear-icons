@@ -13,7 +13,8 @@
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}",
         "--disable-extensions",
-        "--profile-temp"
+        "--profile-temp",
+        "--disable-extensions"
       ],
       "outFiles": ["${workspaceFolder}/dist/**/*.cjs"],
       "preLaunchTask": "${defaultBuildTask}"
@@ -25,7 +26,8 @@
       "request": "launch",
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}",
-        "--extensionDevelopmentKind=web"
+        "--extensionDevelopmentKind=web",
+        "--disable-extensions"
       ],
       "outFiles": ["${workspaceFolder}/dist/web/**/*.cjs"],
       "preLaunchTask": "${defaultBuildTask}"

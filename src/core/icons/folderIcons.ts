@@ -104,7 +104,15 @@ export const folderIcons: FolderTheme[] = [
       { name: 'folder-bower', folderNames: ['bower_components'] },
       {
         name: 'folder-test',
-        folderNames: ['test', 'tests', 'testing', 'snapshots', 'spec', 'specs'],
+        folderNames: [
+          'test',
+          'tests',
+          'testing',
+          'snapshots',
+          'spec',
+          'specs',
+          'testfiles',
+        ],
       },
       {
         name: 'folder-directive',
@@ -1248,6 +1256,18 @@ export const folderIcons: FolderTheme[] = [
           'blender-project',
           'blender-models',
         ],
+      },
+      {
+        name: 'folder-atom',
+        folderNames: ['atoms', 'atom'],
+      },
+      {
+        name: 'folder-molecule',
+        folderNames: ['molecules', 'molecule'],
+      },
+      {
+        name: 'folder-organism',
+        folderNames: ['organisms', 'organism'],
       },
     ],
   },

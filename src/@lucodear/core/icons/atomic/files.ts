@@ -144,12 +144,12 @@ export const atomicOverrides = [
       'organisms/jsx',
     ],
   },
-  // pages - yellow-700
+  // pages - deep-orange-400
   {
     name: 'atdes-page-ts',
     clone: {
       base: 'typescript',
-      color: 'yellow-700',
+      color: 'deep-orange-400',
     },
     fileExtensions: ['page.ts', 'pages.ts', 'page/ts', 'pages/ts'],
   },
@@ -157,7 +157,7 @@ export const atomicOverrides = [
     name: 'atdes-page-tsx',
     clone: {
       base: 'react_ts',
-      color: 'yellow-700',
+      color: 'deep-orange-400',
     },
     fileExtensions: ['page.tsx', 'pages.tsx', 'page/tsx', 'pages/tsx'],
   },
@@ -165,7 +165,7 @@ export const atomicOverrides = [
     name: 'atdes-page-js',
     clone: {
       base: 'javascript',
-      color: 'yellow-700',
+      color: 'deep-orange-400',
     },
     fileExtensions: ['page.js', 'pages.js', 'page/js', 'pages/js'],
   },
@@ -173,7 +173,7 @@ export const atomicOverrides = [
     name: 'atdes-page-jsx',
     clone: {
       base: 'react',
-      color: 'yellow-700',
+      color: 'deep-orange-400',
     },
     fileExtensions: ['page.jsx', 'pages.jsx', 'page/jsx', 'pages/jsx'],
   },

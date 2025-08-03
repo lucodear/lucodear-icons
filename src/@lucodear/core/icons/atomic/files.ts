@@ -1,12 +1,8 @@
-import { type FileIcon, IconPack } from '../../../../core';
+import { type FileIcon } from '../../../../core';
 import type { LucodearFileIcon } from '../../models';
 import { lucodear } from '../utils';
 
-const atomicPack = lucodear(
-  'atomic-design',
-  IconPack.Atomic,
-  [] satisfies LucodearFileIcon[]
-);
+const atomicPack = lucodear('atomic-design', [] satisfies LucodearFileIcon[]);
 
 export const atomicOverrides = [
   // atom - blue-500
@@ -16,7 +12,6 @@ export const atomicOverrides = [
       base: 'typescript',
       color: 'blue-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: ['atom.ts', 'atoms.ts', 'atom/ts', 'atoms/ts'],
   },
   {
@@ -25,7 +20,6 @@ export const atomicOverrides = [
       base: 'react_ts',
       color: 'blue-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: ['atom.tsx', 'atoms.tsx', 'atom/tsx', 'atoms/tsx'],
   },
   {
@@ -34,7 +28,6 @@ export const atomicOverrides = [
       base: 'javascript',
       color: 'blue-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: ['atom.js', 'atoms.js', 'atom/js', 'atoms/js'],
   },
   {
@@ -43,7 +36,6 @@ export const atomicOverrides = [
       base: 'react',
       color: 'blue-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: ['atom.jsx', 'atoms.jsx', 'atom/jsx', 'atoms/jsx'],
   },
   // molecule - orange-500
@@ -53,7 +45,6 @@ export const atomicOverrides = [
       base: 'typescript',
       color: 'orange-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'molecule.ts',
       'molecules.ts',
@@ -67,7 +58,6 @@ export const atomicOverrides = [
       base: 'react_ts',
       color: 'orange-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'molecule.tsx',
       'molecules.tsx',
@@ -81,7 +71,6 @@ export const atomicOverrides = [
       base: 'javascript',
       color: 'orange-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'molecule.js',
       'molecules.js',
@@ -95,7 +84,6 @@ export const atomicOverrides = [
       base: 'react',
       color: 'orange-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'molecule.jsx',
       'molecules.jsx',
@@ -110,7 +98,6 @@ export const atomicOverrides = [
       base: 'typescript',
       color: 'teal-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'organism.ts',
       'organisms.ts',
@@ -124,7 +111,6 @@ export const atomicOverrides = [
       base: 'react_ts',
       color: 'teal-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'organism.tsx',
       'organisms.tsx',
@@ -138,7 +124,6 @@ export const atomicOverrides = [
       base: 'javascript',
       color: 'teal-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'organism.js',
       'organisms.js',
@@ -152,7 +137,6 @@ export const atomicOverrides = [
       base: 'react',
       color: 'teal-500',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'organism.jsx',
       'organisms.jsx',
@@ -167,7 +151,6 @@ export const atomicOverrides = [
       base: 'typescript',
       color: 'yellow-700',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: ['page.ts', 'pages.ts', 'page/ts', 'pages/ts'],
   },
   {
@@ -176,7 +159,6 @@ export const atomicOverrides = [
       base: 'react_ts',
       color: 'yellow-700',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: ['page.tsx', 'pages.tsx', 'page/tsx', 'pages/tsx'],
   },
   {
@@ -185,7 +167,6 @@ export const atomicOverrides = [
       base: 'javascript',
       color: 'yellow-700',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: ['page.js', 'pages.js', 'page/js', 'pages/js'],
   },
   {
@@ -194,7 +175,6 @@ export const atomicOverrides = [
       base: 'react',
       color: 'yellow-700',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: ['page.jsx', 'pages.jsx', 'page/jsx', 'pages/jsx'],
   },
   // template - brown-400
@@ -204,7 +184,6 @@ export const atomicOverrides = [
       base: 'typescript',
       color: 'brown-400',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'template.ts',
       'templates.ts',
@@ -218,7 +197,6 @@ export const atomicOverrides = [
       base: 'react_ts',
       color: 'brown-400',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'template.tsx',
       'templates.tsx',
@@ -232,7 +210,6 @@ export const atomicOverrides = [
       base: 'javascript',
       color: 'brown-400',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'template.js',
       'templates.js',
@@ -246,7 +223,6 @@ export const atomicOverrides = [
       base: 'react',
       color: 'brown-400',
     },
-    enabledFor: [IconPack.Atomic],
     fileExtensions: [
       'template.jsx',
       'templates.jsx',

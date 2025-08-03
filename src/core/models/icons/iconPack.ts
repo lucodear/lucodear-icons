@@ -19,7 +19,6 @@ export enum IconPack {
   RustFerris = 'rust_ferris',
   RustFerrisMinimal = 'rust_ferris_minimal',
   CloudFlare = 'cloudflare',
-  Atomic = 'atomic-design',
   // #endregion
 }
 

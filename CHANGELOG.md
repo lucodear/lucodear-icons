@@ -3,10 +3,33 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.29.0](https://github.com/lucodear/lucodear-icons/compare/v1.28.0...v1.29.0) 
+
+> August 14, 2025 
+
+- feat: add new icons Claude Code [`#3134`](https://github.com/lucodear/lucodear-icons/pull/3134)
+- chore(deps): update actions/checkout action to v5 [`#3131`](https://github.com/lucodear/lucodear-icons/pull/3131)
+- chore(deps): update github actions workflows [`#3130`](https://github.com/lucodear/lucodear-icons/pull/3130)
+- chore: update dependencies and devDependencies [`afa019fb`](https://github.com/lucodear/lucodear-icons/commit/afa019fb)
+- chore(deps): update dependency bun to v1.2.20 [`#3127`](https://github.com/lucodear/lucodear-icons/pull/3127)
+- chore(deps): update actions/create-github-app-token action to v2.1.0 [`#3123`](https://github.com/lucodear/lucodear-icons/pull/3123)
+- chore(deps): update dependency @softarc/sheriff-core to v0.19.1 [`#3122`](https://github.com/lucodear/lucodear-icons/pull/3122)
+- feat(folderIcons): add angular interceptor icon [`#3106`](https://github.com/lucodear/lucodear-icons/pull/3106)
+- feat: add 'colour' and 'colours' to folder icons [`a303d9bf`](https://github.com/lucodear/lucodear-icons/commit/a303d9bf)
+- feat: add vanilla extract icon [`#3113`](https://github.com/lucodear/lucodear-icons/pull/3113)
+- feat: Dev and prod for drizzle config [`#3118`](https://github.com/lucodear/lucodear-icons/pull/3118)
+- chore(deps): update dependency puppeteer to v24.16.0 [`#3114`](https://github.com/lucodear/lucodear-icons/pull/3114)
+- fix(docs): remove unnecessary line break [`e8c25991`](https://github.com/lucodear/lucodear-icons/commit/e8c25991)
+- chore(release): v5.25.0 [`c306238c`](https://github.com/lucodear/lucodear-icons/commit/c306238c)
+- feat: update copilot icon filenames [`#3105`](https://github.com/lucodear/lucodear-icons/pull/3105)
+- chore(deps): update dependency typescript to v5.9.2 [`#3110`](https://github.com/lucodear/lucodear-icons/pull/3110)
+- chore(deps): update dependency lint-staged to v16.1.4 [`#3111`](https://github.com/lucodear/lucodear-icons/pull/3111)
+ 
 #### [v1.28.0](https://github.com/lucodear/lucodear-icons/compare/v1.27.0...v1.28.0) 
 
 > August 3, 2025 
 
+- release: 🔖 v1.28.0 [`473aa309`](https://github.com/lucodear/lucodear-icons/commit/473aa309)
 - feat: ✨ update file colors for atomic design [`a24daabe`](https://github.com/lucodear/lucodear-icons/commit/a24daabe)
 - chore: 🧹 remove atomic design folders (replaced by upstream) [`f974cca1`](https://github.com/lucodear/lucodear-icons/commit/f974cca1)
 - chore(deps): update dependency lint-staged to v16.1.2 [`#3103`](https://github.com/lucodear/lucodear-icons/pull/3103)

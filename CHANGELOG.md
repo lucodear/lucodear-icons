@@ -3,10 +3,28 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.30.0](https://github.com/lucodear/lucodear-icons/compare/v1.29.0...v1.30.0) 
+
+> September 2, 2025 
+
+- feat: ✨ update folder-exceptions [`45bdc3bf`](https://github.com/lucodear/lucodear-icons/commit/45bdc3bf)
+- feat: Shader icon for GLSL raytracing, SPIR-V and Slang files [`#3166`](https://github.com/lucodear/lucodear-icons/pull/3166)
+- feat: add file and folder icons for metro bundler [`#3161`](https://github.com/lucodear/lucodear-icons/pull/3161)
+- feat: cursor icons [`#3146`](https://github.com/lucodear/lucodear-icons/pull/3146)
+- feat: add icon for quarto [`#3151`](https://github.com/lucodear/lucodear-icons/pull/3151)
+- feat(icons): Add files compatible with eslint [`#3156`](https://github.com/lucodear/lucodear-icons/pull/3156)
+- fix(check-colors): ignore deleted SVGs when linting staged files [`#3147`](https://github.com/lucodear/lucodear-icons/pull/3147)
+- chore(release): v5.26.0 [`e3b97d35`](https://github.com/lucodear/lucodear-icons/commit/e3b97d35)
+- feat: add lintstaged icons [`#2794`](https://github.com/lucodear/lucodear-icons/pull/2794)
+- feat: apply `meta` folder icon to `metadata` folder [`#3145`](https://github.com/lucodear/lucodear-icons/pull/3145)
+- feat(icon): added `varnish` icon [`#3142`](https://github.com/lucodear/lucodear-icons/pull/3142)
+- feat: ✨ prompt folder and file icons [`#3141`](https://github.com/lucodear/lucodear-icons/pull/3141)
+ 
 #### [v1.29.0](https://github.com/lucodear/lucodear-icons/compare/v1.28.0...v1.29.0) 
 
 > August 14, 2025 
 
+- release: 🔖 v1.29.0 [`2b29c191`](https://github.com/lucodear/lucodear-icons/commit/2b29c191)
 - feat: add new icons Claude Code [`#3134`](https://github.com/lucodear/lucodear-icons/pull/3134)
 - chore(deps): update actions/checkout action to v5 [`#3131`](https://github.com/lucodear/lucodear-icons/pull/3131)
 - chore(deps): update github actions workflows [`#3130`](https://github.com/lucodear/lucodear-icons/pull/3130)

@@ -18,6 +18,10 @@ export const fileIconsOverrides: Partial<FileIcons> = {
       fileExtensions: ['base.tsconfig.json', 'tsconfig.base.json'],
       fileNames: ['base.tsconfig.json', 'tsconfig.base.json'],
     },
+    {
+      name: 'prompt',
+      fileExtensions: ['prompt.md', 'prompts.md', 'prompt/md', 'prompts/md'],
+    },
     ...atomicOverrides,
   ]),
 };

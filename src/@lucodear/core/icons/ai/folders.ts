@@ -17,7 +17,6 @@ const folder = (name: string, ...others: string[]): LucodearFolderIcon => ({
 
 export const folders = lucodear('ai', [
   folder('agent', 'agents'),
-  folder('prompt', 'prompts'),
   light(folder('chain', 'chains')),
   folder('chromadb', 'chroma'),
   folder('graph', 'graphs', 'langgraph'),

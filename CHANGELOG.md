@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.31.0](https://github.com/lucodear/lucodear-icons/compare/v1.30.0...v1.31.0) 
+
+> September 2, 2025 
+
+- feat: ✨ update folder-exceptions icons [`3defbb5c`](https://github.com/lucodear/lucodear-icons/commit/3defbb5c)
+ 
 #### [v1.30.0](https://github.com/lucodear/lucodear-icons/compare/v1.29.0...v1.30.0) 
 
 > September 2, 2025 
 
+- release: 🔖 v1.30.0 [`e9dfeae9`](https://github.com/lucodear/lucodear-icons/commit/e9dfeae9)
 - feat: ✨ update folder-exceptions [`45bdc3bf`](https://github.com/lucodear/lucodear-icons/commit/45bdc3bf)
 - feat: Shader icon for GLSL raytracing, SPIR-V and Slang files [`#3166`](https://github.com/lucodear/lucodear-icons/pull/3166)
 - feat: add file and folder icons for metro bundler [`#3161`](https://github.com/lucodear/lucodear-icons/pull/3161)

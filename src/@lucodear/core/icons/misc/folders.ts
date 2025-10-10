@@ -197,6 +197,10 @@ export const folders = lucodear('misc', [
     folderNames: ['module', 'modules', 'mod', 'domain', 'domains'],
   },
   {
+    name: 'observability',
+    folderNames: ['observability'],
+  },
+  {
     name: 'oracle',
     folderNames: ['oracle', 'osb', 'soa'],
   },

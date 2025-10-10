@@ -77,6 +77,10 @@ export const folders = lucodear('misc', [
     folderNames: ['conversion', 'convert', 'conversions'],
   },
   {
+    name: 'dataset',
+    folderNames: ['dataset', 'datasets', 'data-set', 'data-sets'],
+  },
+  {
     name: 'decorator',
     folderNames: ['decorator', 'decorators'],
   },
@@ -158,6 +162,10 @@ export const folders = lucodear('misc', [
   {
     name: 'impl',
     folderNames: ['impl', 'impls', 'implementation', 'implementations'],
+  },
+  {
+    name: 'kv',
+    folderNames: ['kv', 'keyvalue', 'key-value', 'key_value', 'kv_store'],
   },
   {
     // just a recolor of the upstream layout folder icon from sky blue to a brown-ish
@@ -310,6 +318,7 @@ export const folders = lucodear('misc', [
       'trx',
       'convert',
       'conversion',
+      'condec',
     ],
   },
   {

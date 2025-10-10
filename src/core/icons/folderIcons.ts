@@ -984,7 +984,7 @@ export const folderIcons: FolderTheme[] = [
         name: 'folder-interceptor',
         folderNames: ['interceptor', 'interceptors'],
       },
-      { name: 'folder-svg', folderNames: ['svg', 'svgs'] },
+      { name: 'folder-svg', folderNames: ['svg', 'svgs', 'vector', 'vectors'] },
       {
         name: 'folder-vuex-store',
         folderNames: ['store', 'stores'],
@@ -1071,6 +1071,10 @@ export const folderIcons: FolderTheme[] = [
       },
       { name: 'folder-quasar', folderNames: ['quasar'] },
       { name: 'folder-next', folderNames: ['next'] },
+      {
+        name: 'folder-dal',
+        folderNames: ['dal', 'data-access', 'data-access-layer'],
+      },
       { name: 'folder-cobol', folderNames: ['cobol'] },
       { name: 'folder-yarn', folderNames: ['yarn'] },
       { name: 'folder-husky', folderNames: ['husky'] },
@@ -1291,6 +1295,14 @@ export const folderIcons: FolderTheme[] = [
       {
         name: 'folder-metro',
         folderNames: ['metro'],
+      },
+      {
+        name: 'folder-filter',
+        folderNames: ['filter', 'filters'],
+      },
+      {
+        name: 'folder-toc',
+        folderNames: ['toc', 'table-of-contents'],
       },
     ],
   },

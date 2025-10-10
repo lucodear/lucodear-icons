@@ -36,6 +36,7 @@
   "configuration.activeIconPack.vue": "Icons for Vue.",
   "configuration.activeIconPack.vue_vuex": "Icons for Vue and Vuex.",
   "configuration.activeIconPack.nest": "Icons for NestJS.",
+  "configuration.activeIconPack.bashly": "Icons for Bashly.",
   "configuration.activeIconPack.payload": "Icons for Payload.",
   "configuration.activeIconPack.keystatic": "Icons for Keystatic.",
   "configuration.activeIconPack.pest": "Icons for pest-py.",

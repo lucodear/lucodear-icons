@@ -11,6 +11,7 @@ export enum IconPack {
   Qwik = 'qwik',
   Vue = 'vue',
   Vuex = 'vue_vuex',
+  Bashly = 'bashly',
 
   // #region 🍭 » lucodear
   Payload = 'payload',

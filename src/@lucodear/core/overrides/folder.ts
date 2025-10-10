@@ -10,5 +10,6 @@ export const folderIconsOverrides: Partial<FolderTheme> = {
   icons: [
     { name: 'folder-node', folderNames: ['node', 'nodejs'] },
     { name: 'folder-images', folderNames: ['media'] },
+    { name: 'folder-database', folderNames: ['datasource', 'datasources'] },
   ],
 };

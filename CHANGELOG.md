@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.33.0](https://github.com/lucodear/lucodear-icons/compare/v1.32.0...v1.33.0) 
+
+> October 10, 2025 
+
+- feat: ✨ add new folder type for observability [`cc59f6f6`](https://github.com/lucodear/lucodear-icons/commit/cc59f6f6)
+ 
 #### [v1.32.0](https://github.com/lucodear/lucodear-icons/compare/v1.31.0...v1.32.0) 
 
 > October 10, 2025 
 
+- release: 🔖 v1.32.0 [`f702451f`](https://github.com/lucodear/lucodear-icons/commit/f702451f)
 - feat: ✨ add new folder types for dataset and kv storage [`#129`](https://github.com/lucodear/lucodear-icons/pull/129)
 - feat: ✨ add new folder icon for Data Access Layer [`#3203`](https://github.com/lucodear/lucodear-icons/pull/3203)
 - feat: clone `bashly-hook` icon for Bashly strings file [`#3209`](https://github.com/lucodear/lucodear-icons/pull/3209)

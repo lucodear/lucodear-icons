@@ -209,6 +209,8 @@ export const fileIcons: FileIcons = {
         'srf',
         'srw',
         'x3f',
+        'ktx',
+        'ktx2',
       ],
     },
     { name: 'palette', fileExtensions: ['pal', 'gpl', 'act'] },
@@ -385,6 +387,7 @@ export const fileIcons: FileIcons = {
         'csproj',
         'ruleset',
         'sln',
+        'slnf',
         'slnx',
         'suo',
         'vb',
@@ -508,7 +511,7 @@ export const fileIcons: FileIcons = {
     { name: 'h', fileExtensions: ['h'] },
     {
       name: 'cpp',
-      fileExtensions: ['cc', 'cpp', 'cxx', 'c++', 'cp', 'mii', 'ii'],
+      fileExtensions: ['cc', 'cpp', 'cxx', 'c++', 'cp', 'mii', 'ii', 'cppm'],
     },
     {
       name: 'hpp',
@@ -603,6 +606,9 @@ export const fileIcons: FileIcons = {
     {
       name: 'certificate',
       fileExtensions: ['cer', 'cert', 'crt'],
+    },
+    {
+      name: 'license',
       fileNames: [
         'copying',
         'copying.md',
@@ -632,9 +638,11 @@ export const fileIcons: FileIcons = {
         'licence.md',
         'licence.rst',
         'licence.txt',
-        'unlicense',
-        'unlicense.txt',
       ],
+    },
+    {
+      name: 'unlicense',
+      fileNames: ['unlicense', 'unlicense.txt'],
     },
     {
       name: 'key',
@@ -701,8 +709,15 @@ export const fileIcons: FileIcons = {
     { name: 'fsharp', fileExtensions: ['fs', 'fsx', 'fsi', 'fsproj'] },
     {
       name: 'swift',
-      fileExtensions: ['swift'],
-      fileNames: ['.swift-format', '.swift-version'],
+      fileExtensions: [
+        'swift',
+        'xcplayground',
+        'swiftdeps',
+        'swiftdoc',
+        'swiftmodule',
+        'swiftsourceinfo',
+      ],
+      fileNames: ['.swift-format', '.swift-version', '.swiftformat'],
     },
     { name: 'arduino', fileExtensions: ['ino'] },
     {
@@ -984,6 +999,7 @@ export const fileIcons: FileIcons = {
     { name: 'xaml', fileExtensions: ['xaml'], fileNames: ['XamlStyler.json'] },
     { name: 'haskell', fileExtensions: ['hs', 'lhs'] },
     { name: 'happo', fileNames: ['.happo.js', '.happo.mjs', '.happo.cjs'] },
+    { name: 'chromatic', fileNames: ['chromatic.config.json'] },
     { name: 'kotlin', fileExtensions: ['kt', 'kts'] },
     {
       name: 'mist',
@@ -1395,6 +1411,22 @@ export const fileIcons: FileIcons = {
         'webpack.test': FileNamePattern.Ecmascript,
         webpack: FileNamePattern.Ecmascript,
         webpackfile: FileNamePattern.Ecmascript,
+      },
+    },
+    {
+      name: 'rstack',
+      fileNames: ['rspress.config.ts', 'rslint.json', 'rslint.jsonc'],
+      patterns: {
+        'rspack.config': FileNamePattern.Ecmascript,
+        'rsbuild.config': FileNamePattern.Ecmascript,
+        'rslib.config': FileNamePattern.Ecmascript,
+        'rstest.config': FileNamePattern.Ecmascript,
+      },
+    },
+    {
+      name: 'lynx',
+      patterns: {
+        'lynx.config': FileNamePattern.Ecmascript,
       },
     },
     { name: 'ionic', fileNames: ['ionic.config.json', '.io-config.json'] },
@@ -2429,6 +2461,8 @@ export const fileIcons: FileIcons = {
       patterns: {
         'vitest.workspace': FileNamePattern.Ecmascript,
         'vitest.config': FileNamePattern.Ecmascript,
+        'vitest.unit.config': FileNamePattern.Ecmascript,
+        'vitest.e2e.config': FileNamePattern.Ecmascript,
       },
     },
     {
@@ -2882,6 +2916,10 @@ export const fileIcons: FileIcons = {
       patterns: {
         esbuild: FileNamePattern.Ecmascript,
         'esbuild.config': FileNamePattern.Ecmascript,
+        'esbuild.dev': FileNamePattern.Ecmascript,
+        'esbuild.stage': FileNamePattern.Ecmascript,
+        'esbuild.prod': FileNamePattern.Ecmascript,
+        'esbuild.test': FileNamePattern.Ecmascript,
       },
     },
     { name: 'spwn', fileExtensions: ['spwn'] },
@@ -3049,7 +3087,7 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'gemini-ai',
-      fileNames: ['.aiexclude'],
+      fileNames: ['.aiexclude', 'GEMINI.md'],
     },
     {
       name: 'taze',
@@ -3261,7 +3299,15 @@ export const fileIcons: FileIcons = {
     },
     { name: 'blender', fileExtensions: ['blend', 'blend1', 'blend2'] },
     { name: 'tsdoc', fileNames: ['tsdoc.json'] },
-    { name: 'oxlint', fileNames: ['.oxlintrc.json'] },
+    {
+      name: 'oxc',
+      fileNames: [
+        '.oxlintrc.json',
+        '.oxlintrc.jsonc',
+        '.oxfmtrc.json',
+        '.oxfmtrc.jsonc',
+      ],
+    },
     {
       name: 'vanilla-extract',
       fileExtensions: [
@@ -3353,6 +3399,30 @@ export const fileIcons: FileIcons = {
     {
       name: 'toc',
       fileExtensions: ['toc'],
+    },
+    {
+      name: 'shellcheck',
+      patterns: {
+        shellcheckrc: FileNamePattern.Dotfile,
+      },
+      light: true,
+    },
+    {
+      name: 'cue',
+      fileExtensions: ['cue'],
+    },
+    {
+      name: 'lean',
+      fileExtensions: ['lean'],
+    },
+    {
+      name: 'salt',
+      fileExtensions: ['sls'],
+    },
+    {
+      name: 'warp',
+      fileNames: ['warp.md'],
+      light: true,
     },
   ]),
 };

@@ -547,7 +547,7 @@ export const fileIcons: FileIcons = {
       name: 'ruff',
       fileNames: ['ruff.toml', '.ruff.toml'],
     },
-    { name: 'uv', fileNames: ['uv.toml', '.uv.toml'] },
+    { name: 'uv', fileNames: ['uv.toml', '.uv.toml', 'uv.lock'] },
     {
       name: 'scons',
       light: true,
@@ -1313,7 +1313,14 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'terraform',
-      fileExtensions: ['tf', 'tf.json', 'tfvars', 'tfstate', 'tfbackend'],
+      fileExtensions: [
+        'tf',
+        'tf.json',
+        'tfvars',
+        'tfstate',
+        'tfbackend',
+        'terraformignore',
+      ],
     },
     {
       name: 'opentofu',

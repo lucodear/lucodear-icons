@@ -77,6 +77,10 @@ export const folders = lucodear('misc', [
     folderNames: ['conversion', 'convert', 'conversions'],
   },
   {
+    name: 'dashboard',
+    folderNames: ['dashboard', 'dashboards'],
+  },
+  {
     name: 'dataset',
     folderNames: ['dataset', 'datasets', 'data-set', 'data-sets'],
   },
@@ -195,6 +199,10 @@ export const folders = lucodear('misc', [
   {
     name: 'module',
     folderNames: ['module', 'modules', 'mod', 'domain', 'domains'],
+  },
+  {
+    name: 'section',
+    folderNames: ['section', 'sections'],
   },
   {
     name: 'observability',

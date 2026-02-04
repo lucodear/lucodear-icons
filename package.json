@@ -28,7 +28,8 @@
     "verify": "bunx sheriff verify",
     "prepublishOnly": "bun run ./src/scripts/module/prepare.ts",
     "postpublish": "git checkout package.json && git checkout README.md",
-    "lc:preview": "bun ./src/@lucodear/scripts/preview"
+    "lc:preview": "bun ./src/@lucodear/scripts/preview",
+    "clean-clones": "rm icons/*.clone.svg ; rm icons-lc/*.clone.svg"
   },
   "publisher": "lucaslabs",
   "author": {

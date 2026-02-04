@@ -9,7 +9,7 @@ import { type FolderTheme } from '../../../core';
 export const folderIconsOverrides: Partial<FolderTheme> = {
   icons: [
     { name: 'folder-node', folderNames: ['node', 'nodejs'] },
-    { name: 'folder-images', folderNames: ['media'] },
+    { name: 'folder-images', folderNames: ['media', 'imagery'] },
     { name: 'folder-database', folderNames: ['datasource', 'datasources'] },
   ],
 };

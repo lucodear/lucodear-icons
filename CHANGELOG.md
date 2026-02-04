@@ -3,10 +3,33 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.35.0](https://github.com/lucodear/lucodear-icons/compare/v1.34.0...v1.35.0) 
+
+> February 4, 2026 
+
+- feat: ✨ add dashboard and section folder support in icons [`11a5f8b4`](https://github.com/lucodear/lucodear-icons/commit/11a5f8b4)
+- feat(icons): add redux and redux-reducer folder icon support [`#3335`](https://github.com/lucodear/lucodear-icons/pull/3335)
+- feat: Include `agent`,`agents` folder in `folder_robot` in name [`#3336`](https://github.com/lucodear/lucodear-icons/pull/3336)
+- feat(icons): extend Gemini folder icon mapping to gemini and gemini-ai [`#3334`](https://github.com/lucodear/lucodear-icons/pull/3334)
+- feat: italian translations [`#3329`](https://github.com/lucodear/lucodear-icons/pull/3329)
+- chore(deps): update actions/attest-build-provenance action to v3.2.0 [`#3324`](https://github.com/lucodear/lucodear-icons/pull/3324)
+- chore(deps): update actions/checkout action to v6.0.2 [`#3321`](https://github.com/lucodear/lucodear-icons/pull/3321)
+- fix(feat): Include `outputs` folder in `folder_dist` name [`#3322`](https://github.com/lucodear/lucodear-icons/pull/3322)
+- chore(deps): update oven-sh/setup-bun digest to 3d26778 [`#3315`](https://github.com/lucodear/lucodear-icons/pull/3315)
+- chore(release): v5.31.0 [`7e4067b0`](https://github.com/lucodear/lucodear-icons/commit/7e4067b0)
+- fix: add 'uv.lock' to uv file icon recognition (Fixes #3316) [`#3317`](https://github.com/lucodear/lucodear-icons/pull/3317)
+- chore(deps): update dependency bun to v1.3.6 [`#3297`](https://github.com/lucodear/lucodear-icons/pull/3297)
+- fix: update Blender logo [`#3285`](https://github.com/lucodear/lucodear-icons/pull/3285)
+- feat: add folder icon for gemini ai [`#3313`](https://github.com/lucodear/lucodear-icons/pull/3313)
+- fix: bring claude icons into 16x16 grid [`2821c2ac`](https://github.com/lucodear/lucodear-icons/commit/2821c2ac)
+- chore(deps): update oven-sh/setup-bun digest to b7a1c7c [`#3308`](https://github.com/lucodear/lucodear-icons/pull/3308)
+- feat: Add 'terraformignore' file extension to terraform icon configuration [`#3305`](https://github.com/lucodear/lucodear-icons/pull/3305)
+ 
 #### [v1.34.0](https://github.com/lucodear/lucodear-icons/compare/v1.33.0...v1.34.0) 
 
 > December 26, 2025 
 
+- release: 🔖 v1.34.0 [`5212fa49`](https://github.com/lucodear/lucodear-icons/commit/5212fa49)
 - chore(release): v5.30.0 [`bf1b222c`](https://github.com/lucodear/lucodear-icons/commit/bf1b222c)
 - chore(deps): update actions/attest-build-provenance action to v3.1.0 [`#3298`](https://github.com/lucodear/lucodear-icons/pull/3298)
 - feat: extended folder-functions to include composables folders [`#3301`](https://github.com/lucodear/lucodear-icons/pull/3301)

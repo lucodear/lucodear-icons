@@ -46,6 +46,11 @@ export const folders = lucodear('lucodear', [
     light: true,
   },
   {
+    name: 'rf',
+    light: true,
+    looseFolderIcon: true,
+  },
+  {
     name: 'rustler',
     folderNames: ['rustler', 'rustlers'],
   },

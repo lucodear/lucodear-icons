@@ -350,6 +350,10 @@ export const folders = lucodear('misc', [
     folderNames: ['watcher'],
   },
   {
+    name: 'worker',
+    folderNames: ['workers', 'worker'],
+  },
+  {
     name: 'workflow',
     folderNames: ['workflow', 'workflows', 'flow', 'flows'],
   },

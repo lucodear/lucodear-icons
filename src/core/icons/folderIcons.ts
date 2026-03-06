@@ -283,6 +283,7 @@ export const folderIcons: FolderTheme[] = [
           'site',
           'browser',
           'browsers',
+          'proxy',
         ],
       },
       {
@@ -558,6 +559,7 @@ export const folderIcons: FolderTheme[] = [
           'benchmark',
           'benchmarks',
           'bench',
+          'benches',
           'performance',
           'perf',
           'profiling',
@@ -1370,6 +1372,10 @@ export const folderIcons: FolderTheme[] = [
       {
         name: 'folder-license',
         folderNames: ['license', 'licenses'],
+      },
+      {
+        name: 'folder-form',
+        folderNames: ['form', 'forms'],
       },
     ],
   },

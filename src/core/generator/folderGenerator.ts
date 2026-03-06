@@ -288,6 +288,7 @@ const extendFolderNames = (folderNames: string[]) => {
     ['', ''],
     ['.', ''],
     ['_', ''],
+    ['-', ''],
     ['__', '__'],
   ];
   folderNames.forEach((name) => {

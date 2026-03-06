@@ -116,6 +116,7 @@ export const fileIcons: FileIcons = {
       fileNames: ['.htaccess'],
     },
     { name: 'toml', fileExtensions: ['toml'], light: true },
+    { name: 'toon', fileExtensions: ['toon'] },
     {
       name: 'image',
       fileExtensions: [
@@ -341,6 +342,10 @@ export const fileIcons: FileIcons = {
       name: 'typescript-def',
       fileExtensions: ['d.ts', 'd.cts', 'd.mts', 'd.ets'],
     },
+    {
+      name: 'typedoc',
+      fileNames: ['typedoc.js', 'typedoc.json'],
+    },
     { name: 'markdoc', fileExtensions: ['mdoc', 'markdoc', 'markdoc.md'] },
     {
       name: 'markdoc-config',
@@ -396,6 +401,7 @@ export const fileIcons: FileIcons = {
         'vcxitems.filters',
         'vcxproj',
         'vcxproj.filters',
+        'wixproj',
       ],
       fileNames: ['.vsconfig'],
     },
@@ -1915,6 +1921,7 @@ export const fileIcons: FileIcons = {
         'story.tsx',
         'stories.svelte',
         'story.mdx',
+        'stories.vue',
       ],
     },
     { name: 'wepy', fileExtensions: ['wpy'] },
@@ -2356,7 +2363,7 @@ export const fileIcons: FileIcons = {
     {
       name: 'nuget',
       fileNames: ['nuget.config', '.nuspec', 'nuget.exe'],
-      fileExtensions: ['nupkg'],
+      fileExtensions: ['nupkg', 'nuspec'],
     },
     { name: 'command', fileExtensions: ['command'] },
     {
@@ -2917,7 +2924,10 @@ export const fileIcons: FileIcons = {
         'panda.config': FileNamePattern.Ecmascript,
       },
     },
-    { name: 'biome', fileNames: ['biome.json', 'biome.jsonc'] },
+    {
+      name: 'biome',
+      fileNames: ['biome.json', 'biome.jsonc', '.biome.json', '.biome.jsonc'],
+    },
     {
       name: 'esbuild',
       patterns: {
@@ -3143,7 +3153,7 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'label',
-      fileNames: ['.github/labeler.yml', '.github/labeler.yaml'],
+      fileNames: ['.github/labeler.yml', '.github/labeler.yaml', 'tags'],
     },
     {
       name: 'zeabur',
@@ -3313,6 +3323,7 @@ export const fileIcons: FileIcons = {
         '.oxlintrc.jsonc',
         '.oxfmtrc.json',
         '.oxfmtrc.jsonc',
+        'oxlint.config.ts',
       ],
     },
     {
@@ -3431,5 +3442,6 @@ export const fileIcons: FileIcons = {
       fileNames: ['warp.md'],
       light: true,
     },
+    { name: 'macaulay2', fileExtensions: ['m2'] },
   ]),
 };

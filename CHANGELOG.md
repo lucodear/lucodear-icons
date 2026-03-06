@@ -3,10 +3,38 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.36.0](https://github.com/lucodear/lucodear-icons/compare/v1.35.0...v1.36.0) 
+
+> March 6, 2026 
+
+- feat: ✨ add worker and rf folder icons [`52b7e03e`](https://github.com/lucodear/lucodear-icons/commit/52b7e03e)
+- chore(deps): update oven-sh/setup-bun digest to ecf28dd [`#3381`](https://github.com/lucodear/lucodear-icons/pull/3381)
+- fix: add wixproj to visualstudio file extensions [`#3383`](https://github.com/lucodear/lucodear-icons/pull/3383)
+- fix: add nuspec to nuget file extensions [`#3377`](https://github.com/lucodear/lucodear-icons/pull/3377)
+- feat: add `tags` file icon [`#3375`](https://github.com/lucodear/lucodear-icons/pull/3375)
+- chore(release): v5.32.0 [`a6b4e9bf`](https://github.com/lucodear/lucodear-icons/commit/a6b4e9bf)
+- feat: support icons for hidden biome config files [`#3372`](https://github.com/lucodear/lucodear-icons/pull/3372)
+- chore(deps): update actions/attest-build-provenance action to v4.1.0 [`#3371`](https://github.com/lucodear/lucodear-icons/pull/3371)
+- feat(icon): add form-folder icon [`#3352`](https://github.com/lucodear/lucodear-icons/pull/3352)
+- chore(deps): update actions/attest-build-provenance action to v4 [`#3368`](https://github.com/lucodear/lucodear-icons/pull/3368)
+- feat: add icon for .toon files [`#3365`](https://github.com/lucodear/lucodear-icons/pull/3365)
+- fix(tasks): change task type from 'bun' to 'shell' for build and test commands [`036a3a4e`](https://github.com/lucodear/lucodear-icons/commit/036a3a4e)
+- feat: Add the `proxy` folder name setting [`#3355`](https://github.com/lucodear/lucodear-icons/pull/3355)
+- feat(icon): add `typedoc` icon [`#3360`](https://github.com/lucodear/lucodear-icons/pull/3360)
+- feat(icon): add macaulay2 icon [`#3349`](https://github.com/lucodear/lucodear-icons/pull/3349)
+- feat: update Traditional Chinese translations [`#3363`](https://github.com/lucodear/lucodear-icons/pull/3363)
+- chore(deps): update actions/stale action to v10.2.0 [`#3358`](https://github.com/lucodear/lucodear-icons/pull/3358)
+- feat: Include `benches` folder in the `folder-benchmark` for Rust's conventional benchmark directory [`#3356`](https://github.com/lucodear/lucodear-icons/pull/3356)
+- feat: enhance oxlint config support [`#3353`](https://github.com/lucodear/lucodear-icons/pull/3353)
+- feat: assign Storybook icon to `.stories.vue` file extensions [`#3341`](https://github.com/lucodear/lucodear-icons/pull/3341)
+- feat(-components): as components [`#3338`](https://github.com/lucodear/lucodear-icons/pull/3338)
+- feat: update oxc, vite and vitest new icons [`#3320`](https://github.com/lucodear/lucodear-icons/pull/3320)
+ 
 #### [v1.35.0](https://github.com/lucodear/lucodear-icons/compare/v1.34.0...v1.35.0) 
 
 > February 4, 2026 
 
+- release: 🔖 v1.35.0 [`132222db`](https://github.com/lucodear/lucodear-icons/commit/132222db)
 - feat: ✨ add dashboard and section folder support in icons [`11a5f8b4`](https://github.com/lucodear/lucodear-icons/commit/11a5f8b4)
 - feat(icons): add redux and redux-reducer folder icon support [`#3335`](https://github.com/lucodear/lucodear-icons/pull/3335)
 - feat: Include `agent`,`agents` folder in `folder_robot` in name [`#3336`](https://github.com/lucodear/lucodear-icons/pull/3336)

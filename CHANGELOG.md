@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.37.0](https://github.com/lucodear/lucodear-icons/compare/v1.36.0...v1.37.0) 
+
+> March 7, 2026 
+
+- feat: ✨ add rellu icons [`8d454a84`](https://github.com/lucodear/lucodear-icons/commit/8d454a84)
+ 
 #### [v1.36.0](https://github.com/lucodear/lucodear-icons/compare/v1.35.0...v1.36.0) 
 
 > March 6, 2026 
 
+- release: 🔖 v1.36.0 [`bfe4af60`](https://github.com/lucodear/lucodear-icons/commit/bfe4af60)
 - feat: ✨ add worker and rf folder icons [`52b7e03e`](https://github.com/lucodear/lucodear-icons/commit/52b7e03e)
 - chore(deps): update oven-sh/setup-bun digest to ecf28dd [`#3381`](https://github.com/lucodear/lucodear-icons/pull/3381)
 - fix: add wixproj to visualstudio file extensions [`#3383`](https://github.com/lucodear/lucodear-icons/pull/3383)

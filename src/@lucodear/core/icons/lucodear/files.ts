@@ -36,6 +36,11 @@ export const files = lucodear('lucodear', [
     fileNames: ['coco.yml', 'coco.yaml'],
   },
   {
+    name: 'rellu',
+    fileExtensions: ['rellurc', 'relluconf'],
+    fileNames: ['rellu.json', 'rellu.jsonc'],
+  },
+  {
     name: 'kurv',
     fileExtensions: ['kurv', 'egg', 'eggs'],
   },

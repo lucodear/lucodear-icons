@@ -95,6 +95,10 @@ export const typescript = lucodear('node', [
     ...namext(['model', 'models', 'entity', 'entities'], true),
   },
   {
+    name: 'ts-middleware',
+    ...namext(['middleware', 'middlewares'], true),
+  },
+  {
     name: 'ts-service',
     ...namext(
       ['service', 'services', 'provider', 'providers', 'svc', 'svcs'],

@@ -3,10 +3,26 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.38.0](https://github.com/lucodear/lucodear-icons/compare/v1.37.0...v1.38.0) 
+
+> March 26, 2026 
+
+- feat: ✨ astro pack [`7fafbb52`](https://github.com/lucodear/lucodear-icons/commit/7fafbb52)
+- feat: add rolldown icon [`#3411`](https://github.com/lucodear/lucodear-icons/pull/3411)
+- feat: add additional env icon file names [`f7de1c32`](https://github.com/lucodear/lucodear-icons/commit/f7de1c32)
+- feat(i18n): add Arabic translation [`#3401`](https://github.com/lucodear/lucodear-icons/pull/3401)
+- chore(deps): update github actions workflows [`#3394`](https://github.com/lucodear/lucodear-icons/pull/3394)
+- feat: add `oxfmt.config.ts` to icons [`#3398`](https://github.com/lucodear/lucodear-icons/pull/3398)
+- feat(icon): add deprecated/scrap folder icon [`#3384`](https://github.com/lucodear/lucodear-icons/pull/3384)
+- feat(icon): add json_schema file icon [`#3380`](https://github.com/lucodear/lucodear-icons/pull/3380)
+- feat(icon): add R language folder icon [`#3387`](https://github.com/lucodear/lucodear-icons/pull/3387)
+- feat(icon): nginx folder icon [`#3197`](https://github.com/lucodear/lucodear-icons/pull/3197)
+ 
 #### [v1.37.0](https://github.com/lucodear/lucodear-icons/compare/v1.36.0...v1.37.0) 
 
 > March 7, 2026 
 
+- release: 🔖 v1.37.0 [`d2dddf7d`](https://github.com/lucodear/lucodear-icons/commit/d2dddf7d)
 - feat: ✨ add rellu icons [`8d454a84`](https://github.com/lucodear/lucodear-icons/commit/8d454a84)
  
 #### [v1.36.0](https://github.com/lucodear/lucodear-icons/compare/v1.35.0...v1.36.0) 

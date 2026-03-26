@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.39.0](https://github.com/lucodear/lucodear-icons/compare/v1.38.0...v1.39.0) 
+
+> March 26, 2026 
+
+- feat: ✨ add missing component astro file [`21ec7c90`](https://github.com/lucodear/lucodear-icons/commit/21ec7c90)
+ 
 #### [v1.38.0](https://github.com/lucodear/lucodear-icons/compare/v1.37.0...v1.38.0) 
 
 > March 26, 2026 
 
+- release: 🔖 v1.38.0 [`9679ff03`](https://github.com/lucodear/lucodear-icons/commit/9679ff03)
 - feat: ✨ astro pack [`7fafbb52`](https://github.com/lucodear/lucodear-icons/commit/7fafbb52)
 - feat: add rolldown icon [`#3411`](https://github.com/lucodear/lucodear-icons/pull/3411)
 - feat: add additional env icon file names [`f7de1c32`](https://github.com/lucodear/lucodear-icons/commit/f7de1c32)

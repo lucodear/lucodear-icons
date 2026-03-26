@@ -65,6 +65,21 @@ export const astroOverrides = [
       'templates/astro',
     ],
   },
+  // component - lime-600
+  {
+    name: 'atdes-component-astro',
+    clone: {
+      base: 'astro',
+      color: 'lime-600',
+    },
+    fileExtensions: [
+      'cmp.astro',
+      'component.astro',
+      'components.astro',
+      'component/astro',
+      'components/astro',
+    ],
+  }
 ] as FileIcon[];
 
 export const files: LucodearFileIcon[] = [...astroPack];

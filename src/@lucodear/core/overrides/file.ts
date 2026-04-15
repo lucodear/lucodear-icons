@@ -1,6 +1,7 @@
 import { type FileIcons, parseByPattern } from '../../../core';
 import { atomicOverrides } from '../icons/atomic';
 import { astroOverrides } from '../icons/astro';
+import { beaOverrides } from '../icons/bea';
 
 /**
  * Defines lucodear's file icons overrides. The content of this object will be merged with the
@@ -24,6 +25,7 @@ export const fileIconsOverrides: Partial<FileIcons> = {
       fileExtensions: ['prompt.md', 'prompts.md', 'prompt/md', 'prompts/md'],
     },
     ...atomicOverrides,
-    ...astroOverrides
+    ...astroOverrides,
+    ...beaOverrides,
   ]),
 };

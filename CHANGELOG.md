@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.41.0](https://github.com/lucodear/lucodear-icons/compare/v1.40.0...v1.41.0) 
+
+> April 15, 2026 
+
+- feat: ✨ Add more bea/osb file types and extensions [`3881c393`](https://github.com/lucodear/lucodear-icons/commit/3881c393)
+ 
 #### [v1.40.0](https://github.com/lucodear/lucodear-icons/compare/v1.39.0...v1.40.0) 
 
 > April 15, 2026 
 
+- release: 🔖 v1.40.0 [`c5d46e75`](https://github.com/lucodear/lucodear-icons/commit/c5d46e75)
 - feat: ✨ add BEA file icons [`5b2b1468`](https://github.com/lucodear/lucodear-icons/commit/5b2b1468)
  
 #### [v1.39.0](https://github.com/lucodear/lucodear-icons/compare/v1.38.0...v1.39.0) 

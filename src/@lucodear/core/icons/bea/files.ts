@@ -15,6 +15,26 @@ const bea = lucodear("bea", [
     name: "bea-jws",
     fileExtensions: ["jws"],
   },
+  {
+    name: "bea-channel",
+    fileExtensions: ["channel"],
+  },
+  {
+    name: "bea-pipeline",
+    fileExtensions: ["pipeline"],
+  },
+  {
+    name: "bea-proxy",
+    fileExtensions: ["proxy", "proxyservice", "proxy-service"],
+  },
+  {
+    name: "bea-bix",
+    fileExtensions: ["bix", "businessservice", "business-service"],
+    clone: {
+      base: "file-bea-proxy",
+      color: "pink-400",
+    }
+  }
 ] satisfies LucodearFileIcon[]);
 
 export const beaOverrides = [
@@ -27,16 +47,56 @@ export const beaOverrides = [
     },
   },
   {
+    name: "bea-wadl",
+    fileExtensions: ["wadl"],
+    clone: {
+      base: "xml",
+      color: "cyan-400",
+    },
+  },
+  {
     name: "bea-xq",
-    fileExtensions: ["xq"],
+    fileExtensions: ["xq", "xquery", "xqy"],
     clone: {
       base: "xml",
       color: "teal-400",
     },
   },
   {
+    name: "bea-jca",
+    fileExtensions: ["jca"],
+    clone: {
+      base: "xml",
+      color: "gray-400",
+    },
+  },
+  {
+    name: "mfl",
+    fileExtensions: ["mfl"],
+    clone: {
+      base: "xml",
+      color: "pink-400",
+    },
+  },
+  {
+    name: "bea-build",
+    fileNames: ["build.xml"],
+    clone: {
+      base: "settings",
+      color: "yellow-600",
+    },
+  },
+  {
+    name: "bea-work",
+    fileExtensions: ["work"],
+    clone: {
+      base: "settings",
+      color: "blue-gray-400",
+    },
+  },
+  {
     name: "bea-xsd",
-    fileExtensions: ["xsd"],
+    fileExtensions: ["xsd", "xmlschema"],
     clone: {
       base: "xml",
       color: "red-400",

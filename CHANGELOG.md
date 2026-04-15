@@ -3,10 +3,17 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.40.0](https://github.com/lucodear/lucodear-icons/compare/v1.39.0...v1.40.0) 
+
+> April 15, 2026 
+
+- feat: ✨ add BEA file icons [`5b2b1468`](https://github.com/lucodear/lucodear-icons/commit/5b2b1468)
+ 
 #### [v1.39.0](https://github.com/lucodear/lucodear-icons/compare/v1.38.0...v1.39.0) 
 
 > March 26, 2026 
 
+- release: 🔖 v1.39.0 [`e38331dc`](https://github.com/lucodear/lucodear-icons/commit/e38331dc)
 - feat: ✨ add missing component astro file [`21ec7c90`](https://github.com/lucodear/lucodear-icons/commit/21ec7c90)
  
 #### [v1.38.0](https://github.com/lucodear/lucodear-icons/compare/v1.37.0...v1.38.0) 

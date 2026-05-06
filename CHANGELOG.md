@@ -3,10 +3,43 @@
  All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
  
+#### [v1.42.0](https://github.com/lucodear/lucodear-icons/compare/v1.41.0...v1.42.0) 
+
+> May 6, 2026 
+
+- feat(icon): add redis icon [`#3450`](https://github.com/lucodear/lucodear-icons/pull/3450)
+- feat(icon): add zed folder icon [`#3442`](https://github.com/lucodear/lucodear-icons/pull/3442)
+- feat: add folder associations for rust/cargo projects [`#3447`](https://github.com/lucodear/lucodear-icons/pull/3447)
+- feat: add uiua file icon [`#3408`](https://github.com/lucodear/lucodear-icons/pull/3408)
+- feat: support jxl image file type [`#3444`](https://github.com/lucodear/lucodear-icons/pull/3444)
+- feat: Add support for vercel.ts icon (typed Vercel configuration) [`#3441`](https://github.com/lucodear/lucodear-icons/pull/3441)
+- feat: add new icons for mrpack [`#3439`](https://github.com/lucodear/lucodear-icons/pull/3439)
+- feat: add tsdown icon [`#3418`](https://github.com/lucodear/lucodear-icons/pull/3418)
+- feat: add CAD file extensions to 3d icon mapping [`#3436`](https://github.com/lucodear/lucodear-icons/pull/3436)
+- chore: improve release process [`b959b483`](https://github.com/lucodear/lucodear-icons/commit/b959b483)
+- chore(release): v5.34.0 [`0aa11bee`](https://github.com/lucodear/lucodear-icons/commit/0aa11bee)
+- feat: new icons for eas files [`#3425`](https://github.com/lucodear/lucodear-icons/pull/3425)
+- feat(icon): add kotlin folder icon [`#3431`](https://github.com/lucodear/lucodear-icons/pull/3431)
+- feat: add external, externals and thirdparty to folder-lib icons [`#3434`](https://github.com/lucodear/lucodear-icons/pull/3434)
+- feat: Add Postman Folder [`#3376`](https://github.com/lucodear/lucodear-icons/pull/3376)
+- feat: added gitea workflows icon [`#3427`](https://github.com/lucodear/lucodear-icons/pull/3427)
+- feat(icon): assembly file/folder icons [`#3397`](https://github.com/lucodear/lucodear-icons/pull/3397)
+- feat(icon): add go-lang folder icon [`#3391`](https://github.com/lucodear/lucodear-icons/pull/3391)
+- feat(icon): add appwrite icons [`#3392`](https://github.com/lucodear/lucodear-icons/pull/3392)
+- chore(deps): update actions/github-script action to v9 [`#3422`](https://github.com/lucodear/lucodear-icons/pull/3422)
+- chore(deps): update actions/create-github-app-token action to v3.1.1 [`#3424`](https://github.com/lucodear/lucodear-icons/pull/3424)
+- chore(release): v5.33.1 [`e6f371b1`](https://github.com/lucodear/lucodear-icons/commit/e6f371b1)
+- fix(workflows): release to npm [`0e16f306`](https://github.com/lucodear/lucodear-icons/commit/0e16f306)
+- chore(release): v5.33.0 [`e30dca26`](https://github.com/lucodear/lucodear-icons/commit/e30dca26)
+- feat: add folder and icon for skills [`#3367`](https://github.com/lucodear/lucodear-icons/pull/3367)
+- chore(deps): update actions/create-github-app-token action to v3 [`#3395`](https://github.com/lucodear/lucodear-icons/pull/3395)
+- feat: update file icon patterns for Rspress and Rslint [`#3414`](https://github.com/lucodear/lucodear-icons/pull/3414)
+ 
 #### [v1.41.0](https://github.com/lucodear/lucodear-icons/compare/v1.40.0...v1.41.0) 
 
 > April 15, 2026 
 
+- release: 🔖 v1.41.0 [`57d6fca5`](https://github.com/lucodear/lucodear-icons/commit/57d6fca5)
 - feat: ✨ Add more bea/osb file types and extensions [`3881c393`](https://github.com/lucodear/lucodear-icons/commit/3881c393)
  
 #### [v1.40.0](https://github.com/lucodear/lucodear-icons/compare/v1.39.0...v1.40.0) 
